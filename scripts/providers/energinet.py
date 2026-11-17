@@ -1,7 +1,7 @@
 """
 Keyless Energinet Energi Data Service provider for Denmark (DK1 + DK2).
-Fetches real-time 5-minute Danish consumption, onshore/offshore wind, solar,
-and CO2 emission intensity, aggregating into hourly averages (MW / gCO2/kWh).
+Fetches real-time 5-minute Danish generation, cross-border exchanges, and CO2
+emission intensity, deriving physical national demand (Generation + Net Import).
 """
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -43,7 +43,7 @@ class EnerginetProvider:
         }
 
     def _fetch_realtime_power(self, metric_key: str, start_str: str, end_str: str) -> list[dict]:
-        """Aggregates 5-minute DK1 + DK2 power readings (MW) into hourly national averages."""
+        """Aggregates 5-minute DK1 + DK2 power readings (MW) into hourly national totals."""
         url = f"{self.BASE_URL}/ElectricityProdex5MinRealtime"
         params = {
             "start": start_str,
@@ -55,7 +55,6 @@ class EnerginetProvider:
         resp.raise_for_status()
         records = resp.json().get("records", [])
 
-        # Group by (hour_ts, price_area) first so DK1 and DK2 are averaged per hour then summed
         area_buckets: dict[tuple[str, str], list[float]] = defaultdict(list)
 
         for row in records:
@@ -65,16 +64,31 @@ class EnerginetProvider:
                 continue
             ts = f"{m5[:13]}:00:00Z"
 
+            wind_mw = float(row.get("OffshoreWindPower") or 0.0) + float(
+                row.get("OnshoreWindPower") or 0.0
+            )
+            solar_mw = float(row.get("SolarPower") or 0.0)
+            thermal_mw = float(row.get("ProductionGe100MW") or 0.0) + float(
+                row.get("ProductionLt100MW") or 0.0
+            )
+            total_gen_mw = wind_mw + solar_mw + thermal_mw
+
+            # In Energinet realtime data, Exchange* > 0 indicates net import into the price area
+            net_import_mw = (
+                float(row.get("ExchangeGermany") or 0.0)
+                + float(row.get("ExchangeNetherlands") or 0.0)
+                + float(row.get("ExchangeGreatBritain") or 0.0)
+                + float(row.get("ExchangeNorway") or 0.0)
+                + float(row.get("ExchangeSweden") or 0.0)
+                + float(row.get("BornholmSE4") or 0.0)
+            )
+
             if metric_key == "dk_consumption":
-                val = float(row.get("BornholmSE4") or 0.0) + float(
-                    row.get("TotalLoad") or row.get("GrossCon") or 0.0
-                )
+                val = max(0.0, total_gen_mw + net_import_mw)
             elif metric_key == "dk_wind":
-                val = float(row.get("OffshoreWindPower") or 0.0) + float(
-                    row.get("OnshoreWindPower") or 0.0
-                )
+                val = wind_mw
             elif metric_key == "dk_solar":
-                val = float(row.get("SolarPower") or 0.0)
+                val = solar_mw
             else:
                 val = 0.0
 

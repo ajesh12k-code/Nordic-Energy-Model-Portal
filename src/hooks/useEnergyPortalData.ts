@@ -27,8 +27,10 @@ export function useEnergyPortalData(selectedCity: string) {
 
         const entries = await Promise.all(
           manifest.datasets.map(async (meta) => {
-            const res = await fetch(`./${meta.file_path}`);
-            if (!res.ok) throw new Error(`Failed to load ${meta.file_path}`);
+            // Fallback to data/<slug>.json when provider metadata omits explicit file_path
+            const relPath = meta.file_path ?? `data/${meta.slug}.json`;
+            const res = await fetch(`./${relPath}`);
+            if (!res.ok) throw new Error(`Failed to load ${relPath} (${res.status})`);
             const payload: DatasetPayload = await res.json();
             return [meta.slug, payload] as const;
           })
