@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-17T08:31:38Z",
-  "dataset_count": 5,
+  "generated_at_utc": "2026-11-17T09:00:08Z",
+  "dataset_count": 6,
   "datasets": [
     {
       "slug": "fi_electricity_consumption",
@@ -12,8 +12,8 @@
       "description": "Total electricity consumption in Finland calculated from production and cross-border import/export.",
       "license": "CC BY 4.0",
       "resolution": "1h",
-      "updated_at_utc": "2026-11-17T08:31:23Z",
-      "record_count": 169,
+      "updated_at_utc": "2026-11-17T08:59:42Z",
+      "record_count": 168,
       "file_path": "data/fi_electricity_consumption.json"
     },
     {
@@ -26,8 +26,8 @@
       "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling.",
       "license": "CC BY 4.0",
       "resolution": "1h",
-      "updated_at_utc": "2026-11-17T08:31:27Z",
-      "record_count": 169,
+      "updated_at_utc": "2026-11-17T08:59:47Z",
+      "record_count": 168,
       "file_path": "data/fi_wind_production.json"
     },
     {
@@ -40,9 +40,23 @@
       "description": "Baseload nuclear power generation across Finnish reactors.",
       "license": "CC BY 4.0",
       "resolution": "1h",
-      "updated_at_utc": "2026-11-17T08:31:31Z",
-      "record_count": 169,
+      "updated_at_utc": "2026-11-17T08:59:53Z",
+      "record_count": 168,
       "file_path": "data/fi_nuclear_production.json"
+    },
+    {
+      "slug": "fi_emission_factor",
+      "title": "Finland Grid Consumption Emission Factor",
+      "provider": "Fingrid Open Data",
+      "source_id": "265",
+      "unit": "gCO2/kWh",
+      "category": "emissions",
+      "description": "Real-time carbon intensity of electricity consumed in Finland including cross-border net imports.",
+      "license": "CC BY 4.0",
+      "resolution": "1h",
+      "updated_at_utc": "2026-11-17T08:59:58Z",
+      "record_count": 168,
+      "file_path": "data/fi_emission_factor.json"
     },
     {
       "slug": "fi_multi_city_temperature_2m",
@@ -54,7 +68,7 @@
       "description": "Hourly 2m air temperature across 5 Finnish cities plus national mean (includes 48h forecast) for Heating Degree Day modeling.",
       "license": "CC BY 4.0",
       "resolution": "1h",
-      "updated_at_utc": "2026-11-17T08:31:33Z",
+      "updated_at_utc": "2026-11-17T09:00:03Z",
       "record_count": 216,
       "locations": [
         {
@@ -100,7 +114,7 @@
       "description": "Hourly 100m hub-height wind speed across 5 Finnish cities (including Vaasa and Oulu wind corridors) for wind generation curve modeling.",
       "license": "CC BY 4.0",
       "resolution": "1h",
-      "updated_at_utc": "2026-11-17T08:31:38Z",
+      "updated_at_utc": "2026-11-17T09:00:08Z",
       "record_count": 216,
       "locations": [
         {

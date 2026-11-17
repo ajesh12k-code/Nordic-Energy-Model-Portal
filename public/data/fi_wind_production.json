@@ -9,15 +9,10 @@
     "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T08:31:27Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-17T08:59:47Z",
+    "record_count": 168
   },
   "data": [
-    {
-      "timestamp": "2026-11-10T08:00:00Z",
-      "value": 5030.14,
-      "samples": 9
-    },
     {
       "timestamp": "2026-11-10T09:00:00Z",
       "value": 4711.58,
@@ -855,8 +850,8 @@
     },
     {
       "timestamp": "2026-11-17T08:00:00Z",
-      "value": 904.85,
-      "samples": 9
+      "value": 920.93,
+      "samples": 19
     }
   ]
 }

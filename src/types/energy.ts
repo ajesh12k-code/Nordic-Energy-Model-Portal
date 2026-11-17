@@ -11,7 +11,7 @@ export interface DatasetMetadata {
   provider: string;
   source_id: string;
   unit: string;
-  category: 'demand' | 'generation' | 'weather' | string;
+  category: 'demand' | 'generation' | 'weather' | 'emissions' | string;
   description: string;
   license: string;
   resolution: string;
@@ -46,6 +46,7 @@ export interface MergedHourlyRecord {
   wind?: number;
   nuclear?: number;
   residualLoad?: number;
+  carbonIntensity?: number; // gCO2/kWh
   temperature?: number;
   windSpeed100m?: number;
   isForecast: boolean;

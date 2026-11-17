@@ -1,13 +1,23 @@
 import { useState, type ReactNode } from 'react';
-import { Activity, BatteryCharging, CloudSun, Database, RefreshCw } from 'lucide-react';
+import {
+  Activity,
+  BatteryCharging,
+  CloudSun,
+  Database,
+  Leaf,
+  RefreshCw,
+  TrendingUp,
+} from 'lucide-react';
 import { useEnergyPortalData } from './hooks/useEnergyPortalData';
 import { KpiStrip } from './components/KpiStrip';
 import { ResidualLoadTab } from './components/ResidualLoadTab';
 import { WeatherForecastTab } from './components/WeatherForecastTab';
+import { HddForecastTab } from './components/HddForecastTab';
+import { CarbonIntensityTab } from './components/CarbonIntensityTab';
 import { StorageSandboxTab } from './components/StorageSandboxTab';
 import { DataCatalogTab } from './components/DataCatalogTab';
 
-type ModelTab = 'residual' | 'weather' | 'storage' | 'catalog';
+type ModelTab = 'residual' | 'weather' | 'hdd' | 'carbon' | 'storage' | 'catalog';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ModelTab>('residual');
@@ -66,25 +76,37 @@ export default function App() {
             active={activeTab === 'residual'}
             onClick={() => setActiveTab('residual')}
             icon={<Activity className="w-4 h-4" />}
-            label="1. Residual Load & Dispatch"
+            label="1. Residual Load"
           />
           <TabButton
             active={activeTab === 'weather'}
             onClick={() => setActiveTab('weather')}
             icon={<CloudSun className="w-4 h-4" />}
-            label="2. Multi-City Weather & Forecast"
+            label="2. Multi-City Weather"
+          />
+          <TabButton
+            active={activeTab === 'hdd'}
+            onClick={() => setActiveTab('hdd')}
+            icon={<TrendingUp className="w-4 h-4" />}
+            label="3. 48h HDD Forecast"
+          />
+          <TabButton
+            active={activeTab === 'carbon'}
+            onClick={() => setActiveTab('carbon')}
+            icon={<Leaf className="w-4 h-4" />}
+            label="4. Carbon & CO₂ Shift"
           />
           <TabButton
             active={activeTab === 'storage'}
             onClick={() => setActiveTab('storage')}
             icon={<BatteryCharging className="w-4 h-4" />}
-            label="3. BESS Peak-Shaving Sandbox"
+            label="5. BESS Peak-Shaving"
           />
           <TabButton
             active={activeTab === 'catalog'}
             onClick={() => setActiveTab('catalog')}
             icon={<Database className="w-4 h-4" />}
-            label="4. Data Catalog & Provenance"
+            label="6. Data Catalog"
           />
         </div>
 
@@ -97,6 +119,8 @@ export default function App() {
             onSelectCity={setSelectedCity}
           />
         )}
+        {activeTab === 'hdd' && <HddForecastTab data={mergedSeries} />}
+        {activeTab === 'carbon' && <CarbonIntensityTab data={historicalSeries} />}
         {activeTab === 'storage' && <StorageSandboxTab data={historicalSeries} />}
         {activeTab === 'catalog' && <DataCatalogTab datasets={catalog?.datasets ?? []} />}
       </main>

@@ -40,7 +40,6 @@ export function useEnergyPortalData(selectedCity: string) {
     loadPortalData();
   }, []);
 
-  // Align all datasets onto a single chronological UTC hourly timeline
   const mergedSeries: MergedHourlyRecord[] = useMemo(() => {
     const map = new Map<string, MergedHourlyRecord>();
 
@@ -67,6 +66,9 @@ export function useEnergyPortalData(selectedCity: string) {
     });
     datasets['fi_nuclear_production']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).nuclear = pt.value;
+    });
+    datasets['fi_emission_factor']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).carbonIntensity = pt.value;
     });
 
     datasets['fi_multi_city_temperature_2m']?.data.forEach((pt) => {
