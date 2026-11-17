@@ -1,0 +1,66 @@
+{
+  "days_back": 7,
+  "datasets": [
+    {
+      "slug": "fi_electricity_consumption",
+      "provider": "fingrid",
+      "source_id": 124,
+      "title": "Finland Total Electricity Consumption",
+      "unit": "MWh/h",
+      "category": "demand",
+      "description": "Total electricity consumption in Finland calculated from production and cross-border import/export."
+    },
+    {
+      "slug": "fi_wind_production",
+      "provider": "fingrid",
+      "source_id": 181,
+      "title": "Finland Wind Power Generation",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling."
+    },
+    {
+      "slug": "fi_nuclear_production",
+      "provider": "fingrid",
+      "source_id": 188,
+      "title": "Finland Nuclear Power Production",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Baseload nuclear power generation across Finnish reactors."
+    },
+    {
+      "slug": "fi_multi_city_temperature_2m",
+      "provider": "open_meteo",
+      "source_id": "temperature_2m",
+      "forecast_days": 2,
+      "title": "Finland Multi-City Ambient Temperature (2m)",
+      "unit": "°C",
+      "category": "weather",
+      "description": "Hourly 2m air temperature across 5 Finnish cities plus national mean (includes 48h forecast) for Heating Degree Day modeling.",
+      "locations": [
+        { "key": "helsinki", "name": "Helsinki", "lat": 60.1699, "lon": 24.9384 },
+        { "key": "tampere", "name": "Tampere", "lat": 61.4978, "lon": 23.7610 },
+        { "key": "lappeenranta", "name": "Lappeenranta", "lat": 61.0587, "lon": 28.1887 },
+        { "key": "vaasa", "name": "Vaasa", "lat": 63.0951, "lon": 21.6165 },
+        { "key": "oulu", "name": "Oulu", "lat": 65.0121, "lon": 25.4651 }
+      ]
+    },
+    {
+      "slug": "fi_multi_city_wind_speed_100m",
+      "provider": "open_meteo",
+      "source_id": "wind_speed_100m",
+      "forecast_days": 2,
+      "title": "Finland Multi-City Hub-Height Wind Speed (100m)",
+      "unit": "m/s",
+      "category": "weather",
+      "description": "Hourly 100m hub-height wind speed across 5 Finnish cities (including Vaasa and Oulu wind corridors) for wind generation curve modeling.",
+      "locations": [
+        { "key": "helsinki", "name": "Helsinki", "lat": 60.1699, "lon": 24.9384 },
+        { "key": "tampere", "name": "Tampere", "lat": 61.4978, "lon": 23.7610 },
+        { "key": "lappeenranta", "name": "Lappeenranta", "lat": 61.0587, "lon": 28.1887 },
+        { "key": "vaasa", "name": "Vaasa", "lat": 63.0951, "lon": 21.6165 },
+        { "key": "oulu", "name": "Oulu", "lat": 65.0121, "lon": 25.4651 }
+      ]
+    }
+  ]
+}

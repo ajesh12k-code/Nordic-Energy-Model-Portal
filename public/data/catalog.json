@@ -1,0 +1,140 @@
+{
+  "generated_at_utc": "2026-11-17T08:20:40Z",
+  "dataset_count": 5,
+  "datasets": [
+    {
+      "slug": "fi_electricity_consumption",
+      "title": "Finland Total Electricity Consumption",
+      "provider": "Fingrid Open Data",
+      "source_id": "124",
+      "unit": "MWh/h",
+      "category": "demand",
+      "description": "Total electricity consumption in Finland calculated from production and cross-border import/export.",
+      "license": "CC BY 4.0",
+      "resolution": "1h",
+      "updated_at_utc": "2026-11-17T08:20:31Z",
+      "record_count": 169,
+      "file_path": "data/fi_electricity_consumption.json"
+    },
+    {
+      "slug": "fi_wind_production",
+      "title": "Finland Wind Power Generation",
+      "provider": "Fingrid Open Data",
+      "source_id": "181",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling.",
+      "license": "CC BY 4.0",
+      "resolution": "1h",
+      "updated_at_utc": "2026-11-17T08:20:34Z",
+      "record_count": 169,
+      "file_path": "data/fi_wind_production.json"
+    },
+    {
+      "slug": "fi_nuclear_production",
+      "title": "Finland Nuclear Power Production",
+      "provider": "Fingrid Open Data",
+      "source_id": "188",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Baseload nuclear power generation across Finnish reactors.",
+      "license": "CC BY 4.0",
+      "resolution": "1h",
+      "updated_at_utc": "2026-11-17T08:20:34Z",
+      "record_count": 169,
+      "file_path": "data/fi_nuclear_production.json"
+    },
+    {
+      "slug": "fi_multi_city_temperature_2m",
+      "title": "Finland Multi-City Ambient Temperature (2m)",
+      "provider": "Open-Meteo Weather API",
+      "source_id": "temperature_2m",
+      "unit": "\u00b0C",
+      "category": "weather",
+      "description": "Hourly 2m air temperature across 5 Finnish cities plus national mean (includes 48h forecast) for Heating Degree Day modeling.",
+      "license": "CC BY 4.0",
+      "resolution": "1h",
+      "updated_at_utc": "2026-11-17T08:20:37Z",
+      "record_count": 216,
+      "locations": [
+        {
+          "key": "helsinki",
+          "name": "Helsinki",
+          "lat": 60.1699,
+          "lon": 24.9384
+        },
+        {
+          "key": "tampere",
+          "name": "Tampere",
+          "lat": 61.4978,
+          "lon": 23.761
+        },
+        {
+          "key": "lappeenranta",
+          "name": "Lappeenranta",
+          "lat": 61.0587,
+          "lon": 28.1887
+        },
+        {
+          "key": "vaasa",
+          "name": "Vaasa",
+          "lat": 63.0951,
+          "lon": 21.6165
+        },
+        {
+          "key": "oulu",
+          "name": "Oulu",
+          "lat": 65.0121,
+          "lon": 25.4651
+        }
+      ],
+      "file_path": "data/fi_multi_city_temperature_2m.json"
+    },
+    {
+      "slug": "fi_multi_city_wind_speed_100m",
+      "title": "Finland Multi-City Hub-Height Wind Speed (100m)",
+      "provider": "Open-Meteo Weather API",
+      "source_id": "wind_speed_100m",
+      "unit": "m/s",
+      "category": "weather",
+      "description": "Hourly 100m hub-height wind speed across 5 Finnish cities (including Vaasa and Oulu wind corridors) for wind generation curve modeling.",
+      "license": "CC BY 4.0",
+      "resolution": "1h",
+      "updated_at_utc": "2026-11-17T08:20:40Z",
+      "record_count": 216,
+      "locations": [
+        {
+          "key": "helsinki",
+          "name": "Helsinki",
+          "lat": 60.1699,
+          "lon": 24.9384
+        },
+        {
+          "key": "tampere",
+          "name": "Tampere",
+          "lat": 61.4978,
+          "lon": 23.761
+        },
+        {
+          "key": "lappeenranta",
+          "name": "Lappeenranta",
+          "lat": 61.0587,
+          "lon": 28.1887
+        },
+        {
+          "key": "vaasa",
+          "name": "Vaasa",
+          "lat": 63.0951,
+          "lon": 21.6165
+        },
+        {
+          "key": "oulu",
+          "name": "Oulu",
+          "lat": 65.0121,
+          "lon": 25.4651
+        }
+      ],
+      "file_path": "data/fi_multi_city_wind_speed_100m.json"
+    }
+  ]
+}
