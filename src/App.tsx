@@ -1,27 +1,12 @@
-import { useState, type ReactNode } from 'react';
-import {
-  Activity,
-  BatteryCharging,
-  CloudSun,
-  Database,
-  Leaf,
-  RefreshCw,
-  TrendingUp,
-} from 'lucide-react';
+import { useState } from 'react';
+import { RefreshCw } from 'lucide-react';
 import { useEnergyPortalData } from './hooks/useEnergyPortalData';
 import { formatLocalDateTimeWithTz } from './utils/timeFormat';
 import { KpiStrip } from './components/KpiStrip';
-import { ResidualLoadTab } from './components/ResidualLoadTab';
-import { WeatherForecastTab } from './components/WeatherForecastTab';
-import { HddForecastTab } from './components/HddForecastTab';
-import { CarbonIntensityTab } from './components/CarbonIntensityTab';
-import { StorageSandboxTab } from './components/StorageSandboxTab';
-import { DataCatalogTab } from './components/DataCatalogTab';
-
-type ModelTab = 'residual' | 'weather' | 'hdd' | 'carbon' | 'storage' | 'catalog';
+import { MODEL_TABS, type ModelTabId } from './config/modelTabs';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<ModelTab>('residual');
+  const [activeTab, setActiveTab] = useState<ModelTabId>('residual');
   const [selectedCity, setSelectedCity] = useState<string>('national');
 
   const { catalog, loading, error, mergedSeries, historicalSeries, cities } =
@@ -46,6 +31,8 @@ export default function App() {
       </div>
     );
   }
+
+  const currentTab = MODEL_TABS.find((t) => t.id === activeTab) ?? MODEL_TABS[0];
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
@@ -75,84 +62,31 @@ export default function App() {
         />
 
         <div className="flex flex-wrap gap-2 border-b border-slate-800 pb-3">
-          <TabButton
-            active={activeTab === 'residual'}
-            onClick={() => setActiveTab('residual')}
-            icon={<Activity className="w-4 h-4" />}
-            label="1. Residual Load"
-          />
-          <TabButton
-            active={activeTab === 'weather'}
-            onClick={() => setActiveTab('weather')}
-            icon={<CloudSun className="w-4 h-4" />}
-            label="2. Multi-City Weather"
-          />
-          <TabButton
-            active={activeTab === 'hdd'}
-            onClick={() => setActiveTab('hdd')}
-            icon={<TrendingUp className="w-4 h-4" />}
-            label="3. 48h HDD Forecast"
-          />
-          <TabButton
-            active={activeTab === 'carbon'}
-            onClick={() => setActiveTab('carbon')}
-            icon={<Leaf className="w-4 h-4" />}
-            label="4. Carbon & CO₂ Shift"
-          />
-          <TabButton
-            active={activeTab === 'storage'}
-            onClick={() => setActiveTab('storage')}
-            icon={<BatteryCharging className="w-4 h-4" />}
-            label="5. BESS Peak-Shaving"
-          />
-          <TabButton
-            active={activeTab === 'catalog'}
-            onClick={() => setActiveTab('catalog')}
-            icon={<Database className="w-4 h-4" />}
-            label="6. Data Catalog"
-          />
+          {MODEL_TABS.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium transition cursor-pointer ${
+                activeTab === tab.id
+                  ? 'bg-emerald-500 text-slate-950'
+                  : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
+              }`}
+            >
+              {tab.icon}
+              {tab.label}
+            </button>
+          ))}
         </div>
 
-        {activeTab === 'residual' && <ResidualLoadTab data={historicalSeries} />}
-        {activeTab === 'weather' && (
-          <WeatherForecastTab
-            data={mergedSeries}
-            cities={cities}
-            selectedCity={selectedCity}
-            onSelectCity={setSelectedCity}
-          />
-        )}
-        {activeTab === 'hdd' && <HddForecastTab data={mergedSeries} />}
-        {activeTab === 'carbon' && <CarbonIntensityTab data={historicalSeries} />}
-        {activeTab === 'storage' && <StorageSandboxTab data={historicalSeries} />}
-        {activeTab === 'catalog' && <DataCatalogTab datasets={catalog?.datasets ?? []} />}
+        {currentTab.render({
+          mergedSeries,
+          historicalSeries,
+          cities,
+          selectedCity,
+          onSelectCity: setSelectedCity,
+          catalog,
+        })}
       </main>
     </div>
-  );
-}
-
-function TabButton({
-  active,
-  onClick,
-  icon,
-  label,
-}: {
-  active: boolean;
-  onClick: () => void;
-  icon: ReactNode;
-  label: string;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition ${
-        active
-          ? 'bg-emerald-500 text-slate-950'
-          : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
-      }`}
-    >
-      {icon}
-      {label}
-    </button>
   );
 }

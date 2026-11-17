@@ -12,7 +12,7 @@ interface ExplainableTooltipProps {
   active?: boolean;
   payload?: TooltipEntry[];
   label?: string;
-  context?: 'residual' | 'weather' | 'hdd' | 'carbon' | 'storage';
+  context?: 'residual' | 'weather' | 'hdd' | 'wind_forecast' | 'carbon' | 'storage';
 }
 
 const PLAIN_ENGLISH_HINTS: Record<string, string> = {
@@ -24,6 +24,11 @@ const PLAIN_ENGLISH_HINTS: Record<string, string> = {
   windSpeed100m: 'Wind speed at turbine hub height (100m); ~3–25 m/s generates power.',
   actualConsumption: 'Actual measured electricity demand on the Finnish grid.',
   predictedConsumption: 'Demand estimated by our weather-based Heating Degree Day model.',
+  actualWindMW: 'Measured national wind power generation from Fingrid.',
+  predictedWindMW: 'Wind power predicted from Vaasa/Oulu coastal 100m wind speeds.',
+  fittedWindMW: 'Theoretical turbine fleet curve at this wind speed.',
+  actualResidualMW: 'Actual net demand remaining after wind generation.',
+  predictedResidualMW: 'Projected net demand (Forecasted Load minus Forecasted Wind).',
   carbonIntensity: 'Grams of CO₂ emitted per kWh of electricity consumed (lower = cleaner grid).',
   originalResidual: 'Grid demand before any battery intervention.',
   shavedResidual: 'Smoothed grid demand after the battery discharges during peaks.',
@@ -126,6 +131,14 @@ function buildTakeaway(context: string, row: Record<string, unknown>): string | 
     }
     if (Number.isFinite(pred)) {
       return `Projected demand based on forecasted outdoor temperature.`;
+    }
+  }
+
+  if (context === 'wind_forecast') {
+    const predW = Number(row.predictedWindMW);
+    const predR = Number(row.predictedResidualMW);
+    if (Number.isFinite(predW) && Number.isFinite(predR)) {
+      return `Projected wind (${predW.toLocaleString()} MW) leaves ${predR.toLocaleString()} MW of net load for dispatchable power.`;
     }
   }
 
