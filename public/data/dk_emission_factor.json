@@ -9,7 +9,7 @@
     "description": "Hourly grid CO2 emission intensity in Denmark averaged across DK1 and DK2 via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T18:11:22Z",
+    "updated_at_utc": "2026-11-17T18:34:34Z",
     "record_count": 168,
     "file_path": "data/dk_emission_factor.json"
   },

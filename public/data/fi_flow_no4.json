@@ -9,14 +9,14 @@
     "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T18:11:11Z",
+    "updated_at_utc": "2026-11-17T18:34:24Z",
     "record_count": 169
   },
   "data": [
     {
       "timestamp": "2026-11-10T18:00:00Z",
-      "value": -3.15,
-      "samples": 16
+      "value": -5.38,
+      "samples": 8
     },
     {
       "timestamp": "2026-11-10T19:00:00Z",
@@ -855,8 +855,8 @@
     },
     {
       "timestamp": "2026-11-17T18:00:00Z",
-      "value": 19.03,
-      "samples": 2
+      "value": 18.88,
+      "samples": 10
     }
   ]
 }

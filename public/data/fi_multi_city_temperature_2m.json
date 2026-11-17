@@ -9,7 +9,7 @@
     "description": "Hourly 2m air temperature across 5 Finnish cities plus national mean (includes 48h forecast) for Heating Degree Day modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T18:11:22Z",
+    "updated_at_utc": "2026-11-17T18:34:34Z",
     "record_count": 216,
     "locations": [
       {
