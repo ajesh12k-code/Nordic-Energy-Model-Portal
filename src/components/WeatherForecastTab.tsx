@@ -9,6 +9,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
 import type { CityLocation, MergedHourlyRecord } from '../types/energy';
 
@@ -81,7 +82,7 @@ export function WeatherForecastTab({
               unit=" MW"
               width={75}
             />
-            <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155' }} />
+            <Tooltip content={<ExplainableTooltip context="weather" />} />
             <Legend />
             <Line
               yAxisId="left"

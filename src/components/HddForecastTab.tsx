@@ -10,6 +10,7 @@ import {
   YAxis,
 } from 'recharts';
 import { runHddLoadModel } from '../models/hddRegression';
+import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
 import type { MergedHourlyRecord } from '../types/energy';
 
@@ -116,7 +117,7 @@ export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
               unit="°C"
               width={50}
             />
-            <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155' }} />
+            <Tooltip content={<ExplainableTooltip context="hdd" />} />
             <Legend />
             <Line
               yAxisId="left"

@@ -9,6 +9,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
 import type { MergedHourlyRecord } from '../types/energy';
 
@@ -123,7 +124,7 @@ export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
             <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
             <XAxis dataKey="label" tick={{ fill: '#94a3b8', fontSize: 11 }} minTickGap={28} />
             <YAxis tick={{ fill: '#94a3b8', fontSize: 11 }} unit=" MW" width={75} />
-            <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155' }} />
+            <Tooltip content={<ExplainableTooltip context="storage" />} />
             <Legend />
             <Line
               type="monotone"
