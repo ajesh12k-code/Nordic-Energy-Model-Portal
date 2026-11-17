@@ -29,6 +29,24 @@
       "description": "Baseload nuclear power generation across Finnish reactors."
     },
     {
+      "slug": "fi_hydro_production",
+      "provider": "fingrid",
+      "source_id": 191,
+      "title": "Finland Hydro Power Production",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Real-time hydro power generation in Finland providing flexible dispatch and frequency balancing."
+    },
+    {
+      "slug": "fi_net_import_export",
+      "provider": "fingrid",
+      "source_id": 194,
+      "title": "Finland Net Electricity Import/Export",
+      "unit": "MWh/h",
+      "category": "transmission",
+      "description": "Real-time net cross-border electricity exchange (+ indicates net import into Finland; - indicates net export)."
+    },
+    {
       "slug": "fi_emission_factor",
       "provider": "fingrid",
       "source_id": 265,

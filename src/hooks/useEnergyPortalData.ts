@@ -64,6 +64,12 @@ export function useEnergyPortalData(selectedCity: string) {
     datasets['fi_nuclear_production']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).nuclear = pt.value;
     });
+    datasets['fi_hydro_production']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).hydro = pt.value;
+    });
+    datasets['fi_net_import_export']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).netImport = pt.value;
+    });
     datasets['fi_emission_factor']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).carbonIntensity = pt.value;
     });

@@ -11,7 +11,7 @@ export interface DatasetMetadata {
   provider: string;
   source_id: string;
   unit: string;
-  category: 'demand' | 'generation' | 'weather' | 'emissions' | string;
+  category: 'demand' | 'generation' | 'weather' | 'emissions' | 'transmission' | string;
   description: string;
   license: string;
   resolution: string;
@@ -45,6 +45,8 @@ export interface MergedHourlyRecord {
   consumption?: number;
   wind?: number;
   nuclear?: number;
+  hydro?: number;
+  netImport?: number; // + = Net Import into Finland, - = Net Export
   residualLoad?: number;
   carbonIntensity?: number; // gCO2/kWh
   temperature?: number;
