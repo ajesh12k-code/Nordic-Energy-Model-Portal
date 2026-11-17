@@ -6,6 +6,10 @@ import type {
   MergedHourlyRecord,
 } from '../types/energy';
 
+/**
+ * Loads catalog.json and all registered JSON telemetry files, aligning them
+ * onto a unified hourly timeline with closed physical generation balance fields.
+ */
 export function useEnergyPortalData(selectedCity: string) {
   const [catalog, setCatalog] = useState<CatalogManifest | null>(null);
   const [datasets, setDatasets] = useState<Record<string, DatasetPayload>>({});
@@ -43,6 +47,8 @@ export function useEnergyPortalData(selectedCity: string) {
 
   const mergedSeries: MergedHourlyRecord[] = useMemo(() => {
     const map = new Map<string, MergedHourlyRecord>();
+    const chpDistrictMap = new Map<string, number>();
+    const chpIndustrialMap = new Map<string, number>();
 
     const ensureRow = (ts: string): MergedHourlyRecord => {
       if (!map.has(ts)) {
@@ -58,6 +64,9 @@ export function useEnergyPortalData(selectedCity: string) {
     datasets['fi_electricity_consumption']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).consumption = pt.value;
     });
+    datasets['fi_total_production']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).totalProduction = pt.value;
+    });
     datasets['fi_wind_production']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).wind = pt.value;
     });
@@ -66,6 +75,14 @@ export function useEnergyPortalData(selectedCity: string) {
     });
     datasets['fi_hydro_production']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).hydro = pt.value;
+    });
+    datasets['fi_chp_district_heating']?.data.forEach((pt) => {
+      chpDistrictMap.set(pt.timestamp, pt.value);
+      ensureRow(pt.timestamp);
+    });
+    datasets['fi_chp_industrial']?.data.forEach((pt) => {
+      chpIndustrialMap.set(pt.timestamp, pt.value);
+      ensureRow(pt.timestamp);
     });
     datasets['fi_net_import_export']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).netImport = pt.value;
@@ -102,14 +119,32 @@ export function useEnergyPortalData(selectedCity: string) {
 
     return Array.from(map.values())
       .sort((a, b) => a.timestamp.localeCompare(b.timestamp))
-      .map((row) => ({
-        ...row,
-        residualLoad:
-          row.consumption !== undefined && row.wind !== undefined
-            ? Math.round((row.consumption - row.wind) * 100) / 100
-            : undefined,
-        isForecast: row.consumption === undefined && row.temperature !== undefined,
-      }));
+      .map((row) => {
+        const dChp = chpDistrictMap.get(row.timestamp);
+        const iChp = chpIndustrialMap.get(row.timestamp);
+        const chpTotal =
+          dChp !== undefined || iChp !== undefined
+            ? Math.round(((dChp ?? 0) + (iChp ?? 0)) * 10) / 10
+            : undefined;
+
+        const knownSum =
+          (row.wind ?? 0) + (row.nuclear ?? 0) + (row.hydro ?? 0) + (chpTotal ?? 0);
+        const otherGeneration =
+          row.totalProduction !== undefined
+            ? Math.max(0, Math.round((row.totalProduction - knownSum) * 10) / 10)
+            : undefined;
+
+        return {
+          ...row,
+          ...(chpTotal !== undefined ? { chpTotal } : {}),
+          ...(otherGeneration !== undefined ? { otherGeneration } : {}),
+          residualLoad:
+            row.consumption !== undefined && row.wind !== undefined
+              ? Math.round((row.consumption - row.wind) * 100) / 100
+              : undefined,
+          isForecast: row.consumption === undefined && row.temperature !== undefined,
+        };
+      });
   }, [datasets, selectedCity]);
 
   const historicalSeries = useMemo(

@@ -21,9 +21,15 @@ const SERIES_CONFIG = [
   { key: 'wind', label: 'Wind Power', color: '#10b981', dashed: false },
   { key: 'nuclear', label: 'Nuclear Baseload', color: '#a855f7', dashed: false },
   { key: 'hydro', label: 'Hydro Power', color: '#f8fafc', dashed: false },
+  { key: 'chpTotal', label: 'CHP (District + Ind.)', color: '#ec4899', dashed: false },
+  { key: 'otherGeneration', label: 'Solar & Reserves', color: '#94a3b8', dashed: false },
   { key: 'netImport', label: 'Net Import (+) / Export (-)', color: '#f43f5e', dashed: true },
 ] as const;
 
+/**
+ * Plots Finland's complete physical power balance: total consumption vs.
+ * nuclear, wind, hydro, CHP cogeneration, solar/reserves, and cross-border trade.
+ */
 export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
   const [visible, setVisible] = useState<Record<string, boolean>>({
     consumption: true,
@@ -31,6 +37,8 @@ export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
     wind: true,
     nuclear: true,
     hydro: true,
+    chpTotal: true,
+    otherGeneration: true,
     netImport: true,
   });
 
@@ -42,22 +50,25 @@ export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold">
-            National Generation Stack, Hydro Balancing & Cross-Border Trade (7-Day)
+            Complete Finnish Generation Stack, CHP & Cross-Border Balance (7-Day)
           </h2>
           <p className="text-sm text-slate-400">
-            Shows how nuclear baseload, variable wind, flexible hydro dispatch, and cross-border
-            Nordic/Baltic imports & exports balance Finnish demand every hour.
+            Accounts for 100% of physical supply: Nuclear + Wind + Hydro + District/Industrial
+            CHP + Solar/Reserves + Net Cross-Border Trade = Total Consumption.
           </p>
         </div>
         <ExportCsvButton
           rows={data}
-          filenamePrefix="fi_generation_hydro_trade_balance"
+          filenamePrefix="fi_complete_generation_trade_balance"
           columns={[
             { key: 'timestamp', header: 'timestamp_utc' },
             { key: 'consumption', header: 'total_consumption_mw' },
+            { key: 'totalProduction', header: 'total_domestic_production_mw' },
             { key: 'wind', header: 'wind_generation_mw' },
             { key: 'nuclear', header: 'nuclear_generation_mw' },
             { key: 'hydro', header: 'hydro_generation_mw' },
+            { key: 'chpTotal', header: 'chp_cogeneration_mw' },
+            { key: 'otherGeneration', header: 'solar_and_reserves_mw' },
             { key: 'netImport', header: 'net_import_export_mw' },
             { key: 'residualLoad', header: 'residual_load_mw' },
           ]}
@@ -158,6 +169,26 @@ export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
                 dot={false}
               />
             )}
+            {visible.chpTotal && (
+              <Line
+                type="monotone"
+                dataKey="chpTotal"
+                name="CHP Cogeneration (MW)"
+                stroke="#ec4899"
+                strokeWidth={1.8}
+                dot={false}
+              />
+            )}
+            {visible.otherGeneration && (
+              <Line
+                type="monotone"
+                dataKey="otherGeneration"
+                name="Solar & Reserves (MW)"
+                stroke="#94a3b8"
+                strokeWidth={1.5}
+                dot={false}
+              />
+            )}
             {visible.netImport && (
               <Line
                 type="monotone"
@@ -175,16 +206,16 @@ export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
 
       <ModelExplainerCard
         guide={{
-          title: 'Generation Mix, Hydro Flexibility & Cross-Border Trade',
+          title: 'Closed Physical Power Balance (Generation + Trade = Demand)',
           whatItShows:
-            'Tracks Finland’s complete physical power balance: total demand versus nuclear, wind, hydro generation, and cross-border electricity trade with Sweden, Estonia, and Norway.',
+            'Includes District Heating & Industrial Combined Heat and Power (CHP)—the ~2,000 MW winter backbone of Finnish cities and factories—so every megawatt of demand and export is accounted for.',
           howToRead: [
-            'White line (Hydro): Ramps up and down rapidly to compensate for wind fluctuations.',
-            'Dashed red line (Net Import/Export): Values above 0 MW mean Finland is importing power; values below 0 MW mean Finland is exporting surplus clean electricity to neighbors.',
-            'Click any legend badge above the chart to isolate specific lines.',
+            'Pink line (CHP Cogeneration): Electricity co-produced by municipal district heating and pulp/paper mills.',
+            'White line (Hydro) & Green line (Wind): Domestic renewable generation.',
+            'Dashed red line (Net Import/Export): Negative values confirm Finland is exporting surplus power to Sweden, Estonia, or Norway.',
           ],
           realWorldTakeaway:
-            'During windy periods, Finland frequently flips from a net electricity importer to a net exporter across the Nordic/Baltic grid.',
+            'Because Finland cogenerates ~2 GW of electricity alongside city district heating in autumn and winter, high wind periods frequently push total domestic production above national demand, turning Finland into a net power exporter.',
         }}
       />
     </section>
