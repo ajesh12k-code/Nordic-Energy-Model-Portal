@@ -5,6 +5,7 @@
 
 An automated, zero-backend **Energy Informatics & Grid Modeling Portal** that ingests live hourly telemetry from **Fingrid Open Data** and multi-city meteorological forecasts from **Open-Meteo**, runs in-browser energy system models, and deploys continuously to GitHub Pages.
 
+Available at: https://ajesh12k-code.github.io/Nordic-Energy-Model-Portal/
 ---
 
 ## System Architecture
