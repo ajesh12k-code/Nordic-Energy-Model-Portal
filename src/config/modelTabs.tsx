@@ -6,6 +6,7 @@ import {
   CloudSun,
   Database,
   Gauge,
+  Globe,
   Grid,
   Leaf,
   ScatterChart,
@@ -22,6 +23,7 @@ import { RampRateStressTab } from '../components/RampRateStressTab';
 import { SpatialCorrelationTab } from '../components/SpatialCorrelationTab';
 import { CarbonIntensityTab } from '../components/CarbonIntensityTab';
 import { StorageSandboxTab } from '../components/StorageSandboxTab';
+import { NordicComparisonTab } from '../components/NordicComparisonTab';
 import { DataCatalogTab } from '../components/DataCatalogTab';
 import type { CatalogManifest, CityLocation, MergedHourlyRecord } from '../types/energy';
 
@@ -36,6 +38,7 @@ export type ModelTabId =
   | 'spatial'
   | 'carbon'
   | 'storage'
+  | 'nordic'
   | 'catalog';
 
 export interface TabRenderContext {
@@ -123,8 +126,14 @@ export const MODEL_TABS: ModelTabConfig[] = [
     render: (ctx) => <StorageSandboxTab data={ctx.historicalSeries} />,
   },
   {
+    id: 'nordic',
+    label: '11. Nordic Grid & Flows',
+    icon: <Globe className="w-4 h-4" />,
+    render: (ctx) => <NordicComparisonTab data={ctx.historicalSeries} />,
+  },
+  {
     id: 'catalog',
-    label: '11. Data Catalog',
+    label: '12. Data Catalog',
     icon: <Database className="w-4 h-4" />,
     render: (ctx) => <DataCatalogTab datasets={ctx.catalog?.datasets ?? []} />,
   },

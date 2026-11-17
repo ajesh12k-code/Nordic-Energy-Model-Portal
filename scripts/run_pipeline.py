@@ -1,79 +1,62 @@
+"""
+Modular ingestion runner that iterates over scripts/datasets_config.json,
+dispatches to provider plugins (Fingrid, Energinet, Open-Meteo), and writes
+standardized JSON payloads + catalog.json into public/data/.
+"""
 import json
-import time
+import os
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
-from providers.base import BaseProvider
+
 from providers.fingrid import FingridProvider
 from providers.open_meteo import OpenMeteoProvider
+from providers.energinet import EnerginetProvider
 
-# Paths relative to the repository root
-CONFIG_PATH = Path("scripts/datasets_config.json")
-OUTPUT_DIR = Path("public/data")
-
-
-def get_provider_registry() -> dict[str, BaseProvider]:
-    """
-    Maps provider keys used in datasets_config.json to their Python plugin classes.
-    To add a new data source in the future (e.g., ENTSO-E), create a new provider
-    class inheriting from BaseProvider and register its key here.
-    """
-    return {
-        "fingrid": FingridProvider(),
-        "open_meteo": OpenMeteoProvider(),
-    }
+ROOT_DIR = Path(__file__).resolve().parent.parent
+CONFIG_PATH = ROOT_DIR / "scripts" / "datasets_config.json"
+OUTPUT_DIR = ROOT_DIR / "public" / "data"
 
 
 def main() -> None:
-    # 1. Load dataset definitions and global lookback window
-    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
-    days_back = config.get("days_back", 7)
-    datasets = config.get("datasets", [])
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        config = json.load(f)
 
-    # 2. Initialize all registered data source plugins
-    providers = get_provider_registry()
+    days_back = int(config.get("days_back", 7))
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    catalog_entries: list[dict[str, Any]] = []
+    providers = {
+        "fingrid": FingridProvider(api_key=os.environ.get("FINGRID_API_KEY", "")),
+        "open_meteo": OpenMeteoProvider(),
+        "energinet": EnerginetProvider(),
+    }
 
-    # 3. Iterate through each configured dataset, fetch data, and write individual JSON files
-    for idx, ds in enumerate(datasets):
-        provider_key = ds["provider"]
-        provider = providers.get(provider_key)
+    catalog_entries = []
 
+    for ds in config.get("datasets", []):
+        provider_name = ds["provider"]
+        provider = providers.get(provider_name)
         if not provider:
-            print(f"[WARN] Unknown provider '{provider_key}' for {ds['slug']}, skipping.")
-            continue
+            raise ValueError(f"Unsupported provider: {provider_name}")
 
-        print(f"Fetching [{ds['slug']}] via {provider.provider_name}...")
+        print(f"Fetching [{ds['slug']}] via {provider_name}...")
         payload = provider.fetch_dataset(ds, days_back=days_back)
 
-        # Save dataset JSON directly to public/data/ so the frontend can fetch it statically
         out_file = OUTPUT_DIR / f"{ds['slug']}.json"
-        out_file.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        with open(out_file, "w", encoding="utf-8") as out_f:
+            json.dump(payload, out_f, indent=2)
 
-        # Record dataset metadata for the master catalog manifest
-        catalog_entries.append(
-            {
-                **payload["metadata"],
-                "file_path": f"data/{ds['slug']}.json",
-            }
-        )
-        print(f"  -> Saved {payload['metadata']['record_count']} hourly points to {out_file}")
+        catalog_entries.append(payload["metadata"])
 
-        # Respect Fingrid's 1-request-per-2-seconds rate limit between calls
-        if idx < len(datasets) - 1:
-            time.sleep(2.5)
-
-    # 4. Generate master catalog.json so the React portal auto-discovers all datasets
     catalog = {
         "generated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "dataset_count": len(catalog_entries),
         "datasets": catalog_entries,
     }
-    catalog_path = OUTPUT_DIR / "catalog.json"
-    catalog_path.write_text(json.dumps(catalog, indent=2), encoding="utf-8")
-    print(f"Updated master catalog at {catalog_path}")
+
+    with open(OUTPUT_DIR / "catalog.json", "w", encoding="utf-8") as cat_f:
+        json.dump(catalog, cat_f, indent=2)
+
+    print(f"Successfully generated {len(catalog_entries)} datasets in {OUTPUT_DIR}.")
 
 
 if __name__ == "__main__":

@@ -7,8 +7,8 @@ import type {
 } from '../types/energy';
 
 /**
- * Loads catalog.json and all registered JSON telemetry files, aligning them
- * onto a unified hourly timeline with closed physical generation balance fields.
+ * Loads catalog.json and all registered JSON telemetry files across Finland,
+ * Denmark, and Nordic interconnectors onto a unified hourly timeline.
  */
 export function useEnergyPortalData(selectedCity: string) {
   const [catalog, setCatalog] = useState<CatalogManifest | null>(null);
@@ -61,6 +61,7 @@ export function useEnergyPortalData(selectedCity: string) {
       return map.get(ts)!;
     };
 
+    // Finland core grid & generation
     datasets['fi_electricity_consumption']?.data.forEach((pt) => {
       ensureRow(pt.timestamp).consumption = pt.value;
     });
@@ -91,6 +92,35 @@ export function useEnergyPortalData(selectedCity: string) {
       ensureRow(pt.timestamp).carbonIntensity = pt.value;
     });
 
+    // Bilateral interconnectors (Sweden SE1/SE3, Norway NO4, Estonia EE)
+    datasets['fi_flow_se1']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).flowSE1 = pt.value;
+    });
+    datasets['fi_flow_se3']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).flowSE3 = pt.value;
+    });
+    datasets['fi_flow_no4']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).flowNO4 = pt.value;
+    });
+    datasets['fi_flow_ee']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).flowEE = pt.value;
+    });
+
+    // Denmark (DK1 + DK2 via Energinet)
+    datasets['dk_electricity_consumption']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).dkConsumption = pt.value;
+    });
+    datasets['dk_wind_production']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).dkWind = pt.value;
+    });
+    datasets['dk_solar_production']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).dkSolar = pt.value;
+    });
+    datasets['dk_emission_factor']?.data.forEach((pt) => {
+      ensureRow(pt.timestamp).dkCarbonIntensity = pt.value;
+    });
+
+    // Multi-city meteorology
     datasets['fi_multi_city_temperature_2m']?.data.forEach((pt) => {
       const row = ensureRow(pt.timestamp);
       row.temperature =
@@ -142,7 +172,10 @@ export function useEnergyPortalData(selectedCity: string) {
             row.consumption !== undefined && row.wind !== undefined
               ? Math.round((row.consumption - row.wind) * 100) / 100
               : undefined,
-          isForecast: row.consumption === undefined && row.temperature !== undefined,
+          isForecast:
+            row.consumption === undefined &&
+            row.dkConsumption === undefined &&
+            row.temperature !== undefined,
         };
       });
   }, [datasets, selectedCity]);

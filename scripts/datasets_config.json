@@ -53,7 +53,7 @@
       "title": "Finland District Heating CHP Production",
       "unit": "MWh/h",
       "category": "generation",
-      "description": "Combined heat and power (cogeneration) electricity produced alongside municipal district heating."
+      "description": "Combined heat and power electricity produced alongside municipal district heating."
     },
     {
       "slug": "fi_chp_industrial",
@@ -74,6 +74,42 @@
       "description": "Real-time net cross-border electricity exchange (+ indicates net import into Finland; - indicates net export)."
     },
     {
+      "slug": "fi_flow_se1",
+      "provider": "fingrid",
+      "source_id": 87,
+      "title": "Finland ↔ Northern Sweden (SE1) Interconnector Flow",
+      "unit": "MWh/h",
+      "category": "transmission",
+      "description": "Cross-border AC transmission between Finland and Sweden bidding zone SE1 (+ import to FI, - export to SE1)."
+    },
+    {
+      "slug": "fi_flow_se3",
+      "provider": "fingrid",
+      "source_id": 89,
+      "title": "Finland ↔ Central Sweden (SE3) Fenno-Skan HVDC Flow",
+      "unit": "MWh/h",
+      "category": "transmission",
+      "description": "Subsea HVDC transmission between Finland and Sweden bidding zone SE3 (+ import to FI, - export to SE3)."
+    },
+    {
+      "slug": "fi_flow_no4",
+      "provider": "fingrid",
+      "source_id": 187,
+      "title": "Finland ↔ Northern Norway (NO4) Interconnector Flow",
+      "unit": "MWh/h",
+      "category": "transmission",
+      "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4)."
+    },
+    {
+      "slug": "fi_flow_ee",
+      "provider": "fingrid",
+      "source_id": 180,
+      "title": "Finland ↔ Estonia (EE) EstLink HVDC Flow",
+      "unit": "MWh/h",
+      "category": "transmission",
+      "description": "Subsea EstLink 1 & 2 HVDC transmission between Finland and Estonia (+ import to FI, - export to EE)."
+    },
+    {
       "slug": "fi_emission_factor",
       "provider": "fingrid",
       "source_id": 265,
@@ -81,6 +117,42 @@
       "unit": "gCO2/kWh",
       "category": "emissions",
       "description": "Real-time carbon intensity of electricity consumed in Finland including cross-border net imports."
+    },
+    {
+      "slug": "dk_electricity_consumption",
+      "provider": "energinet",
+      "source_id": "dk_consumption",
+      "title": "Denmark (DK1+DK2) Total Electricity Consumption",
+      "unit": "MWh/h",
+      "category": "demand",
+      "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet."
+    },
+    {
+      "slug": "dk_wind_production",
+      "provider": "energinet",
+      "source_id": "dk_wind",
+      "title": "Denmark (DK1+DK2) Onshore & Offshore Wind Generation",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Combined Danish onshore and offshore wind turbine electricity generation via Energinet."
+    },
+    {
+      "slug": "dk_solar_production",
+      "provider": "energinet",
+      "source_id": "dk_solar",
+      "title": "Denmark (DK1+DK2) Solar PV Generation",
+      "unit": "MWh/h",
+      "category": "generation",
+      "description": "Hourly solar photovoltaic generation across Denmark via Energinet."
+    },
+    {
+      "slug": "dk_emission_factor",
+      "provider": "energinet",
+      "source_id": "dk_co2_intensity",
+      "title": "Denmark (DK1+DK2) Grid CO2 Emission Intensity",
+      "unit": "gCO2/kWh",
+      "category": "emissions",
+      "description": "Hourly grid CO2 emission intensity in Denmark averaged across DK1 and DK2 via Energinet."
     },
     {
       "slug": "fi_multi_city_temperature_2m",
