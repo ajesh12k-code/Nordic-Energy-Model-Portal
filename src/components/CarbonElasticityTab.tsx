@@ -16,6 +16,10 @@ import { ExportCsvButton } from './ExportCsvButton';
 import { ModelExplainerCard } from './ModelExplainerCard';
 import type { MergedHourlyRecord } from '../types/energy';
 
+/**
+ * Displays the empirical relationship between hourly wind power penetration (%)
+ * and Finnish grid carbon intensity (gCO2/kWh) with an OLS decarbonization trendline.
+ */
 export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
   const model = useMemo(() => runCarbonElasticityModel(data), [data]);
 
@@ -27,8 +31,8 @@ export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
             Marginal Carbon Elasticity of Wind (Decarbonization Curve)
           </h2>
           <p className="text-sm text-slate-400">
-            Maps hourly wind penetration share (% of demand) against real-time grid carbon
-            intensity (gCO₂/kWh) to quantify structural displacement of fossil & import power.
+            Each dot is 1 hour: moving right means higher wind power share (%), and moving down
+            means cleaner electricity (fewer grams of CO₂ per kWh).
           </p>
         </div>
 
@@ -44,9 +48,9 @@ export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
         />
       </div>
 
-      <div className="grid grid-cols-3 gap-3 text-xs">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
         <div className="bg-slate-800/50 border border-slate-800 rounded-lg p-3">
-          <span className="text-slate-400 block">Decarbonization Slope</span>
+          <span className="text-slate-400 block">Decarbonization Impact</span>
           <strong className="text-base text-emerald-400">
             {model.slopePer10PctWind} gCO₂/kWh per +10% wind
           </strong>
@@ -56,14 +60,14 @@ export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
           <strong className="text-base text-white">{model.baselineIntercept} gCO₂/kWh</strong>
         </div>
         <div className="bg-slate-800/50 border border-slate-800 rounded-lg p-3">
-          <span className="text-slate-400 block">Correlation Fit (R²)</span>
+          <span className="text-slate-400 block">Trend Strength (R²)</span>
           <strong className="text-base text-white">{model.rSquared.toFixed(3)}</strong>
         </div>
       </div>
 
       <div className="h-96 w-full">
         <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart data={model.points}>
+          <ComposedChart data={model.points} margin={{ bottom: 18 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
             <XAxis
               type="number"
@@ -71,6 +75,13 @@ export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
               name="Wind Share"
               unit="%"
               tick={{ fill: '#94a3b8', fontSize: 11 }}
+              label={{
+                value: 'Wind Share of Electricity Demand (%) →',
+                position: 'insideBottom',
+                offset: -10,
+                fill: '#94a3b8',
+                fontSize: 11,
+              }}
             />
             <YAxis
               type="number"
@@ -80,16 +91,16 @@ export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
               width={65}
             />
             <Tooltip content={<ExplainableTooltip context="carbon" />} />
-            <Legend />
+            <Legend verticalAlign="top" height={32} />
             <Scatter
-              name="Hourly Observation (gCO₂/kWh)"
+              name="Actual Hourly Grid Intensity (gCO₂/kWh)"
               dataKey="carbonIntensity"
               fill="#38bdf8"
             />
             <Line
               type="monotone"
               dataKey="fittedIntensity"
-              name="OLS Decarbonization Trendline"
+              name="Average Decarbonization Trendline"
               stroke="#10b981"
               strokeWidth={3}
               dot={false}
@@ -104,8 +115,9 @@ export function CarbonElasticityTab({ data }: { data: MergedHourlyRecord[] }) {
           whatItShows:
             'Plots every hour of the past 7 days by how much of Finland’s electricity came from wind (horizontal axis) versus how carbon-intensive the grid was (vertical axis).',
           howToRead: [
-            'Blue dots: Individual hours—notice how dots cluster lower on the chart as you move right toward higher wind shares.',
-            'Green trendline: The average rate at which wind power pushes higher-emission peaking plants and imports off the grid.',
+            'Horizontal axis (%): Percentage of national electricity supplied by wind turbines.',
+            'Vertical axis (g): Grams of CO₂ emitted per kilowatt-hour of electricity consumed.',
+            'Downward green line: Proves that as wind share increases, dirtier power sources are pushed off the grid.',
           ],
           realWorldTakeaway:
             'Even when wind share is near 0%, Finland’s nuclear and hydro fleet keeps baseline intensity low; as wind rises above 25–35%, grid emissions drop toward near-zero.',

@@ -3,8 +3,13 @@ import { RefreshCw } from 'lucide-react';
 import { useEnergyPortalData } from './hooks/useEnergyPortalData';
 import { formatLocalDateTimeWithTz } from './utils/timeFormat';
 import { KpiStrip } from './components/KpiStrip';
+import { UnitsExplainerBar } from './components/UnitsExplainerBar';
 import { MODEL_TABS, type ModelTabId } from './config/modelTabs';
 
+/**
+ * Root application shell orchestrating live catalog loading, global KPI/unit
+ * summaries, and dynamic rendering of the registered energy modeling tabs.
+ */
 export default function App() {
   const [activeTab, setActiveTab] = useState<ModelTabId>('residual');
   const [selectedCity, setSelectedCity] = useState<string>('national');
@@ -55,11 +60,13 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-5">
         <KpiStrip
           latestRow={historicalSeries[historicalSeries.length - 1]}
           datasetCount={catalog?.dataset_count ?? 0}
         />
+
+        <UnitsExplainerBar />
 
         <div className="flex flex-wrap gap-2 border-b border-slate-800 pb-3">
           {MODEL_TABS.map((tab) => (
