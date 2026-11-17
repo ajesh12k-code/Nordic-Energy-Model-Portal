@@ -1,0 +1,862 @@
+{
+  "metadata": {
+    "slug": "fi_hydro_production",
+    "title": "Finland Hydro Power Production",
+    "provider": "Fingrid Open Data",
+    "source_id": "191",
+    "unit": "MWh/h",
+    "category": "generation",
+    "description": "Real-time hydro power generation in Finland providing flexible dispatch and frequency balancing.",
+    "license": "CC BY 4.0",
+    "resolution": "1h",
+    "updated_at_utc": "2026-11-17T16:38:24Z",
+    "record_count": 169
+  },
+  "data": [
+    {
+      "timestamp": "2026-11-10T16:00:00Z",
+      "value": 2405.82,
+      "samples": 7
+    },
+    {
+      "timestamp": "2026-11-10T17:00:00Z",
+      "value": 2428.05,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-10T18:00:00Z",
+      "value": 2440.4,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-10T19:00:00Z",
+      "value": 2407.41,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-10T20:00:00Z",
+      "value": 2363.01,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-10T21:00:00Z",
+      "value": 2341.46,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-10T22:00:00Z",
+      "value": 2261.99,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-10T23:00:00Z",
+      "value": 2116.65,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T00:00:00Z",
+      "value": 2054.37,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T01:00:00Z",
+      "value": 2026.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T02:00:00Z",
+      "value": 2074.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T03:00:00Z",
+      "value": 2145.37,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T04:00:00Z",
+      "value": 2235.66,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T05:00:00Z",
+      "value": 2353.49,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T06:00:00Z",
+      "value": 2329.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T07:00:00Z",
+      "value": 2323.63,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T08:00:00Z",
+      "value": 2237.52,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T09:00:00Z",
+      "value": 2255.03,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T10:00:00Z",
+      "value": 2259.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T11:00:00Z",
+      "value": 2218.63,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T12:00:00Z",
+      "value": 2241.33,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T13:00:00Z",
+      "value": 2302.03,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T14:00:00Z",
+      "value": 2325.79,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T15:00:00Z",
+      "value": 2334.03,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T16:00:00Z",
+      "value": 2350.05,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T17:00:00Z",
+      "value": 2335.56,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T18:00:00Z",
+      "value": 2287.34,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T19:00:00Z",
+      "value": 2200.16,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T20:00:00Z",
+      "value": 2137.74,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T21:00:00Z",
+      "value": 1944.1,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T22:00:00Z",
+      "value": 1793.26,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-11T23:00:00Z",
+      "value": 1700.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T00:00:00Z",
+      "value": 1759.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T01:00:00Z",
+      "value": 1784.83,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T02:00:00Z",
+      "value": 1740.44,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-12T03:00:00Z",
+      "value": 1734.08,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T04:00:00Z",
+      "value": 1933.98,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T05:00:00Z",
+      "value": 2080.57,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T06:00:00Z",
+      "value": 2191.19,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T07:00:00Z",
+      "value": 2154.54,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T08:00:00Z",
+      "value": 2154.39,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T09:00:00Z",
+      "value": 2139.51,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T10:00:00Z",
+      "value": 2125.99,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T11:00:00Z",
+      "value": 2087.89,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T12:00:00Z",
+      "value": 2075.31,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T13:00:00Z",
+      "value": 2110.79,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T14:00:00Z",
+      "value": 2139.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T15:00:00Z",
+      "value": 2116.55,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T16:00:00Z",
+      "value": 1944.17,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T17:00:00Z",
+      "value": 1912.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T18:00:00Z",
+      "value": 1937.98,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T19:00:00Z",
+      "value": 1881.9,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T20:00:00Z",
+      "value": 1837.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T21:00:00Z",
+      "value": 1801.38,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T22:00:00Z",
+      "value": 1711.59,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-12T23:00:00Z",
+      "value": 1593.35,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T00:00:00Z",
+      "value": 1536.45,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T01:00:00Z",
+      "value": 1499.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T02:00:00Z",
+      "value": 1486.99,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T03:00:00Z",
+      "value": 1495.52,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T04:00:00Z",
+      "value": 1578.86,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T05:00:00Z",
+      "value": 1623.19,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T06:00:00Z",
+      "value": 1616.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T07:00:00Z",
+      "value": 1628.6,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T08:00:00Z",
+      "value": 1709.02,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T09:00:00Z",
+      "value": 1678.6,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T10:00:00Z",
+      "value": 1702.98,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T11:00:00Z",
+      "value": 1702.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T12:00:00Z",
+      "value": 1742.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T13:00:00Z",
+      "value": 1823.83,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T14:00:00Z",
+      "value": 1920.05,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T15:00:00Z",
+      "value": 1975.45,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T16:00:00Z",
+      "value": 1975.65,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T17:00:00Z",
+      "value": 1967.36,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T18:00:00Z",
+      "value": 1929.83,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T19:00:00Z",
+      "value": 1862.71,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T20:00:00Z",
+      "value": 1921.08,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T21:00:00Z",
+      "value": 1956.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T22:00:00Z",
+      "value": 1853.67,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-13T23:00:00Z",
+      "value": 1768.09,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T00:00:00Z",
+      "value": 1626.17,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T01:00:00Z",
+      "value": 1519.54,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T02:00:00Z",
+      "value": 1446.52,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T03:00:00Z",
+      "value": 1446.78,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T04:00:00Z",
+      "value": 1483.88,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T05:00:00Z",
+      "value": 1523.13,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T06:00:00Z",
+      "value": 1564.2,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T07:00:00Z",
+      "value": 1733.96,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T08:00:00Z",
+      "value": 1713.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T09:00:00Z",
+      "value": 1885.85,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T10:00:00Z",
+      "value": 2013.09,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T11:00:00Z",
+      "value": 2014.02,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T12:00:00Z",
+      "value": 1956.49,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T13:00:00Z",
+      "value": 1876.29,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T14:00:00Z",
+      "value": 1821.47,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T15:00:00Z",
+      "value": 1844.82,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T16:00:00Z",
+      "value": 1845.83,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T17:00:00Z",
+      "value": 2018.13,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T18:00:00Z",
+      "value": 1946.8,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T19:00:00Z",
+      "value": 1637.99,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T20:00:00Z",
+      "value": 1523.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T21:00:00Z",
+      "value": 1502.06,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T22:00:00Z",
+      "value": 1437.59,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-14T23:00:00Z",
+      "value": 1397.78,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T00:00:00Z",
+      "value": 1376.45,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T01:00:00Z",
+      "value": 1371.37,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T02:00:00Z",
+      "value": 1374.77,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T03:00:00Z",
+      "value": 1425.73,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T04:00:00Z",
+      "value": 1467.24,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T05:00:00Z",
+      "value": 1544.03,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T06:00:00Z",
+      "value": 1525.61,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T07:00:00Z",
+      "value": 1560.56,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T08:00:00Z",
+      "value": 1574.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T09:00:00Z",
+      "value": 1523.16,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T10:00:00Z",
+      "value": 1518.04,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T11:00:00Z",
+      "value": 1521.02,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T12:00:00Z",
+      "value": 1622.27,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T13:00:00Z",
+      "value": 1769.66,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T14:00:00Z",
+      "value": 1895.64,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T15:00:00Z",
+      "value": 2022.05,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T16:00:00Z",
+      "value": 2029.86,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T17:00:00Z",
+      "value": 1952.22,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T18:00:00Z",
+      "value": 1808.02,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T19:00:00Z",
+      "value": 1723.72,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T20:00:00Z",
+      "value": 1738.62,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T21:00:00Z",
+      "value": 1650.5,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T22:00:00Z",
+      "value": 1563.09,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-15T23:00:00Z",
+      "value": 1445.39,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T00:00:00Z",
+      "value": 1450.48,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T01:00:00Z",
+      "value": 1441.13,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T02:00:00Z",
+      "value": 1450.65,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T03:00:00Z",
+      "value": 1455.24,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T04:00:00Z",
+      "value": 1611.9,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T05:00:00Z",
+      "value": 1823.9,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T06:00:00Z",
+      "value": 1886.87,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T07:00:00Z",
+      "value": 1761.05,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T08:00:00Z",
+      "value": 1813.71,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T09:00:00Z",
+      "value": 2016.43,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T10:00:00Z",
+      "value": 1974.79,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T11:00:00Z",
+      "value": 2071.92,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T12:00:00Z",
+      "value": 2200.96,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T13:00:00Z",
+      "value": 2240.88,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T14:00:00Z",
+      "value": 2242.74,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T15:00:00Z",
+      "value": 2205.9,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T16:00:00Z",
+      "value": 2159.14,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T17:00:00Z",
+      "value": 2073.43,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T18:00:00Z",
+      "value": 2124.32,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T19:00:00Z",
+      "value": 2072.5,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T20:00:00Z",
+      "value": 2023.19,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T21:00:00Z",
+      "value": 2062.92,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T22:00:00Z",
+      "value": 2081.26,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-16T23:00:00Z",
+      "value": 1991.57,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T00:00:00Z",
+      "value": 1897.39,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T01:00:00Z",
+      "value": 1906.53,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T02:00:00Z",
+      "value": 1899.5,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T03:00:00Z",
+      "value": 1846.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T04:00:00Z",
+      "value": 2175.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T05:00:00Z",
+      "value": 2218.45,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T06:00:00Z",
+      "value": 2261.87,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T07:00:00Z",
+      "value": 2233.48,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T08:00:00Z",
+      "value": 2216.29,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T09:00:00Z",
+      "value": 2220.82,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T10:00:00Z",
+      "value": 2218.85,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T11:00:00Z",
+      "value": 2249.46,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T12:00:00Z",
+      "value": 2285.62,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T13:00:00Z",
+      "value": 2259.68,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T14:00:00Z",
+      "value": 2269.94,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T15:00:00Z",
+      "value": 2265.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T16:00:00Z",
+      "value": 2271.64,
+      "samples": 11
+    }
+  ]
+}
