@@ -22,7 +22,7 @@ interface ExplainableTooltipProps {
 
 /**
  * Custom Recharts tooltip that resolves true timestamps on scatter plots,
- * appends physical units, and provides plain-English takeaways.
+ * distinguishes X-axis vs. Y-axis swatch colors, and appends physical units.
  */
 export function ExplainableTooltip({
   active,
@@ -36,7 +36,6 @@ export function ExplainableTooltip({
   const isForecast = Boolean(row.isForecast);
   const { shortName } = getClientTimezoneInfo();
 
-  // Prefer the point's formatted timestamp string so scatter X-values aren't shown as clock times
   const headerTime =
     typeof row.label === 'string' && row.label.length > 0
       ? row.label
@@ -68,6 +67,7 @@ export function ExplainableTooltip({
           const key = String(entry.dataKey ?? '');
           const meta = METRIC_META[key];
           const unit = inferMetricUnit(key, entry.name);
+          const swatchColor = meta?.badgeColor ?? entry.color;
           const numVal = typeof entry.value === 'number' ? entry.value : Number(entry.value);
           const formattedNum = Number.isFinite(numVal)
             ? numVal.toLocaleString('en-US', { maximumFractionDigits: 1 })
@@ -79,7 +79,7 @@ export function ExplainableTooltip({
                 <span className="flex items-center gap-1.5 text-slate-200 font-medium">
                   <span
                     className="w-2.5 h-2.5 rounded-full inline-block shrink-0"
-                    style={{ backgroundColor: entry.color }}
+                    style={{ backgroundColor: swatchColor }}
                   />
                   {meta?.label ?? entry.name}
                 </span>

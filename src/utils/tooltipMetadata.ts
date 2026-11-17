@@ -1,11 +1,12 @@
 /**
  * Central dictionary mapping chart data keys to human-readable labels,
- * physical units, and plain-English stakeholder explanations.
+ * physical units, optional swatch colors (for X-axis scatter metrics), and plain-English hints.
  */
 export interface MetricInfo {
   label?: string;
   unit: string;
   hint: string;
+  badgeColor?: string;
 }
 
 export const METRIC_META: Record<string, MetricInfo> = {
@@ -20,7 +21,12 @@ export const METRIC_META: Record<string, MetricInfo> = {
   netImport: { unit: 'MW', hint: '+ means Finland is importing power; − means Finland is exporting surplus power.' },
   temperature: { unit: '°C', hint: 'Outdoor air temperature driving electric space-heating demand.' },
   windSpeed100m: { unit: 'm/s', hint: 'Wind speed at turbine blade height (100m); ~3–25 m/s generates power.' },
-  windSpeedMs: { label: 'Corridor Wind Speed', unit: 'm/s', hint: 'Weighted 100m wind speed across coastal Vaasa & Oulu.' },
+  windSpeedMs: {
+    label: 'Corridor Wind Speed (X-Axis)',
+    unit: 'm/s',
+    hint: 'Weighted 100m wind speed across coastal Vaasa & Oulu.',
+    badgeColor: '#f59e0b', // Distinct amber swatch so it never duplicates the blue scatter dot
+  },
   actualConsumption: { unit: 'MW', hint: 'Actual measured electricity demand on the Finnish grid.' },
   predictedConsumption: { unit: 'MW', hint: 'Demand estimated by our weather-based Heating Degree Day model.' },
   actualWindMW: { unit: 'MW', hint: 'Actual wind power generated across Finland.' },
@@ -28,7 +34,12 @@ export const METRIC_META: Record<string, MetricInfo> = {
   fittedWindMW: { unit: 'MW', hint: 'Expected turbine fleet output at this wind speed.' },
   actualResidualMW: { unit: 'MW', hint: 'Actual net demand remaining after wind power.' },
   predictedResidualMW: { unit: 'MW', hint: 'Projected net demand (Forecasted Load minus Forecasted Wind).' },
-  windSharePct: { label: 'Wind Share of Demand', unit: '%', hint: 'Percentage of Finland’s electricity supplied by wind during this hour.' },
+  windSharePct: {
+    label: 'Wind Share of Demand (X-Axis)',
+    unit: '%',
+    hint: 'Percentage of Finland’s electricity supplied by wind during this hour.',
+    badgeColor: '#f59e0b', // Distinct amber swatch separating X-axis share from Y-axis CO2 intensity
+  },
   carbonIntensity: { label: 'Actual Grid Carbon Intensity', unit: 'gCO₂/kWh', hint: 'Grams of CO₂ emitted per kWh used (lower = cleaner electricity).' },
   fittedIntensity: { label: 'Expected Trendline Intensity', unit: 'gCO₂/kWh', hint: 'Average carbon intensity typically seen at this wind share.' },
   weekdayLoadMW: { unit: 'MW', hint: 'Average electricity demand on Monday–Friday at this hour.' },
@@ -82,6 +93,11 @@ export function buildTooltipTakeaway(context: string, row: Record<string, unknow
   }
 
   if (context === 'wind_forecast') {
+    const ws = Number(row.windSpeedMs);
+    const actualW = Number(row.actualWindMW);
+    if (Number.isFinite(ws) && Number.isFinite(actualW)) {
+      return `At ${ws} m/s corridor wind speed, Finland's turbine fleet generated ${actualW.toLocaleString('en-US')} MW.`;
+    }
     const predW = Number(row.predictedWindMW);
     const predR = Number(row.predictedResidualMW);
     if (Number.isFinite(predW) && Number.isFinite(predR)) {
