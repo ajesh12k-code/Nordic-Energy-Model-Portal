@@ -1,10 +1,10 @@
 """
 Keyless Energinet Energi Data Service provider for Denmark (DK1 + DK2).
-Fetches hourly Danish consumption, wind, solar, and CO2 emission intensity
-and normalizes records to the portal's standard hourly schema.
+Fetches real-time 5-minute Danish consumption, onshore/offshore wind, solar,
+and CO2 emission intensity, aggregating into hourly averages (MW / gCO2/kWh).
 """
-from datetime import datetime, timedelta, timezone
 from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 import requests
 
 
@@ -22,7 +22,7 @@ class EnerginetProvider:
         if source_id == "dk_co2_intensity":
             points = self._fetch_co2(start_str, end_str)
         else:
-            points = self._fetch_power_metric(source_id, start_str, end_str)
+            points = self._fetch_realtime_power(source_id, start_str, end_str)
 
         return {
             "metadata": {
@@ -42,53 +42,59 @@ class EnerginetProvider:
             "data": points,
         }
 
-    def _fetch_power_metric(self, metric_key: str, start_str: str, end_str: str) -> list[dict]:
-        """Aggregates DK1 + DK2 hourly settlement data into national Denmark totals (MWh/h)."""
-        url = f"{self.BASE_URL}/ProductionConsumptionSettlement"
+    def _fetch_realtime_power(self, metric_key: str, start_str: str, end_str: str) -> list[dict]:
+        """Aggregates 5-minute DK1 + DK2 power readings (MW) into hourly national averages."""
+        url = f"{self.BASE_URL}/ElectricityProdex5MinRealtime"
         params = {
             "start": start_str,
             "end": end_str,
-            "limit": 2000,
-            "sort": "HourUTC asc",
+            "limit": 10000,
+            "sort": "Minutes5UTC asc",
         }
         resp = requests.get(url, params=params, timeout=30)
         resp.raise_for_status()
         records = resp.json().get("records", [])
 
-        hourly_sums: dict[str, float] = defaultdict(float)
-        hourly_counts: dict[str, int] = defaultdict(int)
+        # Group by (hour_ts, price_area) first so DK1 and DK2 are averaged per hour then summed
+        area_buckets: dict[tuple[str, str], list[float]] = defaultdict(list)
 
         for row in records:
-            hour_utc = row.get("HourUTC")
-            if not hour_utc:
+            m5 = row.get("Minutes5UTC")
+            area = row.get("PriceArea")
+            if not m5 or area not in ("DK1", "DK2"):
                 continue
-            ts = f"{hour_utc[:19]}Z"
+            ts = f"{m5[:13]}:00:00Z"
 
             if metric_key == "dk_consumption":
-                val = float(row.get("GrossConsumptionMWh") or 0.0)
+                val = float(row.get("BornholmSE4") or 0.0) + float(
+                    row.get("TotalLoad") or row.get("GrossCon") or 0.0
+                )
             elif metric_key == "dk_wind":
-                val = float(row.get("OffshoreWindLt100MW_MWh") or 0.0) + float(
-                    row.get("OffshoreWindGe100MW_MWh") or 0.0
-                ) + float(row.get("OnshoreWindLt50kW_MWh") or 0.0) + float(
-                    row.get("OnshoreWindGe50kW_MWh") or 0.0
+                val = float(row.get("OffshoreWindPower") or 0.0) + float(
+                    row.get("OnshoreWindPower") or 0.0
                 )
             elif metric_key == "dk_solar":
-                val = float(row.get("SolarPowerLt10kW_MWh") or 0.0) + float(
-                    row.get("SolarPowerGe10Lt40kW_MWh") or 0.0
-                ) + float(row.get("SolarPowerGe40kW_MWh") or 0.0)
+                val = float(row.get("SolarPower") or 0.0)
             else:
                 val = 0.0
 
-            hourly_sums[ts] += val
-            hourly_counts[ts] += 1
+            area_buckets[(ts, area)].append(val)
+
+        hourly_national: dict[str, float] = defaultdict(float)
+        hourly_samples: dict[str, int] = defaultdict(int)
+
+        for (ts, _area), vals in area_buckets.items():
+            if vals:
+                hourly_national[ts] += sum(vals) / len(vals)
+                hourly_samples[ts] += len(vals)
 
         return [
             {
                 "timestamp": ts,
-                "value": round(hourly_sums[ts], 2),
-                "samples": hourly_counts[ts],
+                "value": round(hourly_national[ts], 2),
+                "samples": hourly_samples[ts],
             }
-            for ts in sorted(hourly_sums.keys())
+            for ts in sorted(hourly_national.keys())
         ]
 
     def _fetch_co2(self, start_str: str, end_str: str) -> list[dict]:
@@ -97,7 +103,7 @@ class EnerginetProvider:
         params = {
             "start": start_str,
             "end": end_str,
-            "limit": 5000,
+            "limit": 10000,
             "sort": "Minutes5UTC asc",
         }
         resp = requests.get(url, params=params, timeout=30)
