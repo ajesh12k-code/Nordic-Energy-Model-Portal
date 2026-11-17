@@ -9,7 +9,7 @@
     "description": "Hourly 100m hub-height wind speed across 5 Finnish cities (including Vaasa and Oulu wind corridors) for wind generation curve modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T17:11:18Z",
+    "updated_at_utc": "2026-11-17T18:11:22Z",
     "record_count": 216,
     "locations": [
       {

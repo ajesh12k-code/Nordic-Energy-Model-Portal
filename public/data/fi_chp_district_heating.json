@@ -6,22 +6,17 @@
     "source_id": "201",
     "unit": "MWh/h",
     "category": "generation",
-    "description": "Combined heat and power (cogeneration) electricity produced alongside municipal district heating.",
+    "description": "Combined heat and power electricity produced alongside municipal district heating.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T17:11:03Z",
+    "updated_at_utc": "2026-11-17T18:10:55Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-10T17:00:00Z",
-      "value": 1105.14,
-      "samples": 16
-    },
-    {
       "timestamp": "2026-11-10T18:00:00Z",
-      "value": 1096.54,
-      "samples": 20
+      "value": 1092.95,
+      "samples": 16
     },
     {
       "timestamp": "2026-11-10T19:00:00Z",
@@ -855,7 +850,12 @@
     },
     {
       "timestamp": "2026-11-17T17:00:00Z",
-      "value": 862.97,
+      "value": 835.34,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T18:00:00Z",
+      "value": 816.2,
       "samples": 2
     }
   ]
