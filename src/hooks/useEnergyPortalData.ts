@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { formatLocalChartLabel } from '../utils/timeFormat';
 import type {
   CatalogManifest,
   DatasetPayload,
@@ -45,15 +46,11 @@ export function useEnergyPortalData(selectedCity: string) {
 
     const ensureRow = (ts: string): MergedHourlyRecord => {
       if (!map.has(ts)) {
-        const d = new Date(ts);
-        const label = d.toLocaleString('en-GB', {
-          month: 'short',
-          day: '2-digit',
-          hour: '2-digit',
-          minute: '2-digit',
-          timeZone: 'UTC',
+        map.set(ts, {
+          timestamp: ts,
+          label: formatLocalChartLabel(ts),
+          isForecast: false,
         });
-        map.set(ts, { timestamp: ts, label, isForecast: false });
       }
       return map.get(ts)!;
     };

@@ -9,6 +9,7 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { useEnergyPortalData } from './hooks/useEnergyPortalData';
+import { formatLocalDateTimeWithTz } from './utils/timeFormat';
 import { KpiStrip } from './components/KpiStrip';
 import { ResidualLoadTab } from './components/ResidualLoadTab';
 import { WeatherForecastTab } from './components/WeatherForecastTab';
@@ -30,7 +31,7 @@ export default function App() {
     return (
       <div className="min-h-screen bg-slate-950 text-slate-200 flex items-center justify-center">
         <RefreshCw className="w-6 h-6 animate-spin mr-3 text-emerald-400" />
-        <span>Loading live Nordic energy &amp; weather catalog...</span>
+        <span>Loading live Nordic energy & weather catalog...</span>
       </div>
     );
   }
@@ -52,15 +53,17 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div>
             <h1 className="text-xl font-bold tracking-tight text-white">
-              Nordic Energy Informatics &amp; Grid Modeling Portal
+              Nordic Energy Informatics & Grid Modeling Portal
             </h1>
             <p className="text-xs text-slate-400">
-              Automated hourly telemetry via Fingrid Open Data &amp; Open-Meteo (5 Finnish Cities)
+              Automated hourly telemetry via Fingrid Open Data & Open-Meteo (5 Finnish Cities)
             </p>
           </div>
           <div className="text-xs text-slate-400 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
-            Last Sync (UTC):{' '}
-            <span className="text-emerald-400 font-mono">{catalog?.generated_at_utc}</span>
+            Last Sync:{' '}
+            <span className="text-emerald-400 font-mono">
+              {formatLocalDateTimeWithTz(catalog?.generated_at_utc)}
+            </span>
           </div>
         </div>
       </header>

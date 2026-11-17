@@ -1,3 +1,5 @@
+import { getClientTimezoneInfo } from '../utils/timeFormat';
+
 interface TooltipEntry {
   dataKey?: string | number;
   name?: string;
@@ -37,14 +39,15 @@ export function ExplainableTooltip({
 
   const row = payload[0]?.payload ?? {};
   const isForecast = Boolean(row.isForecast);
-
-  // Generate a dynamic plain-English takeaway based on the active tab & values
+  const { shortName } = getClientTimezoneInfo();
   const summary = buildTakeaway(context, row);
 
   return (
     <div className="bg-slate-950/95 border border-slate-700 rounded-xl p-3.5 shadow-xl max-w-xs text-xs space-y-2.5 backdrop-blur">
       <div className="flex items-center justify-between gap-2 border-b border-slate-800 pb-1.5">
-        <span className="font-semibold text-slate-100">{label} (UTC)</span>
+        <span className="font-semibold text-slate-100">
+          {label} ({shortName})
+        </span>
         <span
           className={`px-2 py-0.5 rounded text-[10px] font-medium ${
             isForecast
