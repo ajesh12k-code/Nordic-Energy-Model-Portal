@@ -72,12 +72,26 @@ export function useEnergyPortalData(selectedCity: string) {
       const row = ensureRow(pt.timestamp);
       row.temperature =
         selectedCity === 'national' ? pt.value : pt.by_city?.[selectedCity] ?? pt.value;
+      if (pt.by_city) {
+        row.temp_helsinki = pt.by_city.helsinki;
+        row.temp_tampere = pt.by_city.tampere;
+        row.temp_lappeenranta = pt.by_city.lappeenranta;
+        row.temp_vaasa = pt.by_city.vaasa;
+        row.temp_oulu = pt.by_city.oulu;
+      }
     });
 
     datasets['fi_multi_city_wind_speed_100m']?.data.forEach((pt) => {
       const row = ensureRow(pt.timestamp);
       row.windSpeed100m =
         selectedCity === 'national' ? pt.value : pt.by_city?.[selectedCity] ?? pt.value;
+      if (pt.by_city) {
+        row.wind_helsinki = pt.by_city.helsinki;
+        row.wind_tampere = pt.by_city.tampere;
+        row.wind_lappeenranta = pt.by_city.lappeenranta;
+        row.wind_vaasa = pt.by_city.vaasa;
+        row.wind_oulu = pt.by_city.oulu;
+      }
     });
 
     return Array.from(map.values())

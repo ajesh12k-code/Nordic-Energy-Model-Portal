@@ -49,5 +49,15 @@ export interface MergedHourlyRecord {
   carbonIntensity?: number; // gCO2/kWh
   temperature?: number;
   windSpeed100m?: number;
+  temp_helsinki?: number;
+  temp_tampere?: number;
+  temp_lappeenranta?: number;
+  temp_vaasa?: number;
+  temp_oulu?: number;
+  wind_helsinki?: number;
+  wind_tampere?: number;
+  wind_lappeenranta?: number;
+  wind_vaasa?: number;
+  wind_oulu?: number;
   isForecast: boolean;
 }
