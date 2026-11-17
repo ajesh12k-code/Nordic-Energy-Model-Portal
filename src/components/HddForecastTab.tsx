@@ -12,6 +12,7 @@ import {
 import { runHddLoadModel } from '../models/hddRegression';
 import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
+import { ModelExplainerCard } from './ModelExplainerCard';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -28,10 +29,10 @@ export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <div>
           <h2 className="text-lg font-semibold">
-            48h Heating Degree Day (HDD) Load Regression &amp; Cold-Snap Stress Test
+            48h Heating Degree Day (HDD) Load Regression & Cold-Snap Stress Test
           </h2>
           <p className="text-sm text-slate-400">
-            Fits an OLS thermal-sensitivity model on trailing 7-day load &amp; 5-city temperature,
+            Fits an OLS thermal-sensitivity model on trailing 7-day load & 5-city temperature,
             then forecasts demand across the +48h Open-Meteo horizon.
           </p>
         </div>
@@ -150,6 +151,21 @@ export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
           </ComposedChart>
         </ResponsiveContainer>
       </div>
+
+      <ModelExplainerCard
+        guide={{
+          title: 'Heating Degree Day (HDD) Demand Forecasting',
+          whatItShows:
+            'Uses statistical regression to learn how many extra megawatts Finland needs for every 1°C drop below the building heating threshold (default 17°C), then predicts the next 48 hours.',
+          howToRead: [
+            'Solid blue line: Actual measured electricity consumption.',
+            'Dashed orange line: Model prediction—continues 48 hours past the blue line using weather forecasts.',
+            'Weather Shock slider (ΔT): Drag left (e.g., -10°C) to stress-test how a sudden Arctic cold snap raises peak grid demand.',
+          ],
+          realWorldTakeaway:
+            'Grid operators and energy utilities rely on temperature-sensitivity models days ahead to schedule reserve power plants and verify winter adequacy.',
+        }}
+      />
     </section>
   );
 }

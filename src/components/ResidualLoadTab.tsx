@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
+import { ModelExplainerCard } from './ModelExplainerCard';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -19,7 +20,7 @@ export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold">
-            Short-Term Load &amp; Residual Demand Decomposition (7-Day Trailing)
+            Short-Term Load & Residual Demand Decomposition (7-Day Trailing)
           </h2>
           <p className="text-sm text-slate-400">
             Residual load represents net demand after subtracting variable wind generation,
@@ -83,6 +84,21 @@ export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
           </ComposedChart>
         </ResponsiveContainer>
       </div>
+
+      <ModelExplainerCard
+        guide={{
+          title: 'Residual Load & Grid Balance',
+          whatItShows:
+            'Compares Finland’s total hourly electricity demand against wind power and steady nuclear baseload over the past 7 days.',
+          howToRead: [
+            'Blue shaded area: Total electricity consumed across homes, industry, and transport.',
+            'Green line: Wind generation—rises and falls naturally with weather fronts.',
+            'Orange line (Residual Load): Total demand minus wind power.',
+          ],
+          realWorldTakeaway:
+            'When the orange residual line drops sharply during windy nights, electricity prices fall and exports rise; when wind calms down, hydro and cross-border cables must ramp up quickly.',
+        }}
+      />
     </section>
   );
 }

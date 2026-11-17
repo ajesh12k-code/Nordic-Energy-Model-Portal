@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
+import { ModelExplainerCard } from './ModelExplainerCard';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -145,6 +146,21 @@ export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
           </LineChart>
         </ResponsiveContainer>
       </div>
+
+      <ModelExplainerCard
+        guide={{
+          title: 'Battery Energy Storage (BESS) Peak Shaving',
+          whatItShows:
+            'Simulates how a utility-scale battery charges during surplus wind hours and discharges during high-demand peaks to flatten stress on the power grid.',
+          howToRead: [
+            'Dashed grey line: Original grid demand spikes without battery storage.',
+            'Solid green line: Flattened grid demand after the battery absorbs surplus energy and shaves peaks.',
+            'Sliders: Adjust Energy Capacity (MWh = tank size) and Inverter Power (MW = pipe width) to see how many megawatts of peak stress are eliminated.',
+          ],
+          realWorldTakeaway:
+            'Grid-scale batteries replace expensive fossil peaking power plants and defer costly transmission line upgrades as renewable shares grow.',
+        }}
+      />
     </section>
   );
 }

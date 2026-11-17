@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
+import { ModelExplainerCard } from './ModelExplainerCard';
 import type { CityLocation, MergedHourlyRecord } from '../types/energy';
 
 interface WeatherForecastTabProps {
@@ -31,7 +32,7 @@ export function WeatherForecastTab({
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold">
-            Weather-Driven Heating Load &amp; Hub-Height Wind (+48h Forecast)
+            Weather-Driven Heating Load & Hub-Height Wind (+48h Forecast)
           </h2>
           <p className="text-sm text-slate-400">
             Compare regional temperatures and 100m wind speeds across Finnish demand and wind
@@ -112,6 +113,21 @@ export function WeatherForecastTab({
           </ComposedChart>
         </ResponsiveContainer>
       </div>
+
+      <ModelExplainerCard
+        guide={{
+          title: 'Regional Weather & Energy Coupling',
+          whatItShows:
+            'Overlays local outdoor temperature and 100-meter wind speeds across 5 Finnish cities against national electricity usage, extending 48 hours into the future.',
+          howToRead: [
+            'Red line: Outdoor temperature (°C)—watch how blue electricity demand climbs whenever red dips.',
+            'Green bars: Wind speed at 100m turbine height (m/s), especially critical in coastal Vaasa and Oulu.',
+            'Rightmost 48 hours: Weather forecast window where blue historical load ends.',
+          ],
+          realWorldTakeaway:
+            'Because electric heating and heat pumps are widespread in Finland, cold snaps in major cities (Helsinki, Tampere) drive predictable surges in national power demand.',
+        }}
+      />
     </section>
   );
 }

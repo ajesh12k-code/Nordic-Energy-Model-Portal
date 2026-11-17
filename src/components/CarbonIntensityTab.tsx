@@ -12,6 +12,7 @@ import {
 } from 'recharts';
 import { ExplainableTooltip } from './ExplainableTooltip';
 import { ExportCsvButton } from './ExportCsvButton';
+import { ModelExplainerCard } from './ModelExplainerCard';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -67,7 +68,7 @@ export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <div>
           <h2 className="text-lg font-semibold">
-            Real-Time Grid Carbon Intensity &amp; Demand-Shifting CO₂ Simulator
+            Real-Time Grid Carbon Intensity & Demand-Shifting CO₂ Simulator
           </h2>
           <p className="text-sm text-slate-400">
             Tracks Fingrid Dataset #265 (gCO₂/kWh) and simulates carbon abatement from shifting
@@ -183,6 +184,21 @@ export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
           </ComposedChart>
         </ResponsiveContainer>
       </div>
+
+      <ModelExplainerCard
+        guide={{
+          title: 'Grid Carbon Intensity & Smart Load Shifting',
+          whatItShows:
+            'Tracks how clean or carbon-intensive Finland’s electricity mix is every hour (grams of CO₂ per kilowatt-hour) alongside wind generation.',
+          howToRead: [
+            'Red shaded area: Carbon intensity (gCO₂/kWh)—lower valleys mean cleaner electricity.',
+            'Green line: Wind generation—notice how red emissions drop whenever green wind rises.',
+            'Sliders: Simulate moving a flexible energy user (like EV fleets or data centers) from the dirtiest hours to the cleanest hours each day.',
+          ],
+          realWorldTakeaway:
+            'Even in a low-carbon grid like Finland’s, timing flexible electricity consumption around wind peaks cuts operational Scope 2 carbon emissions without building new hardware.',
+        }}
+      />
     </section>
   );
 }
