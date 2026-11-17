@@ -9,19 +9,14 @@
     "description": "Real-time net cross-border electricity exchange (+ indicates net import into Finland; - indicates net export).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T16:41:53Z",
+    "updated_at_utc": "2026-11-17T17:11:10Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-10T16:00:00Z",
-      "value": -1289.86,
-      "samples": 6
-    },
-    {
       "timestamp": "2026-11-10T17:00:00Z",
-      "value": -1291.28,
-      "samples": 20
+      "value": -1280.14,
+      "samples": 16
     },
     {
       "timestamp": "2026-11-10T18:00:00Z",
@@ -855,8 +850,13 @@
     },
     {
       "timestamp": "2026-11-17T16:00:00Z",
-      "value": -672.99,
-      "samples": 12
+      "value": -611.64,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-17T17:00:00Z",
+      "value": -517.35,
+      "samples": 2
     }
   ]
 }
