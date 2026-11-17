@@ -4,7 +4,6 @@ dispatches to provider plugins (Fingrid, Energinet, Open-Meteo), and writes
 standardized JSON payloads + catalog.json into public/data/.
 """
 import json
-import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -24,8 +23,9 @@ def main() -> None:
     days_back = int(config.get("days_back", 7))
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # FingridProvider reads FINGRID_API_KEY directly from environment variables
     providers = {
-        "fingrid": FingridProvider(api_key=os.environ.get("FINGRID_API_KEY", "")),
+        "fingrid": FingridProvider(),
         "open_meteo": OpenMeteoProvider(),
         "energinet": EnerginetProvider(),
     }
