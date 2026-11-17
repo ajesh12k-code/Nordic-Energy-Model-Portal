@@ -9,6 +9,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { ExportCsvButton } from './ExportCsvButton';
 import type { CityLocation, MergedHourlyRecord } from '../types/energy';
 
 interface WeatherForecastTabProps {
@@ -36,7 +37,7 @@ export function WeatherForecastTab({
             corridors against national grid load.
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <label htmlFor="city-select" className="text-xs text-slate-400">
             Region:
           </label>
@@ -53,6 +54,17 @@ export function WeatherForecastTab({
               </option>
             ))}
           </select>
+          <ExportCsvButton
+            rows={data}
+            filenamePrefix={`fi_weather_load_${selectedCity}`}
+            columns={[
+              { key: 'timestamp', header: 'timestamp_utc' },
+              { key: 'isForecast', header: 'is_forecast' },
+              { key: 'temperature', header: `temperature_2m_c_${selectedCity}` },
+              { key: 'windSpeed100m', header: `wind_speed_100m_ms_${selectedCity}` },
+              { key: 'consumption', header: 'national_consumption_mw' },
+            ]}
+          />
         </div>
       </div>
 

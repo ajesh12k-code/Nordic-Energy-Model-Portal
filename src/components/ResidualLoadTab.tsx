@@ -9,20 +9,35 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { ExportCsvButton } from './ExportCsvButton';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function ResidualLoadTab({ data }: { data: MergedHourlyRecord[] }) {
   return (
     <section className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4">
-      <div>
-        <h2 className="text-lg font-semibold">
-          Short-Term Load &amp; Residual Demand Decomposition (7-Day Trailing)
-        </h2>
-        <p className="text-sm text-slate-400">
-          Residual load represents net demand after subtracting variable wind generation,
-          highlighting the flexibility required from hydro, thermal, and Nordic interconnectors.
-        </p>
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+        <div>
+          <h2 className="text-lg font-semibold">
+            Short-Term Load &amp; Residual Demand Decomposition (7-Day Trailing)
+          </h2>
+          <p className="text-sm text-slate-400">
+            Residual load represents net demand after subtracting variable wind generation,
+            highlighting the flexibility required from hydro, thermal, and Nordic interconnectors.
+          </p>
+        </div>
+        <ExportCsvButton
+          rows={data}
+          filenamePrefix="fi_residual_load_dispatch"
+          columns={[
+            { key: 'timestamp', header: 'timestamp_utc' },
+            { key: 'consumption', header: 'total_consumption_mw' },
+            { key: 'wind', header: 'wind_generation_mw' },
+            { key: 'nuclear', header: 'nuclear_generation_mw' },
+            { key: 'residualLoad', header: 'residual_load_mw' },
+          ]}
+        />
       </div>
+
       <div className="h-96 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={data}>

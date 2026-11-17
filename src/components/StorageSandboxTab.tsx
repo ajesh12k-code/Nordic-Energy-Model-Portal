@@ -9,6 +9,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { ExportCsvButton } from './ExportCsvButton';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -46,9 +47,11 @@ export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
       maxShaved = Math.max(maxShaved, netGridLoad);
 
       return {
+        timestamp: row.timestamp,
         label: row.label,
         originalResidual: load,
         shavedResidual: netGridLoad,
+        socMWh: Math.round(socMWh * 10) / 10,
       };
     });
 
@@ -69,7 +72,7 @@ export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
             Simulate grid-scale battery dispatch against live Finnish residual demand.
           </p>
         </div>
-        <div className="flex flex-wrap gap-6 bg-slate-800/70 p-3 rounded-lg border border-slate-700">
+        <div className="flex flex-wrap items-center gap-4 bg-slate-800/70 p-3 rounded-lg border border-slate-700">
           <div>
             <label className="block text-xs text-slate-400">
               Energy Capacity: <strong className="text-white">{batteryMWh} MWh</strong>
@@ -98,11 +101,19 @@ export function StorageSandboxTab({ data }: { data: MergedHourlyRecord[] }) {
               className="accent-emerald-400"
             />
           </div>
-          <div className="flex items-center">
-            <span className="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1.5 rounded-md">
-              Peak Shaved: <strong>{simulation.peakReductionMW} MW</strong>
-            </span>
-          </div>
+          <span className="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1.5 rounded-md">
+            Peak Shaved: <strong>{simulation.peakReductionMW} MW</strong>
+          </span>
+          <ExportCsvButton
+            rows={simulation.series}
+            filenamePrefix={`fi_bess_dispatch_${batteryMWh}mwh_${batteryMW}mw`}
+            columns={[
+              { key: 'timestamp', header: 'timestamp_utc' },
+              { key: 'originalResidual', header: 'unmitigated_residual_mw' },
+              { key: 'shavedResidual', header: 'post_bess_residual_mw' },
+              { key: 'socMWh', header: 'battery_soc_mwh' },
+            ]}
+          />
         </div>
       </div>
 

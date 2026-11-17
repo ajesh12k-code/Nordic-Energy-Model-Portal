@@ -10,6 +10,7 @@ import {
   YAxis,
 } from 'recharts';
 import { runHddLoadModel } from '../models/hddRegression';
+import { ExportCsvButton } from './ExportCsvButton';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -34,7 +35,7 @@ export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-5 bg-slate-800/70 p-3 rounded-lg border border-slate-700">
+        <div className="flex flex-wrap items-center gap-4 bg-slate-800/70 p-3 rounded-lg border border-slate-700">
           <div>
             <label className="block text-xs text-slate-400">
               Heating Base Temp: <strong className="text-white">{baseTempC}°C</strong>
@@ -66,6 +67,17 @@ export function HddForecastTab({ data }: { data: MergedHourlyRecord[] }) {
               className="accent-sky-400"
             />
           </div>
+          <ExportCsvButton
+            rows={model.series}
+            filenamePrefix={`fi_hdd_forecast_base${baseTempC}_dt${tempDeltaC}`}
+            columns={[
+              { key: 'timestamp', header: 'timestamp_utc' },
+              { key: 'isForecast', header: 'is_forecast' },
+              { key: 'temperature', header: 'scenario_temp_c' },
+              { key: 'actualConsumption', header: 'observed_load_mw' },
+              { key: 'predictedConsumption', header: 'predicted_load_mw' },
+            ]}
+          />
         </div>
       </div>
 

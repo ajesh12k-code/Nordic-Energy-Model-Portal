@@ -10,6 +10,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { ExportCsvButton } from './ExportCsvButton';
 import type { MergedHourlyRecord } from '../types/energy';
 
 export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
@@ -27,8 +28,6 @@ export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
     const minIntensity = Math.min(...intensities);
     const maxIntensity = Math.max(...intensities);
 
-    // Group by UTC day and compare scheduling the flexible load during the `windowHours`
-    // highest-carbon hours vs. the `windowHours` lowest-carbon hours each day
     const byDay = new Map<string, number[]>();
     valid.forEach((r) => {
       const day = r.timestamp.slice(0, 10);
@@ -45,7 +44,6 @@ export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
       const cleanestSlice = sorted.slice(0, windowHours);
       const dirtiestSlice = sorted.slice(-windowHours);
 
-      // 1 MWh = 1,000 kWh -> gCO2/kWh * MWh = kg CO2 directly
       optimalCaseKg += cleanestSlice.reduce((sum, g) => sum + g * hourlyLoadMWh, 0);
       worstCaseKg += dirtiestSlice.reduce((sum, g) => sum + g * hourlyLoadMWh, 0);
     });
@@ -76,7 +74,7 @@ export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-5 bg-slate-800/70 p-3 rounded-lg border border-slate-700">
+        <div className="flex flex-wrap items-center gap-4 bg-slate-800/70 p-3 rounded-lg border border-slate-700">
           <div>
             <label className="block text-xs text-slate-400">
               Flexible Daily Load: <strong className="text-white">{shiftableMWhPerDay} MWh/d</strong>
@@ -105,6 +103,16 @@ export function CarbonIntensityTab({ data }: { data: MergedHourlyRecord[] }) {
               className="accent-emerald-400"
             />
           </div>
+          <ExportCsvButton
+            rows={data}
+            filenamePrefix="fi_carbon_intensity_series"
+            columns={[
+              { key: 'timestamp', header: 'timestamp_utc' },
+              { key: 'carbonIntensity', header: 'emission_factor_gco2_kwh' },
+              { key: 'wind', header: 'wind_generation_mw' },
+              { key: 'consumption', header: 'total_consumption_mw' },
+            ]}
+          />
         </div>
       </div>
 
