@@ -44,20 +44,32 @@ export interface DatasetPayload {
   data: TimeSeriesPoint[];
 }
 
-/** Unified hourly record aligning all grid, trade, emission, and weather variables. */
+/** Unified hourly record aligning Finland, Denmark, and cross-border Nordic flows. */
 export interface MergedHourlyRecord {
   timestamp: string;
   label: string;
+  // Finland core grid
   consumption?: number;
   totalProduction?: number;
   wind?: number;
   nuclear?: number;
   hydro?: number;
-  chpTotal?: number; // District Heating CHP (201) + Industrial CHP (202)
-  otherGeneration?: number; // Solar, thermal reserves & small-scale plants closing totalProduction
-  netImport?: number; // + = Net Import into Finland, - = Net Export
+  chpTotal?: number;
+  otherGeneration?: number;
+  netImport?: number;
   residualLoad?: number;
-  carbonIntensity?: number; // gCO2/kWh
+  carbonIntensity?: number;
+  // Bilateral Nordic/Baltic interconnectors (+ = import to FI, - = export from FI)
+  flowSE1?: number;
+  flowSE3?: number;
+  flowNO4?: number;
+  flowEE?: number;
+  // Denmark (DK1 + DK2 via Energinet)
+  dkConsumption?: number;
+  dkWind?: number;
+  dkSolar?: number;
+  dkCarbonIntensity?: number;
+  // Meteorology
   temperature?: number;
   windSpeed100m?: number;
   temp_helsinki?: number;
