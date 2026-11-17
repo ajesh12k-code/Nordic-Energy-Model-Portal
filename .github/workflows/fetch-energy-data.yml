@@ -4,38 +4,35 @@ on:
   schedule:
     # Runs every hour at minute 15 (UTC) so Fingrid's previous hour intervals are finalized
     - cron: "15 * * * *"
-  workflow_dispatch: # Allows you to trigger a run manually from the GitHub Actions tab
+  workflow_dispatch:
 
 permissions:
-  contents: write # Grants the workflow permission to commit updated JSON files to public/data/
+  contents: write
 
 jobs:
   update-datasets:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Clone the repository into the GitHub Actions runner
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # 2. Set up Python 3.11 and cache pip packages for fast runs
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
 
-      # 3. Install dependencies from requirements.txt
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      # 4. Run the modular pipeline using the encrypted repository secret
       - name: Fetch all configured energy and weather datasets
         env:
           FINGRID_API_KEY: ${{ secrets.FINGRID_API_KEY }}
         run: python scripts/run_pipeline.py
 
-      # 5. Commit and push updated JSON files back to main if data changed
       - name: Commit and push updated JSON data
         run: |
           git config user.name "github-actions[bot]"
@@ -45,5 +42,6 @@ jobs:
             echo "No new data changes to commit."
           else
             git commit -m "chore(data): update hourly energy and weather datasets"
-            git push
+            git pull --rebase -X ours origin main
+            git push origin main
           fi
