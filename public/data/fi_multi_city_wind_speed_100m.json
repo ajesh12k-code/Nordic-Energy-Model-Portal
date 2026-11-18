@@ -9,7 +9,7 @@
     "description": "Hourly 100m hub-height wind speed across 5 Finnish cities (including Vaasa and Oulu wind corridors) for wind generation curve modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T18:34:35Z",
+    "updated_at_utc": "2026-11-18T01:37:41Z",
     "record_count": 216,
     "locations": [
       {
@@ -45,294 +45,6 @@
     ]
   },
   "data": [
-    {
-      "timestamp": "2026-11-10T00:00:00Z",
-      "value": 7.88,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 8.81,
-        "tampere": 6.77,
-        "lappeenranta": 6.49,
-        "vaasa": 8.42,
-        "oulu": 8.93
-      }
-    },
-    {
-      "timestamp": "2026-11-10T01:00:00Z",
-      "value": 7.85,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 7.79,
-        "tampere": 6.81,
-        "lappeenranta": 6.9,
-        "vaasa": 8.79,
-        "oulu": 8.97
-      }
-    },
-    {
-      "timestamp": "2026-11-10T02:00:00Z",
-      "value": 7.98,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 7.53,
-        "tampere": 6.85,
-        "lappeenranta": 7.52,
-        "vaasa": 8.89,
-        "oulu": 9.11
-      }
-    },
-    {
-      "timestamp": "2026-11-10T03:00:00Z",
-      "value": 7.95,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 6.97,
-        "tampere": 7.19,
-        "lappeenranta": 7.39,
-        "vaasa": 8.79,
-        "oulu": 9.41
-      }
-    },
-    {
-      "timestamp": "2026-11-10T04:00:00Z",
-      "value": 7.81,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 6.26,
-        "tampere": 7.88,
-        "lappeenranta": 6.4,
-        "vaasa": 9.16,
-        "oulu": 9.37
-      }
-    },
-    {
-      "timestamp": "2026-11-10T05:00:00Z",
-      "value": 7.81,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.8,
-        "tampere": 7.32,
-        "lappeenranta": 6.78,
-        "vaasa": 9.72,
-        "oulu": 9.45
-      }
-    },
-    {
-      "timestamp": "2026-11-10T06:00:00Z",
-      "value": 7.96,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.95,
-        "tampere": 7.54,
-        "lappeenranta": 6.67,
-        "vaasa": 9.9,
-        "oulu": 9.73
-      }
-    },
-    {
-      "timestamp": "2026-11-10T07:00:00Z",
-      "value": 8.42,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.8,
-        "tampere": 8.01,
-        "lappeenranta": 8.07,
-        "vaasa": 9.89,
-        "oulu": 10.32
-      }
-    },
-    {
-      "timestamp": "2026-11-10T08:00:00Z",
-      "value": 8.05,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.56,
-        "tampere": 6.92,
-        "lappeenranta": 7.72,
-        "vaasa": 9.55,
-        "oulu": 10.49
-      }
-    },
-    {
-      "timestamp": "2026-11-10T09:00:00Z",
-      "value": 7.85,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.26,
-        "tampere": 6.83,
-        "lappeenranta": 7.53,
-        "vaasa": 9.05,
-        "oulu": 10.56
-      }
-    },
-    {
-      "timestamp": "2026-11-10T10:00:00Z",
-      "value": 7.28,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 4.82,
-        "tampere": 6.87,
-        "lappeenranta": 6.02,
-        "vaasa": 8.4,
-        "oulu": 10.31
-      }
-    },
-    {
-      "timestamp": "2026-11-10T11:00:00Z",
-      "value": 6.51,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 4.92,
-        "tampere": 6.6,
-        "lappeenranta": 5.63,
-        "vaasa": 7.65,
-        "oulu": 7.76
-      }
-    },
-    {
-      "timestamp": "2026-11-10T12:00:00Z",
-      "value": 6.32,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.3,
-        "tampere": 6.89,
-        "lappeenranta": 6.62,
-        "vaasa": 5.96,
-        "oulu": 6.85
-      }
-    },
-    {
-      "timestamp": "2026-11-10T13:00:00Z",
-      "value": 5.93,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 4.53,
-        "tampere": 6.58,
-        "lappeenranta": 6.97,
-        "vaasa": 4.96,
-        "oulu": 6.59
-      }
-    },
-    {
-      "timestamp": "2026-11-10T14:00:00Z",
-      "value": 5.71,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 4.28,
-        "tampere": 6.27,
-        "lappeenranta": 6.51,
-        "vaasa": 5.1,
-        "oulu": 6.38
-      }
-    },
-    {
-      "timestamp": "2026-11-10T15:00:00Z",
-      "value": 5.75,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 4.47,
-        "tampere": 5.65,
-        "lappeenranta": 6.05,
-        "vaasa": 6.68,
-        "oulu": 5.91
-      }
-    },
-    {
-      "timestamp": "2026-11-10T16:00:00Z",
-      "value": 5.49,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 5.37,
-        "tampere": 5.4,
-        "lappeenranta": 5.99,
-        "vaasa": 5.7,
-        "oulu": 5.0
-      }
-    },
-    {
-      "timestamp": "2026-11-10T17:00:00Z",
-      "value": 5.68,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 6.86,
-        "tampere": 5.03,
-        "lappeenranta": 6.42,
-        "vaasa": 5.12,
-        "oulu": 4.95
-      }
-    },
-    {
-      "timestamp": "2026-11-10T18:00:00Z",
-      "value": 5.53,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 8.81,
-        "tampere": 4.81,
-        "lappeenranta": 5.9,
-        "vaasa": 4.61,
-        "oulu": 3.5
-      }
-    },
-    {
-      "timestamp": "2026-11-10T19:00:00Z",
-      "value": 5.29,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 9.58,
-        "tampere": 4.89,
-        "lappeenranta": 4.81,
-        "vaasa": 4.21,
-        "oulu": 2.98
-      }
-    },
-    {
-      "timestamp": "2026-11-10T20:00:00Z",
-      "value": 5.14,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 9.2,
-        "tampere": 4.65,
-        "lappeenranta": 4.96,
-        "vaasa": 4.04,
-        "oulu": 2.84
-      }
-    },
-    {
-      "timestamp": "2026-11-10T21:00:00Z",
-      "value": 4.99,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 8.84,
-        "tampere": 3.99,
-        "lappeenranta": 5.13,
-        "vaasa": 4.27,
-        "oulu": 2.74
-      }
-    },
-    {
-      "timestamp": "2026-11-10T22:00:00Z",
-      "value": 4.59,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 7.96,
-        "tampere": 3.41,
-        "lappeenranta": 4.82,
-        "vaasa": 4.38,
-        "oulu": 2.4
-      }
-    },
-    {
-      "timestamp": "2026-11-10T23:00:00Z",
-      "value": 4.59,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 7.6,
-        "tampere": 3.32,
-        "lappeenranta": 5.24,
-        "vaasa": 4.3,
-        "oulu": 2.48
-      }
-    },
     {
       "timestamp": "2026-11-11T00:00:00Z",
       "value": 4.46,
@@ -2207,74 +1919,74 @@
     },
     {
       "timestamp": "2026-11-17T12:00:00Z",
-      "value": 7.57,
+      "value": 7.6,
       "samples": 5,
       "by_city": {
-        "helsinki": 9.26,
-        "tampere": 6.95,
-        "lappeenranta": 7.02,
-        "vaasa": 8.56,
-        "oulu": 6.07
+        "helsinki": 8.75,
+        "tampere": 7.34,
+        "lappeenranta": 7.5,
+        "vaasa": 8.33,
+        "oulu": 6.08
       }
     },
     {
       "timestamp": "2026-11-17T13:00:00Z",
-      "value": 7.74,
+      "value": 7.91,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.71,
-        "tampere": 7.65,
-        "lappeenranta": 7.11,
-        "vaasa": 8.77,
-        "oulu": 6.48
+        "helsinki": 8.95,
+        "tampere": 7.77,
+        "lappeenranta": 7.4,
+        "vaasa": 8.8,
+        "oulu": 6.61
       }
     },
     {
       "timestamp": "2026-11-17T14:00:00Z",
-      "value": 7.8,
+      "value": 7.87,
       "samples": 5,
       "by_city": {
-        "helsinki": 9.07,
-        "tampere": 8.25,
-        "lappeenranta": 7.04,
-        "vaasa": 8.77,
-        "oulu": 5.88
+        "helsinki": 8.64,
+        "tampere": 7.63,
+        "lappeenranta": 7.82,
+        "vaasa": 8.86,
+        "oulu": 6.39
       }
     },
     {
       "timestamp": "2026-11-17T15:00:00Z",
-      "value": 7.67,
+      "value": 7.82,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.99,
-        "tampere": 7.8,
-        "lappeenranta": 7.1,
-        "vaasa": 8.6,
-        "oulu": 5.85
+        "helsinki": 8.52,
+        "tampere": 7.92,
+        "lappeenranta": 7.9,
+        "vaasa": 8.78,
+        "oulu": 5.99
       }
     },
     {
       "timestamp": "2026-11-17T16:00:00Z",
-      "value": 7.67,
+      "value": 7.61,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.67,
-        "tampere": 7.6,
-        "lappeenranta": 6.99,
-        "vaasa": 9.06,
-        "oulu": 6.05
+        "helsinki": 8.8,
+        "tampere": 6.91,
+        "lappeenranta": 7.48,
+        "vaasa": 8.85,
+        "oulu": 6.01
       }
     },
     {
       "timestamp": "2026-11-17T17:00:00Z",
-      "value": 7.77,
+      "value": 7.59,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.2,
-        "tampere": 7.72,
-        "lappeenranta": 7.39,
-        "vaasa": 9.56,
-        "oulu": 5.99
+        "helsinki": 8.78,
+        "tampere": 6.35,
+        "lappeenranta": 7.62,
+        "vaasa": 9.51,
+        "oulu": 5.71
       }
     },
     {
@@ -2282,166 +1994,166 @@
       "value": 7.68,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.91,
-        "tampere": 7.2,
-        "lappeenranta": 7.16,
-        "vaasa": 9.92,
-        "oulu": 6.22
+        "helsinki": 7.28,
+        "tampere": 7.01,
+        "lappeenranta": 7.59,
+        "vaasa": 10.47,
+        "oulu": 6.05
       }
     },
     {
       "timestamp": "2026-11-17T19:00:00Z",
-      "value": 7.59,
+      "value": 7.55,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.07,
-        "tampere": 6.84,
-        "lappeenranta": 6.83,
-        "vaasa": 10.04,
-        "oulu": 6.17
+        "helsinki": 7.07,
+        "tampere": 6.36,
+        "lappeenranta": 7.09,
+        "vaasa": 10.64,
+        "oulu": 6.59
       }
     },
     {
       "timestamp": "2026-11-17T20:00:00Z",
-      "value": 7.61,
+      "value": 7.56,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.52,
-        "tampere": 7.18,
-        "lappeenranta": 7.05,
-        "vaasa": 10.11,
-        "oulu": 6.17
+        "helsinki": 6.81,
+        "tampere": 6.97,
+        "lappeenranta": 6.91,
+        "vaasa": 10.37,
+        "oulu": 6.74
       }
     },
     {
       "timestamp": "2026-11-17T21:00:00Z",
-      "value": 7.37,
+      "value": 7.44,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.08,
-        "tampere": 6.51,
-        "lappeenranta": 6.5,
-        "vaasa": 9.7,
-        "oulu": 7.04
+        "helsinki": 6.6,
+        "tampere": 6.18,
+        "lappeenranta": 6.74,
+        "vaasa": 10.16,
+        "oulu": 7.5
       }
     },
     {
       "timestamp": "2026-11-17T22:00:00Z",
-      "value": 7.07,
+      "value": 7.33,
       "samples": 5,
       "by_city": {
-        "helsinki": 6.95,
-        "tampere": 5.7,
-        "lappeenranta": 6.1,
-        "vaasa": 9.02,
-        "oulu": 7.58
+        "helsinki": 6.49,
+        "tampere": 6.17,
+        "lappeenranta": 6.61,
+        "vaasa": 9.37,
+        "oulu": 8.02
       }
     },
     {
       "timestamp": "2026-11-17T23:00:00Z",
-      "value": 7.02,
+      "value": 7.21,
       "samples": 5,
       "by_city": {
-        "helsinki": 6.28,
-        "tampere": 5.46,
-        "lappeenranta": 6.84,
-        "vaasa": 8.35,
-        "oulu": 8.15
+        "helsinki": 6.49,
+        "tampere": 6.06,
+        "lappeenranta": 6.75,
+        "vaasa": 8.49,
+        "oulu": 8.26
       }
     },
     {
       "timestamp": "2026-11-18T00:00:00Z",
-      "value": 6.73,
+      "value": 7.06,
       "samples": 5,
       "by_city": {
-        "helsinki": 5.75,
-        "tampere": 4.99,
-        "lappeenranta": 7.06,
-        "vaasa": 7.58,
-        "oulu": 8.29
+        "helsinki": 6.69,
+        "tampere": 5.54,
+        "lappeenranta": 6.82,
+        "vaasa": 7.72,
+        "oulu": 8.52
       }
     },
     {
       "timestamp": "2026-11-18T01:00:00Z",
-      "value": 6.45,
+      "value": 7.05,
       "samples": 5,
       "by_city": {
-        "helsinki": 5.87,
-        "tampere": 4.14,
-        "lappeenranta": 7.03,
-        "vaasa": 6.83,
-        "oulu": 8.36
+        "helsinki": 6.69,
+        "tampere": 5.86,
+        "lappeenranta": 6.87,
+        "vaasa": 7.08,
+        "oulu": 8.77
       }
     },
     {
       "timestamp": "2026-11-18T02:00:00Z",
-      "value": 6.27,
+      "value": 6.83,
       "samples": 5,
       "by_city": {
-        "helsinki": 5.74,
-        "tampere": 4.45,
-        "lappeenranta": 6.76,
-        "vaasa": 6.15,
-        "oulu": 8.24
+        "helsinki": 6.42,
+        "tampere": 5.9,
+        "lappeenranta": 6.91,
+        "vaasa": 6.3,
+        "oulu": 8.61
       }
     },
     {
       "timestamp": "2026-11-18T03:00:00Z",
-      "value": 6.35,
+      "value": 6.7,
       "samples": 5,
       "by_city": {
-        "helsinki": 6.6,
-        "tampere": 5.99,
-        "lappeenranta": 6.42,
-        "vaasa": 4.9,
-        "oulu": 7.85
+        "helsinki": 7.0,
+        "tampere": 5.79,
+        "lappeenranta": 7.02,
+        "vaasa": 5.33,
+        "oulu": 8.37
       }
     },
     {
       "timestamp": "2026-11-18T04:00:00Z",
-      "value": 6.52,
+      "value": 6.73,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.57,
-        "tampere": 6.4,
-        "lappeenranta": 6.42,
-        "vaasa": 4.64,
-        "oulu": 7.56
+        "helsinki": 8.05,
+        "tampere": 5.95,
+        "lappeenranta": 6.9,
+        "vaasa": 4.77,
+        "oulu": 7.96
       }
     },
     {
       "timestamp": "2026-11-18T05:00:00Z",
-      "value": 6.64,
+      "value": 6.97,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.41,
-        "tampere": 6.36,
-        "lappeenranta": 6.26,
-        "vaasa": 4.81,
-        "oulu": 7.35
+        "helsinki": 8.71,
+        "tampere": 6.55,
+        "lappeenranta": 7.22,
+        "vaasa": 4.73,
+        "oulu": 7.65
       }
     },
     {
       "timestamp": "2026-11-18T06:00:00Z",
-      "value": 7.04,
+      "value": 7.13,
       "samples": 5,
       "by_city": {
-        "helsinki": 9.07,
-        "tampere": 6.82,
-        "lappeenranta": 6.6,
-        "vaasa": 5.41,
-        "oulu": 7.3
+        "helsinki": 9.06,
+        "tampere": 6.98,
+        "lappeenranta": 7.56,
+        "vaasa": 4.51,
+        "oulu": 7.52
       }
     },
     {
       "timestamp": "2026-11-18T07:00:00Z",
-      "value": 7.31,
+      "value": 7.38,
       "samples": 5,
       "by_city": {
-        "helsinki": 9.51,
-        "tampere": 7.61,
-        "lappeenranta": 6.49,
-        "vaasa": 5.67,
+        "helsinki": 10.28,
+        "tampere": 7.08,
+        "lappeenranta": 7.2,
+        "vaasa": 5.06,
         "oulu": 7.29
       }
     },
@@ -2450,155 +2162,155 @@
       "value": 7.37,
       "samples": 5,
       "by_city": {
-        "helsinki": 10.04,
-        "tampere": 7.91,
-        "lappeenranta": 5.8,
-        "vaasa": 5.98,
-        "oulu": 7.1
-      }
-    },
-    {
-      "timestamp": "2026-11-18T09:00:00Z",
-      "value": 7.4,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 9.97,
-        "tampere": 9.15,
-        "lappeenranta": 5.01,
-        "vaasa": 5.83,
-        "oulu": 7.05
-      }
-    },
-    {
-      "timestamp": "2026-11-18T10:00:00Z",
-      "value": 7.2,
-      "samples": 5,
-      "by_city": {
-        "helsinki": 9.37,
-        "tampere": 8.85,
-        "lappeenranta": 5.16,
-        "vaasa": 5.63,
+        "helsinki": 10.13,
+        "tampere": 7.59,
+        "lappeenranta": 6.55,
+        "vaasa": 5.58,
         "oulu": 7.0
       }
     },
     {
-      "timestamp": "2026-11-18T11:00:00Z",
-      "value": 7.17,
+      "timestamp": "2026-11-18T09:00:00Z",
+      "value": 7.15,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.2,
-        "tampere": 9.06,
-        "lappeenranta": 5.35,
-        "vaasa": 6.34,
-        "oulu": 6.92
+        "helsinki": 10.0,
+        "tampere": 7.5,
+        "lappeenranta": 5.87,
+        "vaasa": 5.69,
+        "oulu": 6.67
+      }
+    },
+    {
+      "timestamp": "2026-11-18T10:00:00Z",
+      "value": 7.38,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.26,
+        "tampere": 8.9,
+        "lappeenranta": 5.97,
+        "vaasa": 6.51,
+        "oulu": 6.26
+      }
+    },
+    {
+      "timestamp": "2026-11-18T11:00:00Z",
+      "value": 7.34,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 8.3,
+        "tampere": 8.98,
+        "lappeenranta": 6.55,
+        "vaasa": 6.68,
+        "oulu": 6.17
       }
     },
     {
       "timestamp": "2026-11-18T12:00:00Z",
-      "value": 7.41,
+      "value": 7.62,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.5,
-        "tampere": 8.64,
-        "lappeenranta": 6.49,
-        "vaasa": 6.71,
-        "oulu": 6.72
+        "helsinki": 8.23,
+        "tampere": 9.3,
+        "lappeenranta": 7.57,
+        "vaasa": 6.79,
+        "oulu": 6.22
       }
     },
     {
       "timestamp": "2026-11-18T13:00:00Z",
-      "value": 7.53,
+      "value": 7.51,
       "samples": 5,
       "by_city": {
-        "helsinki": 9.0,
-        "tampere": 7.77,
-        "lappeenranta": 7.16,
-        "vaasa": 6.78,
-        "oulu": 6.94
+        "helsinki": 8.62,
+        "tampere": 8.8,
+        "lappeenranta": 7.35,
+        "vaasa": 6.31,
+        "oulu": 6.47
       }
     },
     {
       "timestamp": "2026-11-18T14:00:00Z",
-      "value": 7.37,
+      "value": 7.46,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.38,
-        "tampere": 8.18,
-        "lappeenranta": 7.15,
-        "vaasa": 5.98,
-        "oulu": 7.18
+        "helsinki": 8.57,
+        "tampere": 8.45,
+        "lappeenranta": 7.05,
+        "vaasa": 6.36,
+        "oulu": 6.86
       }
     },
     {
       "timestamp": "2026-11-18T15:00:00Z",
-      "value": 7.32,
+      "value": 7.33,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.95,
-        "tampere": 8.7,
-        "lappeenranta": 6.72,
-        "vaasa": 6.08,
-        "oulu": 7.16
+        "helsinki": 8.17,
+        "tampere": 8.75,
+        "lappeenranta": 6.24,
+        "vaasa": 6.54,
+        "oulu": 6.95
       }
     },
     {
       "timestamp": "2026-11-18T16:00:00Z",
-      "value": 7.64,
+      "value": 7.13,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.19,
-        "tampere": 8.05,
-        "lappeenranta": 6.75,
-        "vaasa": 6.97,
-        "oulu": 8.26
+        "helsinki": 7.49,
+        "tampere": 8.19,
+        "lappeenranta": 6.26,
+        "vaasa": 6.31,
+        "oulu": 7.39
       }
     },
     {
       "timestamp": "2026-11-18T17:00:00Z",
-      "value": 7.5,
+      "value": 7.54,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.69,
-        "tampere": 7.75,
-        "lappeenranta": 5.45,
-        "vaasa": 8.15,
-        "oulu": 8.45
+        "helsinki": 7.7,
+        "tampere": 8.5,
+        "lappeenranta": 6.72,
+        "vaasa": 7.0,
+        "oulu": 7.78
       }
     },
     {
       "timestamp": "2026-11-18T18:00:00Z",
-      "value": 7.36,
+      "value": 7.58,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.41,
-        "tampere": 7.14,
-        "lappeenranta": 5.25,
-        "vaasa": 8.1,
-        "oulu": 7.89
+        "helsinki": 7.99,
+        "tampere": 8.14,
+        "lappeenranta": 6.83,
+        "vaasa": 7.46,
+        "oulu": 7.5
       }
     },
     {
       "timestamp": "2026-11-18T19:00:00Z",
-      "value": 7.45,
+      "value": 7.48,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.62,
-        "tampere": 6.82,
-        "lappeenranta": 5.44,
-        "vaasa": 8.59,
-        "oulu": 8.76
+        "helsinki": 8.12,
+        "tampere": 7.59,
+        "lappeenranta": 6.65,
+        "vaasa": 7.46,
+        "oulu": 7.58
       }
     },
     {
       "timestamp": "2026-11-18T20:00:00Z",
-      "value": 7.66,
+      "value": 7.37,
       "samples": 5,
       "by_city": {
-        "helsinki": 9.06,
+        "helsinki": 9.69,
         "tampere": 6.46,
-        "lappeenranta": 5.95,
-        "vaasa": 7.94,
-        "oulu": 8.88
+        "lappeenranta": 5.98,
+        "vaasa": 6.33,
+        "oulu": 8.39
       }
     },
     {
@@ -2606,35 +2318,323 @@
       "value": 7.26,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.7,
-        "tampere": 5.8,
-        "lappeenranta": 5.93,
-        "vaasa": 7.47,
-        "oulu": 8.39
+        "helsinki": 9.97,
+        "tampere": 6.12,
+        "lappeenranta": 5.73,
+        "vaasa": 6.05,
+        "oulu": 8.43
       }
     },
     {
       "timestamp": "2026-11-18T22:00:00Z",
-      "value": 6.99,
+      "value": 7.42,
       "samples": 5,
       "by_city": {
-        "helsinki": 8.04,
-        "tampere": 5.6,
-        "lappeenranta": 5.86,
-        "vaasa": 7.11,
-        "oulu": 8.32
+        "helsinki": 9.21,
+        "tampere": 6.42,
+        "lappeenranta": 6.31,
+        "vaasa": 6.44,
+        "oulu": 8.72
       }
     },
     {
       "timestamp": "2026-11-18T23:00:00Z",
-      "value": 6.69,
+      "value": 7.31,
       "samples": 5,
       "by_city": {
-        "helsinki": 7.51,
-        "tampere": 5.02,
-        "lappeenranta": 5.95,
-        "vaasa": 6.48,
-        "oulu": 8.5
+        "helsinki": 9.56,
+        "tampere": 6.25,
+        "lappeenranta": 6.44,
+        "vaasa": 5.66,
+        "oulu": 8.63
+      }
+    },
+    {
+      "timestamp": "2026-11-19T00:00:00Z",
+      "value": 7.06,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.9,
+        "tampere": 6.43,
+        "lappeenranta": 6.16,
+        "vaasa": 4.62,
+        "oulu": 8.21
+      }
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00Z",
+      "value": 7.33,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.2,
+        "tampere": 7.18,
+        "lappeenranta": 6.39,
+        "vaasa": 5.48,
+        "oulu": 8.42
+      }
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 7.58,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.59,
+        "tampere": 7.01,
+        "lappeenranta": 6.26,
+        "vaasa": 7.07,
+        "oulu": 7.99
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 7.7,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 10.11,
+        "tampere": 7.47,
+        "lappeenranta": 6.03,
+        "vaasa": 7.09,
+        "oulu": 7.82
+      }
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 7.63,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.96,
+        "tampere": 7.57,
+        "lappeenranta": 5.72,
+        "vaasa": 7.22,
+        "oulu": 7.68
+      }
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 7.91,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 10.3,
+        "tampere": 7.93,
+        "lappeenranta": 6.71,
+        "vaasa": 7.15,
+        "oulu": 7.48
+      }
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 7.95,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 10.85,
+        "tampere": 8.24,
+        "lappeenranta": 6.75,
+        "vaasa": 6.73,
+        "oulu": 7.19
+      }
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 7.99,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 11.04,
+        "tampere": 8.34,
+        "lappeenranta": 6.27,
+        "vaasa": 7.26,
+        "oulu": 7.02
+      }
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 7.85,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 11.09,
+        "tampere": 7.89,
+        "lappeenranta": 6.19,
+        "vaasa": 7.45,
+        "oulu": 6.65
+      }
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 7.71,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 10.86,
+        "tampere": 8.21,
+        "lappeenranta": 6.54,
+        "vaasa": 6.77,
+        "oulu": 6.16
+      }
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 8.04,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 10.64,
+        "tampere": 10.16,
+        "lappeenranta": 6.57,
+        "vaasa": 6.75,
+        "oulu": 6.1
+      }
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 7.77,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.93,
+        "tampere": 10.27,
+        "lappeenranta": 5.87,
+        "vaasa": 6.67,
+        "oulu": 6.11
+      }
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 7.57,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.6,
+        "tampere": 8.6,
+        "lappeenranta": 6.41,
+        "vaasa": 6.93,
+        "oulu": 6.29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 7.81,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.85,
+        "tampere": 8.86,
+        "lappeenranta": 6.67,
+        "vaasa": 7.18,
+        "oulu": 6.49
+      }
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 7.66,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.17,
+        "tampere": 8.8,
+        "lappeenranta": 6.88,
+        "vaasa": 7.09,
+        "oulu": 6.38
+      }
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 7.78,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.71,
+        "tampere": 9.0,
+        "lappeenranta": 6.83,
+        "vaasa": 6.96,
+        "oulu": 6.42
+      }
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 7.71,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.51,
+        "tampere": 8.95,
+        "lappeenranta": 6.86,
+        "vaasa": 6.9,
+        "oulu": 6.35
+      }
+    },
+    {
+      "timestamp": "2026-11-19T17:00:00Z",
+      "value": 7.79,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.5,
+        "tampere": 9.17,
+        "lappeenranta": 7.13,
+        "vaasa": 6.96,
+        "oulu": 6.18
+      }
+    },
+    {
+      "timestamp": "2026-11-19T18:00:00Z",
+      "value": 7.59,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 8.97,
+        "tampere": 9.21,
+        "lappeenranta": 6.95,
+        "vaasa": 6.76,
+        "oulu": 6.04
+      }
+    },
+    {
+      "timestamp": "2026-11-19T19:00:00Z",
+      "value": 7.47,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 9.07,
+        "tampere": 9.12,
+        "lappeenranta": 6.44,
+        "vaasa": 6.87,
+        "oulu": 5.86
+      }
+    },
+    {
+      "timestamp": "2026-11-19T20:00:00Z",
+      "value": 7.24,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 8.47,
+        "tampere": 8.66,
+        "lappeenranta": 6.22,
+        "vaasa": 7.12,
+        "oulu": 5.71
+      }
+    },
+    {
+      "timestamp": "2026-11-19T21:00:00Z",
+      "value": 6.83,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 5.99,
+        "tampere": 8.34,
+        "lappeenranta": 6.49,
+        "vaasa": 7.6,
+        "oulu": 5.71
+      }
+    },
+    {
+      "timestamp": "2026-11-19T22:00:00Z",
+      "value": 6.75,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 5.66,
+        "tampere": 7.65,
+        "lappeenranta": 6.63,
+        "vaasa": 8.04,
+        "oulu": 5.76
+      }
+    },
+    {
+      "timestamp": "2026-11-19T23:00:00Z",
+      "value": 6.68,
+      "samples": 5,
+      "by_city": {
+        "helsinki": 5.88,
+        "tampere": 6.38,
+        "lappeenranta": 6.6,
+        "vaasa": 8.43,
+        "oulu": 6.13
       }
     }
   ]

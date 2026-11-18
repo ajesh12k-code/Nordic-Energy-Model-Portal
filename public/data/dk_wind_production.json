@@ -9,46 +9,11 @@
     "description": "Combined Danish onshore and offshore wind turbine electricity generation via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-17T18:34:32Z",
+    "updated_at_utc": "2026-11-18T01:37:38Z",
     "record_count": 168,
     "file_path": "data/dk_wind_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-10T17:00:00Z",
-      "value": 533.46,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-10T18:00:00Z",
-      "value": 713.42,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-10T19:00:00Z",
-      "value": 1144.25,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-10T20:00:00Z",
-      "value": 998.23,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-10T21:00:00Z",
-      "value": 971.18,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-10T22:00:00Z",
-      "value": 1002.88,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-10T23:00:00Z",
-      "value": 1009.13,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-11T00:00:00Z",
       "value": 1147.96,
@@ -852,6 +817,41 @@
     {
       "timestamp": "2026-11-17T16:00:00Z",
       "value": 3961.81,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T17:00:00Z",
+      "value": 4539.85,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T18:00:00Z",
+      "value": 5044.86,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T19:00:00Z",
+      "value": 5473.4,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T20:00:00Z",
+      "value": 5838.29,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T21:00:00Z",
+      "value": 5902.0,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T22:00:00Z",
+      "value": 5884.94,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-17T23:00:00Z",
+      "value": 5884.65,
       "samples": 24
     }
   ]
