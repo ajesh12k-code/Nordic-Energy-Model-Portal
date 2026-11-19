@@ -9,99 +9,14 @@
     "description": "Total electricity consumption in Finland calculated from production and cross-border import/export.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-19T01:12:59Z",
+    "updated_at_utc": "2026-11-19T18:16:40Z",
     "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-12T01:00:00Z",
-      "value": 10155.0,
-      "samples": 3
-    },
-    {
-      "timestamp": "2026-11-12T02:00:00Z",
-      "value": 10125.49,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T03:00:00Z",
-      "value": 10299.15,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T04:00:00Z",
-      "value": 10736.0,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T05:00:00Z",
-      "value": 10986.82,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T06:00:00Z",
-      "value": 10895.08,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T07:00:00Z",
-      "value": 10808.55,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T08:00:00Z",
-      "value": 10820.9,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T09:00:00Z",
-      "value": 10857.7,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T10:00:00Z",
-      "value": 10811.05,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T11:00:00Z",
-      "value": 10926.58,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T12:00:00Z",
-      "value": 11137.5,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T13:00:00Z",
-      "value": 11253.37,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T14:00:00Z",
-      "value": 11468.88,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T15:00:00Z",
-      "value": 11563.73,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T16:00:00Z",
-      "value": 11837.3,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-12T17:00:00Z",
-      "value": 12037.9,
-      "samples": 4
-    },
-    {
       "timestamp": "2026-11-12T18:00:00Z",
-      "value": 11998.58,
-      "samples": 4
+      "value": 12003.65,
+      "samples": 2
     },
     {
       "timestamp": "2026-11-12T19:00:00Z",
@@ -851,6 +766,91 @@
     {
       "timestamp": "2026-11-19T00:00:00Z",
       "value": 9665.51,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00Z",
+      "value": 9656.72,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 9408.68,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 9571.86,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 10058.65,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 10422.27,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 10435.77,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 10371.53,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 10341.23,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 10518.95,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 10437.77,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 10454.73,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 10514.05,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 10762.17,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 10785.77,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 10851.12,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 10849.0,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-19T17:00:00Z",
+      "value": 10782.52,
       "samples": 4
     }
   ]

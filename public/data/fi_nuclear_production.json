@@ -9,99 +9,14 @@
     "description": "Baseload nuclear power generation across Finnish reactors.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-19T01:13:10Z",
+    "updated_at_utc": "2026-11-19T18:16:50Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-12T01:00:00Z",
-      "value": 2585.2,
-      "samples": 15
-    },
-    {
-      "timestamp": "2026-11-12T02:00:00Z",
-      "value": 2585.03,
-      "samples": 19
-    },
-    {
-      "timestamp": "2026-11-12T03:00:00Z",
-      "value": 2585.51,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T04:00:00Z",
-      "value": 2585.1,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T05:00:00Z",
-      "value": 2585.56,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T06:00:00Z",
-      "value": 2584.61,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T07:00:00Z",
-      "value": 2587.1,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T08:00:00Z",
-      "value": 2587.58,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T09:00:00Z",
-      "value": 2587.61,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T10:00:00Z",
-      "value": 2585.09,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T11:00:00Z",
-      "value": 2584.81,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T12:00:00Z",
-      "value": 2587.64,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T13:00:00Z",
-      "value": 2588.59,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T14:00:00Z",
-      "value": 2588.13,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T15:00:00Z",
-      "value": 2588.42,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T16:00:00Z",
-      "value": 2588.76,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T17:00:00Z",
-      "value": 2588.48,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-12T18:00:00Z",
-      "value": 2588.41,
-      "samples": 20
+      "value": 2588.24,
+      "samples": 14
     },
     {
       "timestamp": "2026-11-12T19:00:00Z",
@@ -855,8 +770,93 @@
     },
     {
       "timestamp": "2026-11-19T01:00:00Z",
-      "value": 3499.56,
-      "samples": 3
+      "value": 3516.55,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 3556.85,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 3597.72,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 3637.81,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 3677.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 3718.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 3760.12,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 3796.68,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 3835.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 3863.14,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 3864.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 3863.01,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 3863.25,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 3863.35,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 3862.38,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 3862.37,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T17:00:00Z",
+      "value": 3862.47,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T18:00:00Z",
+      "value": 3863.14,
+      "samples": 4
     }
   ]
 }

@@ -9,96 +9,11 @@
     "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-19T01:13:36Z",
+    "updated_at_utc": "2026-11-19T18:17:21Z",
     "record_count": 168,
     "file_path": "data/dk_electricity_consumption.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-12T00:00:00Z",
-      "value": 4636.82,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T01:00:00Z",
-      "value": 4963.69,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T02:00:00Z",
-      "value": 5195.27,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T03:00:00Z",
-      "value": 4905.33,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T04:00:00Z",
-      "value": 4682.38,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T05:00:00Z",
-      "value": 4811.59,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T06:00:00Z",
-      "value": 5220.57,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T07:00:00Z",
-      "value": 5461.84,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T08:00:00Z",
-      "value": 5628.02,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T09:00:00Z",
-      "value": 5980.87,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T10:00:00Z",
-      "value": 6134.33,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T11:00:00Z",
-      "value": 5991.6,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T12:00:00Z",
-      "value": 6112.11,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T13:00:00Z",
-      "value": 6057.55,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T14:00:00Z",
-      "value": 5944.18,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T15:00:00Z",
-      "value": 6132.95,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T16:00:00Z",
-      "value": 6309.97,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-12T17:00:00Z",
       "value": 6207.73,
@@ -852,6 +767,91 @@
     {
       "timestamp": "2026-11-18T23:00:00Z",
       "value": 5715.44,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T00:00:00Z",
+      "value": 5778.05,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00Z",
+      "value": 5562.54,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 5035.18,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 4687.1,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 4756.44,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 5075.74,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 5481.72,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 5676.11,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 5918.19,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 6211.95,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 6269.55,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 6227.83,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 6181.08,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 6109.23,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 5779.33,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 5891.83,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 6132.03,
       "samples": 24
     }
   ]

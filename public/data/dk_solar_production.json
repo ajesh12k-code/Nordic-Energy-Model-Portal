@@ -9,96 +9,11 @@
     "description": "Hourly solar photovoltaic generation across Denmark via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-19T01:13:38Z",
+    "updated_at_utc": "2026-11-19T18:17:23Z",
     "record_count": 168,
     "file_path": "data/dk_solar_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-12T00:00:00Z",
-      "value": 29.64,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T01:00:00Z",
-      "value": 29.06,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T02:00:00Z",
-      "value": 28.98,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T03:00:00Z",
-      "value": 30.25,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T04:00:00Z",
-      "value": 28.92,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T05:00:00Z",
-      "value": 30.35,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T06:00:00Z",
-      "value": 59.72,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T07:00:00Z",
-      "value": 196.36,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T08:00:00Z",
-      "value": 565.71,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T09:00:00Z",
-      "value": 965.26,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T10:00:00Z",
-      "value": 1089.23,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T11:00:00Z",
-      "value": 1038.61,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T12:00:00Z",
-      "value": 1005.82,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T13:00:00Z",
-      "value": 661.59,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T14:00:00Z",
-      "value": 280.11,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T15:00:00Z",
-      "value": 47.49,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T16:00:00Z",
-      "value": 41.65,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-12T17:00:00Z",
       "value": 42.59,
@@ -852,6 +767,91 @@
     {
       "timestamp": "2026-11-18T23:00:00Z",
       "value": 29.54,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T00:00:00Z",
+      "value": 29.27,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00Z",
+      "value": 29.6,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 28.89,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 28.87,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 29.09,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 29.15,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 40.92,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 118.38,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 356.09,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 682.19,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 991.34,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 1035.03,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 955.01,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 682.74,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 210.06,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 44.79,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 114.97,
       "samples": 24
     }
   ]

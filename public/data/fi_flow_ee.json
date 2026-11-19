@@ -9,99 +9,14 @@
     "description": "Subsea EstLink 1 & 2 HVDC transmission between Finland and Estonia (+ import to FI, - export to EE).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-19T01:13:32Z",
+    "updated_at_utc": "2026-11-19T18:17:15Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-12T01:00:00Z",
-      "value": 1022.33,
-      "samples": 15
-    },
-    {
-      "timestamp": "2026-11-12T02:00:00Z",
-      "value": 1022.05,
-      "samples": 19
-    },
-    {
-      "timestamp": "2026-11-12T03:00:00Z",
-      "value": 1022.03,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T04:00:00Z",
-      "value": 1022.34,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T05:00:00Z",
-      "value": 1022.12,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T06:00:00Z",
-      "value": 1022.19,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T07:00:00Z",
-      "value": 1022.18,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T08:00:00Z",
-      "value": 1021.62,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T09:00:00Z",
-      "value": 1015.77,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T10:00:00Z",
-      "value": 1017.98,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T11:00:00Z",
-      "value": 1013.07,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T12:00:00Z",
-      "value": 1014.31,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T13:00:00Z",
-      "value": 1010.0,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T14:00:00Z",
-      "value": 1028.96,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T15:00:00Z",
-      "value": 1030.21,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T16:00:00Z",
-      "value": 1024.38,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T17:00:00Z",
-      "value": 1024.59,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-12T18:00:00Z",
-      "value": 1027.27,
-      "samples": 20
+      "value": 1027.09,
+      "samples": 14
     },
     {
       "timestamp": "2026-11-12T19:00:00Z",
@@ -855,8 +770,93 @@
     },
     {
       "timestamp": "2026-11-19T01:00:00Z",
-      "value": 954.37,
-      "samples": 3
+      "value": 900.36,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 960.12,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 948.85,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 974.26,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 949.25,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 913.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 858.73,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 941.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 990.16,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 915.08,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 962.66,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 1021.79,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 1024.98,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 1028.47,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 1030.11,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 1026.16,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T17:00:00Z",
+      "value": 1022.46,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T18:00:00Z",
+      "value": 1027.8,
+      "samples": 5
     }
   ]
 }

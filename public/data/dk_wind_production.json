@@ -9,96 +9,11 @@
     "description": "Combined Danish onshore and offshore wind turbine electricity generation via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-19T01:13:37Z",
+    "updated_at_utc": "2026-11-19T18:17:22Z",
     "record_count": 168,
     "file_path": "data/dk_wind_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-12T00:00:00Z",
-      "value": 3193.77,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T01:00:00Z",
-      "value": 3808.35,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T02:00:00Z",
-      "value": 4326.12,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T03:00:00Z",
-      "value": 4236.74,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T04:00:00Z",
-      "value": 3893.01,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T05:00:00Z",
-      "value": 3993.27,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T06:00:00Z",
-      "value": 4104.71,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T07:00:00Z",
-      "value": 4574.42,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T08:00:00Z",
-      "value": 5004.08,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T09:00:00Z",
-      "value": 5539.12,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T10:00:00Z",
-      "value": 6160.14,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T11:00:00Z",
-      "value": 6529.64,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T12:00:00Z",
-      "value": 6705.55,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T13:00:00Z",
-      "value": 6719.26,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T14:00:00Z",
-      "value": 6539.35,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T15:00:00Z",
-      "value": 6400.53,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-12T16:00:00Z",
-      "value": 6094.15,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-12T17:00:00Z",
       "value": 6017.8,
@@ -852,6 +767,91 @@
     {
       "timestamp": "2026-11-18T23:00:00Z",
       "value": 1456.48,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T00:00:00Z",
+      "value": 1404.47,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00Z",
+      "value": 1270.47,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00Z",
+      "value": 1382.16,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00Z",
+      "value": 1059.7,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00Z",
+      "value": 941.21,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00Z",
+      "value": 728.98,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00Z",
+      "value": 686.82,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00Z",
+      "value": 634.32,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00Z",
+      "value": 563.99,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00Z",
+      "value": 509.1,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00Z",
+      "value": 472.29,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00Z",
+      "value": 425.55,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00Z",
+      "value": 382.19,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00Z",
+      "value": 401.44,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00Z",
+      "value": 452.04,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00Z",
+      "value": 557.13,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00Z",
+      "value": 695.49,
       "samples": 24
     }
   ]
