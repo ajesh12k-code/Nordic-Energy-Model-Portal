@@ -9,49 +9,14 @@
     "description": "Baseload nuclear power generation across Finnish reactors.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-18T18:51:05Z",
+    "updated_at_utc": "2026-11-19T01:13:10Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-11T18:00:00Z",
-      "value": 2585.94,
-      "samples": 2
-    },
-    {
-      "timestamp": "2026-11-11T19:00:00Z",
-      "value": 2584.97,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-11T20:00:00Z",
-      "value": 2585.28,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-11T21:00:00Z",
-      "value": 2584.32,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-11T22:00:00Z",
-      "value": 2585.06,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-11T23:00:00Z",
-      "value": 2584.82,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-12T00:00:00Z",
-      "value": 2584.64,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-12T01:00:00Z",
-      "value": 2585.24,
-      "samples": 20
+      "value": 2585.2,
+      "samples": 15
     },
     {
       "timestamp": "2026-11-12T02:00:00Z",
@@ -855,8 +820,43 @@
     },
     {
       "timestamp": "2026-11-18T18:00:00Z",
-      "value": 3089.54,
-      "samples": 10
+      "value": 3089.35,
+      "samples": 14
+    },
+    {
+      "timestamp": "2026-11-18T19:00:00Z",
+      "value": 3090.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-18T20:00:00Z",
+      "value": 3217.18,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-18T21:00:00Z",
+      "value": 3353.51,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-18T22:00:00Z",
+      "value": 3394.36,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-18T23:00:00Z",
+      "value": 3435.88,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T00:00:00Z",
+      "value": 3476.14,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00Z",
+      "value": 3499.56,
+      "samples": 3
     }
   ]
 }
