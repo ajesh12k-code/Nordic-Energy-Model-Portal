@@ -9,54 +9,14 @@
     "description": "Real-time hydro power generation in Finland providing flexible dispatch and frequency balancing.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-21T08:16:39Z",
+    "updated_at_utc": "2026-11-21T16:47:20Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-14T08:00:00Z",
-      "value": 1715.56,
-      "samples": 14
-    },
-    {
-      "timestamp": "2026-11-14T09:00:00Z",
-      "value": 1885.85,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-14T10:00:00Z",
-      "value": 2013.09,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-14T11:00:00Z",
-      "value": 2014.02,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-14T12:00:00Z",
-      "value": 1956.49,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-14T13:00:00Z",
-      "value": 1876.29,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-14T14:00:00Z",
-      "value": 1821.47,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-14T15:00:00Z",
-      "value": 1844.82,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-14T16:00:00Z",
-      "value": 1845.83,
-      "samples": 20
+      "value": 1920.28,
+      "samples": 4
     },
     {
       "timestamp": "2026-11-14T17:00:00Z",
@@ -855,8 +815,48 @@
     },
     {
       "timestamp": "2026-11-21T08:00:00Z",
-      "value": 1892.98,
-      "samples": 4
+      "value": 1939.76,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T09:00:00Z",
+      "value": 1961.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T10:00:00Z",
+      "value": 1963.51,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T11:00:00Z",
+      "value": 1938.98,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T12:00:00Z",
+      "value": 1892.08,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T13:00:00Z",
+      "value": 1863.94,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T14:00:00Z",
+      "value": 1855.62,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T15:00:00Z",
+      "value": 1736.38,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T16:00:00Z",
+      "value": 1771.33,
+      "samples": 15
     }
   ]
 }
