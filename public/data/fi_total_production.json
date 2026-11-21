@@ -9,44 +9,14 @@
     "description": "Total domestic electricity production across all Finnish power plants.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-20T18:36:54Z",
+    "updated_at_utc": "2026-11-21T00:47:57Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-13T18:00:00Z",
-      "value": 9844.63,
-      "samples": 7
-    },
-    {
-      "timestamp": "2026-11-13T19:00:00Z",
-      "value": 9714.69,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T20:00:00Z",
-      "value": 9608.93,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T21:00:00Z",
-      "value": 9453.6,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T22:00:00Z",
-      "value": 9247.04,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T23:00:00Z",
-      "value": 9592.0,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-14T00:00:00Z",
-      "value": 9729.78,
-      "samples": 20
+      "value": 9799.84,
+      "samples": 4
     },
     {
       "timestamp": "2026-11-14T01:00:00Z",
@@ -855,8 +825,38 @@
     },
     {
       "timestamp": "2026-11-20T18:00:00Z",
-      "value": 9799.85,
-      "samples": 11
+      "value": 9778.12,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T19:00:00Z",
+      "value": 9819.73,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T20:00:00Z",
+      "value": 9872.48,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T21:00:00Z",
+      "value": 10042.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T22:00:00Z",
+      "value": 9965.39,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T23:00:00Z",
+      "value": 10395.38,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T00:00:00Z",
+      "value": 10508.83,
+      "samples": 15
     }
   ]
 }

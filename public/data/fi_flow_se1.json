@@ -9,44 +9,14 @@
     "description": "Cross-border AC transmission between Finland and Sweden bidding zone SE1 (+ import to FI, - export to SE1).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-20T18:37:16Z",
+    "updated_at_utc": "2026-11-21T00:48:17Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-13T18:00:00Z",
-      "value": -1929.43,
-      "samples": 7
-    },
-    {
-      "timestamp": "2026-11-13T19:00:00Z",
-      "value": -1848.22,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T20:00:00Z",
-      "value": -1770.68,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T21:00:00Z",
-      "value": -1846.46,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T22:00:00Z",
-      "value": -1885.72,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-13T23:00:00Z",
-      "value": -1763.51,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-14T00:00:00Z",
-      "value": -1622.26,
-      "samples": 20
+      "value": -1478.1,
+      "samples": 3
     },
     {
       "timestamp": "2026-11-14T01:00:00Z",
@@ -855,8 +825,38 @@
     },
     {
       "timestamp": "2026-11-20T18:00:00Z",
-      "value": -1273.91,
-      "samples": 11
+      "value": -1380.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T19:00:00Z",
+      "value": -1751.43,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T20:00:00Z",
+      "value": -1947.63,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T21:00:00Z",
+      "value": -1745.01,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T22:00:00Z",
+      "value": -1837.99,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-20T23:00:00Z",
+      "value": -1413.89,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T00:00:00Z",
+      "value": -1269.92,
+      "samples": 15
     }
   ]
 }
