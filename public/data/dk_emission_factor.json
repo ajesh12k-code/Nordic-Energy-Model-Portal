@@ -9,41 +9,11 @@
     "description": "Hourly grid CO2 emission intensity in Denmark averaged across DK1 and DK2 via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-21T16:47:51Z",
+    "updated_at_utc": "2026-11-21T22:12:10Z",
     "record_count": 168,
     "file_path": "data/dk_emission_factor.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-14T15:00:00Z",
-      "value": 35.58,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T16:00:00Z",
-      "value": 33.83,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T17:00:00Z",
-      "value": 31.54,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T18:00:00Z",
-      "value": 31.12,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T19:00:00Z",
-      "value": 31.33,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T20:00:00Z",
-      "value": 29.29,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-14T21:00:00Z",
       "value": 29.25,
@@ -852,6 +822,36 @@
     {
       "timestamp": "2026-11-21T14:00:00Z",
       "value": 32.83,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T15:00:00Z",
+      "value": 34.25,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T16:00:00Z",
+      "value": 31.62,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T17:00:00Z",
+      "value": 31.29,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T18:00:00Z",
+      "value": 32.58,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T19:00:00Z",
+      "value": 37.71,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T20:00:00Z",
+      "value": 48.54,
       "samples": 24
     }
   ]

@@ -9,41 +9,11 @@
     "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-21T16:47:47Z",
+    "updated_at_utc": "2026-11-21T22:12:07Z",
     "record_count": 168,
     "file_path": "data/dk_electricity_consumption.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-14T15:00:00Z",
-      "value": 5285.89,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T16:00:00Z",
-      "value": 5631.42,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T17:00:00Z",
-      "value": 5146.37,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T18:00:00Z",
-      "value": 5000.61,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T19:00:00Z",
-      "value": 4833.44,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T20:00:00Z",
-      "value": 4780.2,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-14T21:00:00Z",
       "value": 4612.05,
@@ -852,6 +822,36 @@
     {
       "timestamp": "2026-11-21T14:00:00Z",
       "value": 5412.13,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T15:00:00Z",
+      "value": 5518.78,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T16:00:00Z",
+      "value": 5514.56,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T17:00:00Z",
+      "value": 5467.0,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T18:00:00Z",
+      "value": 5115.88,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T19:00:00Z",
+      "value": 4924.71,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T20:00:00Z",
+      "value": 4950.26,
       "samples": 24
     }
   ]

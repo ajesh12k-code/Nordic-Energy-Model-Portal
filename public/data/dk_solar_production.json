@@ -9,41 +9,11 @@
     "description": "Hourly solar photovoltaic generation across Denmark via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-21T16:47:50Z",
+    "updated_at_utc": "2026-11-21T22:12:09Z",
     "record_count": 168,
     "file_path": "data/dk_solar_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-14T15:00:00Z",
-      "value": 66.86,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T16:00:00Z",
-      "value": 70.46,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T17:00:00Z",
-      "value": 54.08,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T18:00:00Z",
-      "value": 33.07,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T19:00:00Z",
-      "value": 38.59,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T20:00:00Z",
-      "value": 29.86,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-14T21:00:00Z",
       "value": 30.07,
@@ -852,6 +822,36 @@
     {
       "timestamp": "2026-11-21T14:00:00Z",
       "value": 194.09,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T15:00:00Z",
+      "value": 44.39,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T16:00:00Z",
+      "value": 51.28,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T17:00:00Z",
+      "value": 75.99,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T18:00:00Z",
+      "value": 52.47,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T19:00:00Z",
+      "value": 42.36,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T20:00:00Z",
+      "value": 43.35,
       "samples": 24
     }
   ]
