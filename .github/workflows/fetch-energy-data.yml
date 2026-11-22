@@ -2,7 +2,6 @@ name: Fetch Hourly Energy & Weather Data
 
 on:
   schedule:
-    # Runs every hour at minute 15 (UTC)
     - cron: "15 * * * *"
   workflow_dispatch:
 
