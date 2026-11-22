@@ -9,51 +9,11 @@
     "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T09:52:37Z",
+    "updated_at_utc": "2026-11-22T17:49:30Z",
     "record_count": 168,
     "file_path": "data/dk_electricity_consumption.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-15T08:00:00Z",
-      "value": 5672.6,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T09:00:00Z",
-      "value": 6088.23,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T10:00:00Z",
-      "value": 5977.92,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T11:00:00Z",
-      "value": 5915.54,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T12:00:00Z",
-      "value": 5733.81,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T13:00:00Z",
-      "value": 5323.65,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T14:00:00Z",
-      "value": 5349.33,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T15:00:00Z",
-      "value": 5617.74,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-15T16:00:00Z",
       "value": 5859.02,
@@ -852,6 +812,46 @@
     {
       "timestamp": "2026-11-22T07:00:00Z",
       "value": 4862.19,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T08:00:00Z",
+      "value": 5207.06,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T09:00:00Z",
+      "value": 5381.96,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T10:00:00Z",
+      "value": 5627.15,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T11:00:00Z",
+      "value": 5538.83,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T12:00:00Z",
+      "value": 5504.5,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T13:00:00Z",
+      "value": 5269.31,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T14:00:00Z",
+      "value": 5127.11,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T15:00:00Z",
+      "value": 5402.09,
       "samples": 24
     }
   ]
