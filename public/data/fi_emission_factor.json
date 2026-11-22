@@ -9,44 +9,14 @@
     "description": "Real-time carbon intensity of electricity consumed in Finland including cross-border net imports.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T17:49:28Z",
+    "updated_at_utc": "2026-11-22T23:36:57Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-15T17:00:00Z",
-      "value": 9.89,
-      "samples": 3
-    },
-    {
-      "timestamp": "2026-11-15T18:00:00Z",
-      "value": 9.54,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T19:00:00Z",
-      "value": 9.42,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T20:00:00Z",
-      "value": 9.67,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T21:00:00Z",
-      "value": 9.87,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T22:00:00Z",
-      "value": 9.83,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-15T23:00:00Z",
-      "value": 10.05,
-      "samples": 20
+      "value": 10.16,
+      "samples": 7
     },
     {
       "timestamp": "2026-11-16T00:00:00Z",
@@ -856,7 +826,37 @@
     {
       "timestamp": "2026-11-22T17:00:00Z",
       "value": 9.68,
-      "samples": 15
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T18:00:00Z",
+      "value": 9.76,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T19:00:00Z",
+      "value": 9.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T20:00:00Z",
+      "value": 10.04,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T21:00:00Z",
+      "value": 10.04,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T22:00:00Z",
+      "value": 10.1,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T23:00:00Z",
+      "value": 10.26,
+      "samples": 11
     }
   ]
 }

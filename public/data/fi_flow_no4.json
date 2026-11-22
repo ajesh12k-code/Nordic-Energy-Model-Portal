@@ -9,44 +9,14 @@
     "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T17:49:23Z",
+    "updated_at_utc": "2026-11-22T23:36:51Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-15T17:00:00Z",
-      "value": 7.33,
-      "samples": 3
-    },
-    {
-      "timestamp": "2026-11-15T18:00:00Z",
-      "value": 13.23,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T19:00:00Z",
-      "value": 9.74,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T20:00:00Z",
-      "value": 12.37,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T21:00:00Z",
-      "value": 18.75,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T22:00:00Z",
-      "value": 22.09,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-15T23:00:00Z",
-      "value": 25.69,
-      "samples": 20
+      "value": 21.15,
+      "samples": 7
     },
     {
       "timestamp": "2026-11-16T00:00:00Z",
@@ -855,8 +825,38 @@
     },
     {
       "timestamp": "2026-11-22T17:00:00Z",
-      "value": -47.7,
-      "samples": 15
+      "value": -47.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T18:00:00Z",
+      "value": -35.59,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T19:00:00Z",
+      "value": -20.99,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T20:00:00Z",
+      "value": -19.11,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T21:00:00Z",
+      "value": -20.41,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T22:00:00Z",
+      "value": -17.7,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T23:00:00Z",
+      "value": -24.43,
+      "samples": 11
     }
   ]
 }

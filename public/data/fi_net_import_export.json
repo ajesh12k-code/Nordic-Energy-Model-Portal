@@ -9,44 +9,14 @@
     "description": "Real-time net cross-border electricity exchange (+ indicates net import into Finland; - indicates net export).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T17:49:16Z",
+    "updated_at_utc": "2026-11-22T23:36:43Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-15T17:00:00Z",
-      "value": 1898.61,
-      "samples": 3
-    },
-    {
-      "timestamp": "2026-11-15T18:00:00Z",
-      "value": 1945.06,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T19:00:00Z",
-      "value": 2103.78,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T20:00:00Z",
-      "value": 2018.18,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T21:00:00Z",
-      "value": 1962.69,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T22:00:00Z",
-      "value": 2261.37,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-15T23:00:00Z",
-      "value": 2079.4,
-      "samples": 20
+      "value": 2259.32,
+      "samples": 7
     },
     {
       "timestamp": "2026-11-16T00:00:00Z",
@@ -855,8 +825,38 @@
     },
     {
       "timestamp": "2026-11-22T17:00:00Z",
-      "value": 750.04,
-      "samples": 15
+      "value": 780.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T18:00:00Z",
+      "value": 995.95,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T19:00:00Z",
+      "value": 1113.94,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T20:00:00Z",
+      "value": 903.26,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T21:00:00Z",
+      "value": 1069.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T22:00:00Z",
+      "value": 1289.53,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T23:00:00Z",
+      "value": 1285.96,
+      "samples": 11
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "slug": "fi_spot_price_eur",
+    "title": "Finland (FI) Day-Ahead Electricity Spot Price",
+    "provider": "energinet",
+    "source_id": "spot_price_FI",
+    "unit": "EUR/MWh",
+    "category": "market",
+    "description": "Hourly Nord Pool Day-Ahead electricity spot price for Finland bidding zone FI (EUR/MWh, excluding VAT).",
+    "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
+    "resolution": "1h",
+    "updated_at_utc": "2026-11-22T23:37:02Z",
+    "record_count": 0,
+    "file_path": "data/fi_spot_price_eur.json"
+  },
+  "data": []
+}

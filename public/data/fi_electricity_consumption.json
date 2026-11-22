@@ -9,39 +9,14 @@
     "description": "Total electricity consumption in Finland calculated from production and cross-border import/export.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T17:48:52Z",
-    "record_count": 168
+    "updated_at_utc": "2026-11-22T23:36:19Z",
+    "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-15T18:00:00Z",
-      "value": 11376.8,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-15T19:00:00Z",
-      "value": 11006.5,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-15T20:00:00Z",
-      "value": 11059.77,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-15T21:00:00Z",
-      "value": 10940.2,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-15T22:00:00Z",
-      "value": 10532.9,
-      "samples": 4
-    },
-    {
       "timestamp": "2026-11-15T23:00:00Z",
-      "value": 10559.03,
-      "samples": 4
+      "value": 10294.3,
+      "samples": 1
     },
     {
       "timestamp": "2026-11-16T00:00:00Z",
@@ -850,8 +825,38 @@
     },
     {
       "timestamp": "2026-11-22T17:00:00Z",
-      "value": 12808.53,
-      "samples": 3
+      "value": 12777.65,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-22T18:00:00Z",
+      "value": 12502.22,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-22T19:00:00Z",
+      "value": 12062.8,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-22T20:00:00Z",
+      "value": 12134.42,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-22T21:00:00Z",
+      "value": 12017.32,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-22T22:00:00Z",
+      "value": 11674.78,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-22T23:00:00Z",
+      "value": 11732.7,
+      "samples": 2
     }
   ]
 }
