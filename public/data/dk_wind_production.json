@@ -9,31 +9,11 @@
     "description": "Combined Danish onshore and offshore wind turbine electricity generation via Energinet.",
     "license": "Energinet Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-21T22:12:08Z",
+    "updated_at_utc": "2026-11-22T02:15:17Z",
     "record_count": 168,
     "file_path": "data/dk_wind_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-14T21:00:00Z",
-      "value": 5544.01,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T22:00:00Z",
-      "value": 5547.03,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-14T23:00:00Z",
-      "value": 5574.51,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-15T00:00:00Z",
-      "value": 5626.69,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-15T01:00:00Z",
       "value": 5532.39,
@@ -852,6 +832,26 @@
     {
       "timestamp": "2026-11-21T20:00:00Z",
       "value": 3597.0,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T21:00:00Z",
+      "value": 3364.17,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T22:00:00Z",
+      "value": 2963.86,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-21T23:00:00Z",
+      "value": 2713.58,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-22T00:00:00Z",
+      "value": 2762.49,
       "samples": 24
     }
   ]

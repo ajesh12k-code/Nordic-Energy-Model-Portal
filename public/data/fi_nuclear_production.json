@@ -9,34 +9,14 @@
     "description": "Baseload nuclear power generation across Finnish reactors.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-21T22:11:36Z",
+    "updated_at_utc": "2026-11-22T02:14:48Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-14T22:00:00Z",
-      "value": 2595.09,
-      "samples": 16
-    },
-    {
-      "timestamp": "2026-11-14T23:00:00Z",
-      "value": 2595.28,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T00:00:00Z",
-      "value": 2594.99,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-15T01:00:00Z",
-      "value": 2595.37,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-15T02:00:00Z",
-      "value": 2595.1,
-      "samples": 20
+      "value": 2594.78,
+      "samples": 15
     },
     {
       "timestamp": "2026-11-15T03:00:00Z",
@@ -855,8 +835,28 @@
     },
     {
       "timestamp": "2026-11-21T22:00:00Z",
-      "value": 4221.96,
-      "samples": 3
+      "value": 4224.09,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-21T23:00:00Z",
+      "value": 4224.31,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T00:00:00Z",
+      "value": 4223.98,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T01:00:00Z",
+      "value": 4224.02,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-22T02:00:00Z",
+      "value": 4224.01,
+      "samples": 4
     }
   ]
 }
