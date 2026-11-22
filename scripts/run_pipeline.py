@@ -1,7 +1,8 @@
 """
 Modular ingestion runner that iterates over scripts/datasets_config.json,
 dispatches to provider plugins (Fingrid, Energinet, Open-Meteo), and writes
-standardized JSON payloads + catalog.json into public/data/.
+standardized JSON payloads + catalog.json into public/data/ with per-dataset
+fault isolation so transient API errors never abort an hourly run.
 """
 import json
 from datetime import datetime, timezone
@@ -23,7 +24,6 @@ def main() -> None:
     days_back = int(config.get("days_back", 7))
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # FingridProvider reads FINGRID_API_KEY directly from environment variables
     providers = {
         "fingrid": FingridProvider(),
         "open_meteo": OpenMeteoProvider(),
@@ -38,14 +38,18 @@ def main() -> None:
         if not provider:
             raise ValueError(f"Unsupported provider: {provider_name}")
 
-        print(f"Fetching [{ds['slug']}] via {provider_name}...")
-        payload = provider.fetch_dataset(ds, days_back=days_back)
-
         out_file = OUTPUT_DIR / f"{ds['slug']}.json"
-        with open(out_file, "w", encoding="utf-8") as out_f:
-            json.dump(payload, out_f, indent=2)
-
-        catalog_entries.append(payload["metadata"])
+        try:
+            print(f"Fetching [{ds['slug']}] via {provider_name}...")
+            payload = provider.fetch_dataset(ds, days_back=days_back)
+            with open(out_file, "w", encoding="utf-8") as out_f:
+                json.dump(payload, out_f, indent=2)
+            catalog_entries.append(payload["metadata"])
+        except Exception as exc:
+            print(f"WARNING: Skipping [{ds['slug']}] due to error: {exc}")
+            if out_file.exists():
+                with open(out_file, "r", encoding="utf-8") as prev_f:
+                    catalog_entries.append(json.load(prev_f)["metadata"])
 
     catalog = {
         "generated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

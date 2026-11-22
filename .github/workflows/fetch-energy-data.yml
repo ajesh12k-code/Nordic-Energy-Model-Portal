@@ -2,7 +2,7 @@ name: Fetch Hourly Energy & Weather Data
 
 on:
   schedule:
-    # Runs every hour at minute 15 (UTC) so Fingrid's previous hour intervals are finalized
+    # Runs every hour at minute 15 (UTC)
     - cron: "15 * * * *"
   workflow_dispatch:
 
@@ -12,8 +12,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "hourly-telemetry-sync"
+  cancel-in-progress: true
 
 jobs:
   update-datasets:
