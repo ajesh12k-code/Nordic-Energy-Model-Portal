@@ -1,7 +1,6 @@
 """
-Keyless Energinet Energi Data Service provider for Denmark (DK1 + DK2).
-Fetches real-time 5-minute Danish generation, cross-border exchanges, and CO2
-emission intensity, deriving physical national demand (Generation + Net Import).
+Keyless Energinet Energi Data Service provider for Denmark (DK1 + DK2) and
+Nordic Day-Ahead Elspotprices (FI, DK1, DK2 in EUR/MWh).
 """
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -15,14 +14,19 @@ class EnerginetProvider:
         source_id = ds_config["source_id"]
         now_utc = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
         start_utc = now_utc - timedelta(days=days_back)
+        # Include +36h ahead for Day-Ahead Elspotprices (published daily ~13:00 CET)
+        end_utc = now_utc + timedelta(hours=36)
 
         start_str = start_utc.strftime("%Y-%m-%dT%H:%M")
-        end_str = now_utc.strftime("%Y-%m-%dT%H:%M")
+        end_str = end_utc.strftime("%Y-%m-%dT%H:%M")
 
         if source_id == "dk_co2_intensity":
-            points = self._fetch_co2(start_str, end_str)
+            points = self._fetch_co2(start_str, now_utc.strftime("%Y-%m-%dT%H:%M"))
+        elif source_id.startswith("spot_price_"):
+            area = source_id.replace("spot_price_", "").upper()
+            points = self._fetch_spot_price(area, start_str, end_str)
         else:
-            points = self._fetch_realtime_power(source_id, start_str, end_str)
+            points = self._fetch_realtime_power(source_id, start_str, now_utc.strftime("%Y-%m-%dT%H:%M"))
 
         return {
             "metadata": {
@@ -33,7 +37,7 @@ class EnerginetProvider:
                 "unit": ds_config["unit"],
                 "category": ds_config["category"],
                 "description": ds_config["description"],
-                "license": "Energinet Open Data (CC BY 4.0)",
+                "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
                 "resolution": "1h",
                 "updated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "record_count": len(points),
@@ -41,6 +45,33 @@ class EnerginetProvider:
             },
             "data": points,
         }
+
+    def _fetch_spot_price(self, price_area: str, start_str: str, end_str: str) -> list[dict]:
+        """Fetches hourly Day-Ahead spot prices (EUR/MWh) for FI, DK1, or DK2."""
+        url = f"{self.BASE_URL}/Elspotprices"
+        params = {
+            "start": start_str,
+            "end": end_str,
+            "filter": f'{{"PriceArea":["{price_area}"]}}',
+            "limit": 1000,
+            "sort": "HourUTC asc",
+        }
+        resp = requests.get(url, params=params, timeout=30)
+        resp.raise_for_status()
+        records = resp.json().get("records", [])
+
+        points = []
+        for row in records:
+            hour_utc = row.get("HourUTC")
+            eur = row.get("SpotPriceEUR")
+            if not hour_utc or eur is None:
+                continue
+            points.append({
+                "timestamp": f"{hour_utc[:19]}Z",
+                "value": round(float(eur), 2),
+                "samples": 1,
+            })
+        return points
 
     def _fetch_realtime_power(self, metric_key: str, start_str: str, end_str: str) -> list[dict]:
         """Aggregates 5-minute DK1 + DK2 power readings (MW) into hourly national totals."""
@@ -73,7 +104,6 @@ class EnerginetProvider:
             )
             total_gen_mw = wind_mw + solar_mw + thermal_mw
 
-            # In Energinet realtime data, Exchange* > 0 indicates net import into the price area
             net_import_mw = (
                 float(row.get("ExchangeGermany") or 0.0)
                 + float(row.get("ExchangeNetherlands") or 0.0)

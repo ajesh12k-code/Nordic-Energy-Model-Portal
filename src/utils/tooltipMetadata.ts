@@ -10,6 +10,10 @@ export interface MetricInfo {
 }
 
 export const METRIC_META: Record<string, MetricInfo> = {
+  fiSpotPriceEur: { label: 'Finland Spot Price (FI)', unit: 'EUR/MWh', hint: 'Nord Pool Day-Ahead wholesale electricity price in Finland (excl. VAT).' },
+  dk1SpotPriceEur: { label: 'Denmark West Spot Price (DK1)', unit: 'EUR/MWh', hint: 'Nord Pool Day-Ahead wholesale electricity price in Western Denmark.' },
+  bessSocMwh: { label: 'Battery State of Charge', unit: 'MWh', hint: 'Energy stored in the BESS following price-arbitrage dispatch.' },
+  hourlyCashflowEur: { label: 'Hourly Arbitrage Revenue', unit: 'EUR', hint: '+ discharging at high spot prices; − charging during low-price wind hours.' },
   consumption: { unit: 'MW', hint: 'Total electricity being used across Finland right now.' },
   totalProduction: { unit: 'MW', hint: 'Sum of all domestic power plants (Nuclear + Wind + Hydro + CHP + Solar/Other).' },
   residualLoad: { unit: 'MW', hint: 'Demand left over after wind power—covered by nuclear, hydro, CHP, or imports.' },

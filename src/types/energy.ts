@@ -13,13 +13,13 @@ export interface DatasetMetadata {
   provider: string;
   source_id: string;
   unit: string;
-  category: 'demand' | 'generation' | 'weather' | 'emissions' | 'transmission' | string;
+  category: 'demand' | 'generation' | 'weather' | 'emissions' | 'transmission' | 'market' | string;
   description: string;
   license: string;
   resolution: string;
   updated_at_utc: string;
   record_count: number;
-  file_path: string;
+  file_path?: string;
   locations?: CityLocation[];
 }
 
@@ -44,7 +44,7 @@ export interface DatasetPayload {
   data: TimeSeriesPoint[];
 }
 
-/** Unified hourly record aligning Finland, Denmark, and cross-border Nordic flows. */
+/** Unified hourly record aligning Finland, Denmark, spot prices, and Nordic flows. */
 export interface MergedHourlyRecord {
   timestamp: string;
   label: string;
@@ -59,6 +59,9 @@ export interface MergedHourlyRecord {
   netImport?: number;
   residualLoad?: number;
   carbonIntensity?: number;
+  // Nordic Day-Ahead Spot Prices (EUR/MWh)
+  fiSpotPriceEur?: number;
+  dk1SpotPriceEur?: number;
   // Bilateral Nordic/Baltic interconnectors (+ = import to FI, - = export from FI)
   flowSE1?: number;
   flowSE3?: number;

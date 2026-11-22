@@ -2,12 +2,15 @@ import type { ReactNode } from 'react';
 import {
   Activity,
   BatteryCharging,
+  BellRing,
   Clock,
   CloudSun,
   Database,
+  Euro,
   Gauge,
   Globe,
   Grid,
+  Home,
   Leaf,
   ScatterChart,
   TrendingUp,
@@ -24,6 +27,9 @@ import { SpatialCorrelationTab } from '../components/SpatialCorrelationTab';
 import { CarbonIntensityTab } from '../components/CarbonIntensityTab';
 import { StorageSandboxTab } from '../components/StorageSandboxTab';
 import { NordicComparisonTab } from '../components/NordicComparisonTab';
+import { CiMarketArbitrageTab } from '../components/CiMarketArbitrageTab';
+import { CitizenAdvisorTab } from '../components/CitizenAdvisorTab';
+import { IntegrationsAlertsTab } from '../components/IntegrationsAlertsTab';
 import { DataCatalogTab } from '../components/DataCatalogTab';
 import type { CatalogManifest, CityLocation, MergedHourlyRecord } from '../types/energy';
 
@@ -39,6 +45,9 @@ export type ModelTabId =
   | 'carbon'
   | 'storage'
   | 'nordic'
+  | 'ci_arbitrage'
+  | 'citizen_advisor'
+  | 'integrations'
   | 'catalog';
 
 export interface TabRenderContext {
@@ -132,8 +141,28 @@ export const MODEL_TABS: ModelTabConfig[] = [
     render: (ctx) => <NordicComparisonTab data={ctx.historicalSeries} />,
   },
   {
+    id: 'ci_arbitrage',
+    label: '12. Spot & BESS Arbitrage',
+    icon: <Euro className="w-4 h-4" />,
+    render: (ctx) => <CiMarketArbitrageTab data={ctx.mergedSeries} />,
+  },
+  {
+    id: 'citizen_advisor',
+    label: '13. Citizen & Community',
+    icon: <Home className="w-4 h-4" />,
+    render: (ctx) => <CitizenAdvisorTab data={ctx.historicalSeries} />,
+  },
+  {
+    id: 'integrations',
+    label: '14. Alerts & API',
+    icon: <BellRing className="w-4 h-4" />,
+    render: (ctx) => (
+      <IntegrationsAlertsTab data={ctx.historicalSeries} catalog={ctx.catalog} />
+    ),
+  },
+  {
     id: 'catalog',
-    label: '12. Data Catalog',
+    label: '15. Data Catalog',
     icon: <Database className="w-4 h-4" />,
     render: (ctx) => <DataCatalogTab datasets={ctx.catalog?.datasets ?? []} />,
   },

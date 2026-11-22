@@ -77,7 +77,7 @@
       "slug": "fi_flow_se1",
       "provider": "fingrid",
       "source_id": 87,
-      "title": "Finland ↔ Northern Sweden (SE1) Interconnector Flow",
+      "title": "Finland \u2194 Northern Sweden (SE1) Interconnector Flow",
       "unit": "MWh/h",
       "category": "transmission",
       "description": "Cross-border AC transmission between Finland and Sweden bidding zone SE1 (+ import to FI, - export to SE1)."
@@ -86,7 +86,7 @@
       "slug": "fi_flow_se3",
       "provider": "fingrid",
       "source_id": 89,
-      "title": "Finland ↔ Central Sweden (SE3) Fenno-Skan HVDC Flow",
+      "title": "Finland \u2194 Central Sweden (SE3) Fenno-Skan HVDC Flow",
       "unit": "MWh/h",
       "category": "transmission",
       "description": "Subsea HVDC transmission between Finland and Sweden bidding zone SE3 (+ import to FI, - export to SE3)."
@@ -95,7 +95,7 @@
       "slug": "fi_flow_no4",
       "provider": "fingrid",
       "source_id": 187,
-      "title": "Finland ↔ Northern Norway (NO4) Interconnector Flow",
+      "title": "Finland \u2194 Northern Norway (NO4) Interconnector Flow",
       "unit": "MWh/h",
       "category": "transmission",
       "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4)."
@@ -104,7 +104,7 @@
       "slug": "fi_flow_ee",
       "provider": "fingrid",
       "source_id": 180,
-      "title": "Finland ↔ Estonia (EE) EstLink HVDC Flow",
+      "title": "Finland \u2194 Estonia (EE) EstLink HVDC Flow",
       "unit": "MWh/h",
       "category": "transmission",
       "description": "Subsea EstLink 1 & 2 HVDC transmission between Finland and Estonia (+ import to FI, - export to EE)."
@@ -160,15 +160,40 @@
       "source_id": "temperature_2m",
       "forecast_days": 2,
       "title": "Finland Multi-City Ambient Temperature (2m)",
-      "unit": "°C",
+      "unit": "\u00b0C",
       "category": "weather",
       "description": "Hourly 2m air temperature across 5 Finnish cities plus national mean (includes 48h forecast) for Heating Degree Day modeling.",
       "locations": [
-        { "key": "helsinki", "name": "Helsinki", "lat": 60.1699, "lon": 24.9384 },
-        { "key": "tampere", "name": "Tampere", "lat": 61.4978, "lon": 23.7610 },
-        { "key": "lappeenranta", "name": "Lappeenranta", "lat": 61.0587, "lon": 28.1887 },
-        { "key": "vaasa", "name": "Vaasa", "lat": 63.0951, "lon": 21.6165 },
-        { "key": "oulu", "name": "Oulu", "lat": 65.0121, "lon": 25.4651 }
+        {
+          "key": "helsinki",
+          "name": "Helsinki",
+          "lat": 60.1699,
+          "lon": 24.9384
+        },
+        {
+          "key": "tampere",
+          "name": "Tampere",
+          "lat": 61.4978,
+          "lon": 23.761
+        },
+        {
+          "key": "lappeenranta",
+          "name": "Lappeenranta",
+          "lat": 61.0587,
+          "lon": 28.1887
+        },
+        {
+          "key": "vaasa",
+          "name": "Vaasa",
+          "lat": 63.0951,
+          "lon": 21.6165
+        },
+        {
+          "key": "oulu",
+          "name": "Oulu",
+          "lat": 65.0121,
+          "lon": 25.4651
+        }
       ]
     },
     {
@@ -181,12 +206,55 @@
       "category": "weather",
       "description": "Hourly 100m hub-height wind speed across 5 Finnish cities (including Vaasa and Oulu wind corridors) for wind generation curve modeling.",
       "locations": [
-        { "key": "helsinki", "name": "Helsinki", "lat": 60.1699, "lon": 24.9384 },
-        { "key": "tampere", "name": "Tampere", "lat": 61.4978, "lon": 23.7610 },
-        { "key": "lappeenranta", "name": "Lappeenranta", "lat": 61.0587, "lon": 28.1887 },
-        { "key": "vaasa", "name": "Vaasa", "lat": 63.0951, "lon": 21.6165 },
-        { "key": "oulu", "name": "Oulu", "lat": 65.0121, "lon": 25.4651 }
+        {
+          "key": "helsinki",
+          "name": "Helsinki",
+          "lat": 60.1699,
+          "lon": 24.9384
+        },
+        {
+          "key": "tampere",
+          "name": "Tampere",
+          "lat": 61.4978,
+          "lon": 23.761
+        },
+        {
+          "key": "lappeenranta",
+          "name": "Lappeenranta",
+          "lat": 61.0587,
+          "lon": 28.1887
+        },
+        {
+          "key": "vaasa",
+          "name": "Vaasa",
+          "lat": 63.0951,
+          "lon": 21.6165
+        },
+        {
+          "key": "oulu",
+          "name": "Oulu",
+          "lat": 65.0121,
+          "lon": 25.4651
+        }
       ]
+    },
+    {
+      "slug": "fi_spot_price_eur",
+      "provider": "energinet",
+      "source_id": "spot_price_FI",
+      "title": "Finland (FI) Day-Ahead Electricity Spot Price",
+      "unit": "EUR/MWh",
+      "category": "market",
+      "description": "Hourly Nord Pool Day-Ahead electricity spot price for Finland bidding zone FI (EUR/MWh, excluding VAT)."
+    },
+    {
+      "slug": "dk1_spot_price_eur",
+      "provider": "energinet",
+      "source_id": "spot_price_DK1",
+      "title": "Denmark West (DK1) Day-Ahead Electricity Spot Price",
+      "unit": "EUR/MWh",
+      "category": "market",
+      "description": "Hourly Nord Pool Day-Ahead electricity spot price for Western Denmark bidding zone DK1 (EUR/MWh)."
     }
   ]
 }
