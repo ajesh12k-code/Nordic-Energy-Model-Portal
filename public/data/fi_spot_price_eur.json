@@ -9,7 +9,7 @@
     "description": "Hourly Nord Pool Day-Ahead electricity spot price for Finland bidding zone FI (EUR/MWh, excluding VAT).",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T23:37:02Z",
+    "updated_at_utc": "2026-11-23T07:36:37Z",
     "record_count": 0,
     "file_path": "data/fi_spot_price_eur.json"
   },

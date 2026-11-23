@@ -9,54 +9,14 @@
     "description": "Combined heat and power electricity produced alongside municipal district heating.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-22T23:36:36Z",
+    "updated_at_utc": "2026-11-23T07:36:10Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-15T23:00:00Z",
-      "value": 149.78,
-      "samples": 7
-    },
-    {
-      "timestamp": "2026-11-16T00:00:00Z",
-      "value": 203.28,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T01:00:00Z",
-      "value": 159.95,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T02:00:00Z",
-      "value": 139.04,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T03:00:00Z",
-      "value": 143.95,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T04:00:00Z",
-      "value": 174.78,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T05:00:00Z",
-      "value": 246.18,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T06:00:00Z",
-      "value": 271.24,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-16T07:00:00Z",
-      "value": 293.49,
-      "samples": 20
+      "value": 291.1,
+      "samples": 7
     },
     {
       "timestamp": "2026-11-16T08:00:00Z",
@@ -855,7 +815,47 @@
     },
     {
       "timestamp": "2026-11-22T23:00:00Z",
-      "value": 177.56,
+      "value": 175.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T00:00:00Z",
+      "value": 170.61,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T01:00:00Z",
+      "value": 172.38,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T02:00:00Z",
+      "value": 173.62,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T03:00:00Z",
+      "value": 173.63,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T04:00:00Z",
+      "value": 177.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T05:00:00Z",
+      "value": 181.19,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T06:00:00Z",
+      "value": 199.95,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T07:00:00Z",
+      "value": 202.89,
       "samples": 11
     }
   ]
