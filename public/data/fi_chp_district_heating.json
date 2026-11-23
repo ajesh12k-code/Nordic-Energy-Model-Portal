@@ -9,79 +9,14 @@
     "description": "Combined heat and power electricity produced alongside municipal district heating.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T07:36:10Z",
+    "updated_at_utc": "2026-11-23T20:13:07Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-16T07:00:00Z",
-      "value": 291.1,
-      "samples": 7
-    },
-    {
-      "timestamp": "2026-11-16T08:00:00Z",
-      "value": 317.04,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T09:00:00Z",
-      "value": 427.15,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T10:00:00Z",
-      "value": 519.1,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T11:00:00Z",
-      "value": 615.06,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T12:00:00Z",
-      "value": 740.29,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T13:00:00Z",
-      "value": 817.77,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T14:00:00Z",
-      "value": 879.19,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T15:00:00Z",
-      "value": 891.45,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T16:00:00Z",
-      "value": 894.68,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T17:00:00Z",
-      "value": 881.09,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T18:00:00Z",
-      "value": 894.34,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T19:00:00Z",
-      "value": 875.28,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-16T20:00:00Z",
-      "value": 865.94,
-      "samples": 20
+      "value": 869.4,
+      "samples": 15
     },
     {
       "timestamp": "2026-11-16T21:00:00Z",
@@ -855,8 +790,73 @@
     },
     {
       "timestamp": "2026-11-23T07:00:00Z",
-      "value": 202.89,
-      "samples": 11
+      "value": 203.9,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T08:00:00Z",
+      "value": 199.4,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-23T09:00:00Z",
+      "value": 206.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T10:00:00Z",
+      "value": 232.96,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T11:00:00Z",
+      "value": 218.34,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T12:00:00Z",
+      "value": 225.21,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T13:00:00Z",
+      "value": 219.8,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T14:00:00Z",
+      "value": 208.92,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T15:00:00Z",
+      "value": 217.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T16:00:00Z",
+      "value": 217.68,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T17:00:00Z",
+      "value": 218.12,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T18:00:00Z",
+      "value": 226.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T19:00:00Z",
+      "value": 243.67,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T20:00:00Z",
+      "value": 259.41,
+      "samples": 3
     }
   ]
 }

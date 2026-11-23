@@ -9,79 +9,14 @@
     "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T07:36:24Z",
+    "updated_at_utc": "2026-11-23T20:13:22Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-16T07:00:00Z",
-      "value": 24.71,
-      "samples": 7
-    },
-    {
-      "timestamp": "2026-11-16T08:00:00Z",
-      "value": 29.54,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T09:00:00Z",
-      "value": 41.82,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T10:00:00Z",
-      "value": 37.37,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T11:00:00Z",
-      "value": 40.72,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T12:00:00Z",
-      "value": 46.9,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T13:00:00Z",
-      "value": 49.79,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T14:00:00Z",
-      "value": 35.39,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T15:00:00Z",
-      "value": 37.02,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T16:00:00Z",
-      "value": 34.99,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T17:00:00Z",
-      "value": 29.37,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T18:00:00Z",
-      "value": 21.37,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T19:00:00Z",
-      "value": 28.24,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-16T20:00:00Z",
-      "value": 28.27,
-      "samples": 20
+      "value": 27.5,
+      "samples": 15
     },
     {
       "timestamp": "2026-11-16T21:00:00Z",
@@ -855,8 +790,73 @@
     },
     {
       "timestamp": "2026-11-23T07:00:00Z",
-      "value": -34.37,
-      "samples": 11
+      "value": -34.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T08:00:00Z",
+      "value": -24.01,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-23T09:00:00Z",
+      "value": -8.84,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T10:00:00Z",
+      "value": 3.09,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T11:00:00Z",
+      "value": -0.41,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T12:00:00Z",
+      "value": -1.05,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T13:00:00Z",
+      "value": -13.69,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T14:00:00Z",
+      "value": -33.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T15:00:00Z",
+      "value": -36.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T16:00:00Z",
+      "value": -27.51,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T17:00:00Z",
+      "value": -40.88,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T18:00:00Z",
+      "value": -55.5,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T19:00:00Z",
+      "value": -50.1,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T20:00:00Z",
+      "value": -49.89,
+      "samples": 3
     }
   ]
 }

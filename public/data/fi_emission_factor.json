@@ -9,79 +9,14 @@
     "description": "Real-time carbon intensity of electricity consumed in Finland including cross-border net imports.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T07:36:30Z",
+    "updated_at_utc": "2026-11-23T20:13:28Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-16T07:00:00Z",
-      "value": 14.86,
-      "samples": 7
-    },
-    {
-      "timestamp": "2026-11-16T08:00:00Z",
-      "value": 15.07,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T09:00:00Z",
-      "value": 17.55,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T10:00:00Z",
-      "value": 19.73,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T11:00:00Z",
-      "value": 22.39,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T12:00:00Z",
-      "value": 25.99,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T13:00:00Z",
-      "value": 27.66,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T14:00:00Z",
-      "value": 28.97,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T15:00:00Z",
-      "value": 29.58,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T16:00:00Z",
-      "value": 30.41,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T17:00:00Z",
-      "value": 30.81,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T18:00:00Z",
-      "value": 32.03,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T19:00:00Z",
-      "value": 32.77,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-16T20:00:00Z",
-      "value": 32.8,
-      "samples": 20
+      "value": 32.99,
+      "samples": 15
     },
     {
       "timestamp": "2026-11-16T21:00:00Z",
@@ -855,8 +790,73 @@
     },
     {
       "timestamp": "2026-11-23T07:00:00Z",
-      "value": 10.22,
-      "samples": 11
+      "value": 10.26,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T08:00:00Z",
+      "value": 10.32,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-23T09:00:00Z",
+      "value": 10.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T10:00:00Z",
+      "value": 10.61,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T11:00:00Z",
+      "value": 10.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T12:00:00Z",
+      "value": 10.24,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T13:00:00Z",
+      "value": 10.06,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T14:00:00Z",
+      "value": 10.01,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T15:00:00Z",
+      "value": 10.21,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T16:00:00Z",
+      "value": 10.23,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T17:00:00Z",
+      "value": 10.26,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T18:00:00Z",
+      "value": 10.33,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T19:00:00Z",
+      "value": 10.66,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T20:00:00Z",
+      "value": 11.16,
+      "samples": 3
     }
   ]
 }

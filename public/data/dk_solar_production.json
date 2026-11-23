@@ -9,76 +9,11 @@
     "description": "Hourly solar photovoltaic generation across Denmark via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T07:36:34Z",
+    "updated_at_utc": "2026-11-23T20:13:32Z",
     "record_count": 168,
     "file_path": "data/dk_solar_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-16T06:00:00Z",
-      "value": 31.38,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T07:00:00Z",
-      "value": 21.08,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T08:00:00Z",
-      "value": 76.73,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T09:00:00Z",
-      "value": 149.61,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T10:00:00Z",
-      "value": 293.54,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T11:00:00Z",
-      "value": 187.01,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T12:00:00Z",
-      "value": 166.88,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T13:00:00Z",
-      "value": 142.75,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T14:00:00Z",
-      "value": 80.1,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T15:00:00Z",
-      "value": 28.73,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T16:00:00Z",
-      "value": 68.05,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T17:00:00Z",
-      "value": 19.21,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T18:00:00Z",
-      "value": 2.48,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-16T19:00:00Z",
       "value": 0.84,
@@ -852,6 +787,71 @@
     {
       "timestamp": "2026-11-23T05:00:00Z",
       "value": 38.83,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T06:00:00Z",
+      "value": 43.15,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T07:00:00Z",
+      "value": 127.48,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T08:00:00Z",
+      "value": 452.21,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T09:00:00Z",
+      "value": 948.77,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T10:00:00Z",
+      "value": 1218.23,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T11:00:00Z",
+      "value": 1218.4,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T12:00:00Z",
+      "value": 1024.59,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T13:00:00Z",
+      "value": 589.67,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T14:00:00Z",
+      "value": 198.52,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T15:00:00Z",
+      "value": 55.93,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T16:00:00Z",
+      "value": 58.19,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T17:00:00Z",
+      "value": 99.22,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T18:00:00Z",
+      "value": 76.53,
       "samples": 24
     }
   ]
