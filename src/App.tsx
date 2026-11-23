@@ -6,16 +6,10 @@ import { KpiStrip } from './components/KpiStrip';
 import { UnitsExplainerBar } from './components/UnitsExplainerBar';
 import { MODEL_TABS, type ModelTabId } from './config/modelTabs';
 
-/**
- * Root application shell orchestrating live catalog loading, global KPI/unit
- * summaries, and dynamic rendering of the registered energy modeling tabs.
- */
 export default function App() {
   const [activeTab, setActiveTab] = useState<ModelTabId>('residual');
   const [selectedCity, setSelectedCity] = useState<string>('national');
-
-  const { catalog, loading, error, mergedSeries, historicalSeries, cities } =
-    useEnergyPortalData(selectedCity);
+  const { catalog, loading, refreshing, refreshData, error, mergedSeries, historicalSeries, cities } = useEnergyPortalData(selectedCity);
 
   if (loading) {
     return (
@@ -44,39 +38,36 @@ export default function App() {
       <header className="border-b border-slate-800 bg-slate-900/70 backdrop-blur sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-white">
-              Nordic Energy Informatics & Grid Modeling Portal
-            </h1>
-            <p className="text-xs text-slate-400">
-              Automated hourly telemetry via Fingrid Open Data & Open-Meteo (5 Finnish Cities)
-            </p>
+            <h1 className="text-xl font-bold tracking-tight text-white">Nordic Energy Informatics & Grid Modeling Portal</h1>
+            <p className="text-xs text-slate-400">Automated hourly telemetry via Fingrid Open Data, Energinet & Open-Meteo</p>
           </div>
-          <div className="text-xs text-slate-400 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
-            Last Sync:{' '}
-            <span className="text-emerald-400 font-mono">
-              {formatLocalDateTimeWithTz(catalog?.generated_at_utc)}
-            </span>
+          <div className="flex flex-wrap items-center gap-2.5">
+            <div className="text-xs text-slate-400 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+              Last Sync: <span className="text-emerald-400 font-mono">{formatLocalDateTimeWithTz(catalog?.generated_at_utc)}</span>
+            </div>
+            <button
+              type="button"
+              onClick={() => void refreshData()}
+              disabled={refreshing}
+              className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/40 transition disabled:opacity-50 cursor-pointer"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin' : ''}`} />
+              {refreshing ? 'Fetching...' : 'Refresh Live Data'}
+            </button>
           </div>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-5">
-        <KpiStrip
-          latestRow={historicalSeries[historicalSeries.length - 1]}
-          datasetCount={catalog?.dataset_count ?? 0}
-        />
-
+        <KpiStrip latestRow={historicalSeries[historicalSeries.length - 1]} datasetCount={catalog?.dataset_count ?? 0} />
         <UnitsExplainerBar />
-
         <div className="flex flex-wrap gap-2 border-b border-slate-800 pb-3">
           {MODEL_TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium transition cursor-pointer ${
-                activeTab === tab.id
-                  ? 'bg-emerald-500 text-slate-950'
-                  : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
+                activeTab === tab.id ? 'bg-emerald-500 text-slate-950' : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
               }`}
             >
               {tab.icon}
@@ -84,15 +75,7 @@ export default function App() {
             </button>
           ))}
         </div>
-
-        {currentTab.render({
-          mergedSeries,
-          historicalSeries,
-          cities,
-          selectedCity,
-          onSelectCity: setSelectedCity,
-          catalog,
-        })}
+        {currentTab.render({ mergedSeries, historicalSeries, cities, selectedCity, onSelectCity: setSelectedCity, catalog })}
       </main>
     </div>
   );
