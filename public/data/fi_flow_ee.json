@@ -9,54 +9,14 @@
     "description": "Subsea EstLink 1 & 2 HVDC transmission between Finland and Estonia (+ import to FI, - export to EE).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T20:13:25Z",
+    "updated_at_utc": "2026-11-24T04:49:48Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-16T20:00:00Z",
-      "value": 620.96,
-      "samples": 15
-    },
-    {
-      "timestamp": "2026-11-16T21:00:00Z",
-      "value": 711.43,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T22:00:00Z",
-      "value": 893.42,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T23:00:00Z",
-      "value": 892.15,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T00:00:00Z",
-      "value": 890.09,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T01:00:00Z",
-      "value": 869.48,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T02:00:00Z",
-      "value": 960.95,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T03:00:00Z",
-      "value": 873.69,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-17T04:00:00Z",
-      "value": 873.32,
-      "samples": 20
+      "value": 817.7,
+      "samples": 3
     },
     {
       "timestamp": "2026-11-17T05:00:00Z",
@@ -855,8 +815,48 @@
     },
     {
       "timestamp": "2026-11-23T20:00:00Z",
-      "value": 1021.45,
-      "samples": 3
+      "value": 1016.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T21:00:00Z",
+      "value": 1024.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T22:00:00Z",
+      "value": 1003.49,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T23:00:00Z",
+      "value": 1019.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T00:00:00Z",
+      "value": 1022.87,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T01:00:00Z",
+      "value": 1020.14,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T02:00:00Z",
+      "value": 1004.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T03:00:00Z",
+      "value": 1025.67,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T04:00:00Z",
+      "value": 1023.91,
+      "samples": 15
     }
   ]
 }

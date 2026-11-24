@@ -9,54 +9,14 @@
     "description": "Cross-border AC transmission between Finland and Sweden bidding zone SE1 (+ import to FI, - export to SE1).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T20:13:15Z",
+    "updated_at_utc": "2026-11-24T04:49:39Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-16T20:00:00Z",
-      "value": -1878.65,
-      "samples": 15
-    },
-    {
-      "timestamp": "2026-11-16T21:00:00Z",
-      "value": -1892.48,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T22:00:00Z",
-      "value": -1975.57,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T23:00:00Z",
-      "value": -1833.92,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T00:00:00Z",
-      "value": -1903.59,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T01:00:00Z",
-      "value": -1855.91,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T02:00:00Z",
-      "value": -1738.46,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T03:00:00Z",
-      "value": -1956.3,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-17T04:00:00Z",
-      "value": -1906.31,
-      "samples": 20
+      "value": -2106.85,
+      "samples": 3
     },
     {
       "timestamp": "2026-11-17T05:00:00Z",
@@ -855,8 +815,48 @@
     },
     {
       "timestamp": "2026-11-23T20:00:00Z",
-      "value": 84.6,
-      "samples": 3
+      "value": 70.74,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T21:00:00Z",
+      "value": 302.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T22:00:00Z",
+      "value": 262.82,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T23:00:00Z",
+      "value": -260.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T00:00:00Z",
+      "value": -700.37,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T01:00:00Z",
+      "value": -682.82,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T02:00:00Z",
+      "value": -479.81,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T03:00:00Z",
+      "value": -922.73,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T04:00:00Z",
+      "value": -968.98,
+      "samples": 15
     }
   ]
 }

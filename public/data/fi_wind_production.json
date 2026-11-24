@@ -9,54 +9,14 @@
     "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T20:12:56Z",
+    "updated_at_utc": "2026-11-24T04:49:22Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-16T20:00:00Z",
-      "value": 1417.85,
-      "samples": 15
-    },
-    {
-      "timestamp": "2026-11-16T21:00:00Z",
-      "value": 1117.41,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T22:00:00Z",
-      "value": 761.31,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-16T23:00:00Z",
-      "value": 541.56,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T00:00:00Z",
-      "value": 426.32,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T01:00:00Z",
-      "value": 406.5,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T02:00:00Z",
-      "value": 441.66,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T03:00:00Z",
-      "value": 487.32,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-17T04:00:00Z",
-      "value": 604.52,
-      "samples": 20
+      "value": 638.77,
+      "samples": 3
     },
     {
       "timestamp": "2026-11-17T05:00:00Z",
@@ -855,8 +815,48 @@
     },
     {
       "timestamp": "2026-11-23T20:00:00Z",
-      "value": 6541.45,
-      "samples": 3
+      "value": 6439.61,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T21:00:00Z",
+      "value": 6229.85,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T22:00:00Z",
+      "value": 5884.45,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-23T23:00:00Z",
+      "value": 5635.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T00:00:00Z",
+      "value": 5264.64,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T01:00:00Z",
+      "value": 4851.8,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T02:00:00Z",
+      "value": 4644.31,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T03:00:00Z",
+      "value": 4547.59,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T04:00:00Z",
+      "value": 4615.69,
+      "samples": 15
     }
   ]
 }

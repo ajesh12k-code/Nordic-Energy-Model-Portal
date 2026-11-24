@@ -9,51 +9,11 @@
     "description": "Hourly grid CO2 emission intensity in Denmark averaged across DK1 and DK2 via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-23T20:13:33Z",
+    "updated_at_utc": "2026-11-24T04:49:57Z",
     "record_count": 168,
     "file_path": "data/dk_emission_factor.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-16T19:00:00Z",
-      "value": 50.67,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T20:00:00Z",
-      "value": 59.71,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T21:00:00Z",
-      "value": 54.25,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-16T22:00:00Z",
-      "value": 49.55,
-      "samples": 22
-    },
-    {
-      "timestamp": "2026-11-16T23:00:00Z",
-      "value": 56.04,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-17T00:00:00Z",
-      "value": 69.62,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-17T01:00:00Z",
-      "value": 72.75,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-17T02:00:00Z",
-      "value": 85.79,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-17T03:00:00Z",
       "value": 86.83,
@@ -852,6 +812,46 @@
     {
       "timestamp": "2026-11-23T18:00:00Z",
       "value": 49.54,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T19:00:00Z",
+      "value": 47.92,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T20:00:00Z",
+      "value": 48.79,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T21:00:00Z",
+      "value": 57.17,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T22:00:00Z",
+      "value": 54.62,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-23T23:00:00Z",
+      "value": 90.21,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-24T00:00:00Z",
+      "value": 93.62,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-24T01:00:00Z",
+      "value": 104.12,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-24T02:00:00Z",
+      "value": 110.38,
       "samples": 24
     }
   ]
