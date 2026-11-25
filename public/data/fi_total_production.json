@@ -9,64 +9,14 @@
     "description": "Total domestic electricity production across all Finnish power plants.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-25T09:51:06Z",
+    "updated_at_utc": "2026-11-25T19:56:23Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-18T09:00:00Z",
-      "value": 9686.38,
-      "samples": 2
-    },
-    {
-      "timestamp": "2026-11-18T10:00:00Z",
-      "value": 9728.38,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T11:00:00Z",
-      "value": 9562.12,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T12:00:00Z",
-      "value": 9673.6,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T13:00:00Z",
-      "value": 9893.19,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T14:00:00Z",
-      "value": 10164.22,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T15:00:00Z",
-      "value": 10366.03,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T16:00:00Z",
-      "value": 10363.25,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T17:00:00Z",
-      "value": 10543.61,
-      "samples": 19
-    },
-    {
-      "timestamp": "2026-11-18T18:00:00Z",
-      "value": 10522.72,
-      "samples": 15
-    },
-    {
       "timestamp": "2026-11-18T19:00:00Z",
-      "value": 10293.14,
-      "samples": 20
+      "value": 10153.4,
+      "samples": 1
     },
     {
       "timestamp": "2026-11-18T20:00:00Z",
@@ -855,8 +805,58 @@
     },
     {
       "timestamp": "2026-11-25T09:00:00Z",
-      "value": 11627.67,
-      "samples": 15
+      "value": 11639.84,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T10:00:00Z",
+      "value": 11639.25,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T11:00:00Z",
+      "value": 11845.13,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T12:00:00Z",
+      "value": 12010.25,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T13:00:00Z",
+      "value": 12270.25,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T14:00:00Z",
+      "value": 12514.72,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T15:00:00Z",
+      "value": 12399.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T16:00:00Z",
+      "value": 12167.17,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T17:00:00Z",
+      "value": 11998.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T18:00:00Z",
+      "value": 11705.11,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T19:00:00Z",
+      "value": 11659.23,
+      "samples": 18
     }
   ]
 }

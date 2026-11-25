@@ -9,64 +9,14 @@
     "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-25T09:51:09Z",
+    "updated_at_utc": "2026-11-25T19:56:27Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-18T09:00:00Z",
-      "value": 2433.57,
-      "samples": 2
-    },
-    {
-      "timestamp": "2026-11-18T10:00:00Z",
-      "value": 2373.67,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T11:00:00Z",
-      "value": 2314.41,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T12:00:00Z",
-      "value": 2420.29,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T13:00:00Z",
-      "value": 2766.16,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T14:00:00Z",
-      "value": 3172.57,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T15:00:00Z",
-      "value": 3358.71,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T16:00:00Z",
-      "value": 3357.31,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T17:00:00Z",
-      "value": 3456.89,
-      "samples": 19
-    },
-    {
-      "timestamp": "2026-11-18T18:00:00Z",
-      "value": 3473.72,
-      "samples": 15
-    },
-    {
       "timestamp": "2026-11-18T19:00:00Z",
-      "value": 3411.48,
-      "samples": 20
+      "value": 3345.5,
+      "samples": 1
     },
     {
       "timestamp": "2026-11-18T20:00:00Z",
@@ -855,8 +805,58 @@
     },
     {
       "timestamp": "2026-11-25T09:00:00Z",
-      "value": 3302.04,
-      "samples": 16
+      "value": 3310.68,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T10:00:00Z",
+      "value": 3368.04,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T11:00:00Z",
+      "value": 3460.35,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T12:00:00Z",
+      "value": 3744.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T13:00:00Z",
+      "value": 4169.19,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T14:00:00Z",
+      "value": 4358.23,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T15:00:00Z",
+      "value": 4415.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T16:00:00Z",
+      "value": 4337.77,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T17:00:00Z",
+      "value": 4342.83,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T18:00:00Z",
+      "value": 4067.41,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T19:00:00Z",
+      "value": 4027.73,
+      "samples": 18
     }
   ]
 }

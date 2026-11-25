@@ -9,64 +9,14 @@
     "description": "Cross-border AC transmission between Finland and Sweden bidding zone SE1 (+ import to FI, - export to SE1).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-25T09:51:25Z",
+    "updated_at_utc": "2026-11-25T19:56:45Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-18T09:00:00Z",
-      "value": -2094.6,
-      "samples": 2
-    },
-    {
-      "timestamp": "2026-11-18T10:00:00Z",
-      "value": -1784.72,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T11:00:00Z",
-      "value": -1837.82,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T12:00:00Z",
-      "value": -1801.22,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T13:00:00Z",
-      "value": -1773.96,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T14:00:00Z",
-      "value": -1845.37,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T15:00:00Z",
-      "value": -1749.15,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T16:00:00Z",
-      "value": -1902.8,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-18T17:00:00Z",
-      "value": -1696.81,
-      "samples": 19
-    },
-    {
-      "timestamp": "2026-11-18T18:00:00Z",
-      "value": -1613.52,
-      "samples": 15
-    },
-    {
       "timestamp": "2026-11-18T19:00:00Z",
-      "value": -1752.31,
-      "samples": 20
+      "value": -1760.83,
+      "samples": 1
     },
     {
       "timestamp": "2026-11-18T20:00:00Z",
@@ -855,8 +805,58 @@
     },
     {
       "timestamp": "2026-11-25T09:00:00Z",
-      "value": -1049.95,
-      "samples": 16
+      "value": -1033.58,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T10:00:00Z",
+      "value": -1166.57,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T11:00:00Z",
+      "value": -1131.07,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T12:00:00Z",
+      "value": -1137.68,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T13:00:00Z",
+      "value": -1087.79,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T14:00:00Z",
+      "value": -1138.13,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T15:00:00Z",
+      "value": -1394.09,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T16:00:00Z",
+      "value": -1281.79,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T17:00:00Z",
+      "value": -1501.34,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T18:00:00Z",
+      "value": -2028.28,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T19:00:00Z",
+      "value": -1647.46,
+      "samples": 18
     }
   ]
 }
