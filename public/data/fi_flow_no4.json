@@ -9,59 +9,14 @@
     "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-24T15:52:52Z",
+    "updated_at_utc": "2026-11-25T00:44:32Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-17T15:00:00Z",
-      "value": 22.56,
-      "samples": 2
-    },
-    {
-      "timestamp": "2026-11-17T16:00:00Z",
-      "value": 18.34,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T17:00:00Z",
-      "value": 17.38,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T18:00:00Z",
-      "value": 18.53,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T19:00:00Z",
-      "value": 14.53,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T20:00:00Z",
-      "value": 13.41,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T21:00:00Z",
-      "value": -0.47,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T22:00:00Z",
-      "value": -19.05,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-17T23:00:00Z",
-      "value": -23.38,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-18T00:00:00Z",
-      "value": -24.8,
-      "samples": 20
+      "value": -26.55,
+      "samples": 5
     },
     {
       "timestamp": "2026-11-18T01:00:00Z",
@@ -855,8 +810,53 @@
     },
     {
       "timestamp": "2026-11-24T15:00:00Z",
-      "value": -82.57,
-      "samples": 16
+      "value": -81.27,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T16:00:00Z",
+      "value": -74.33,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T17:00:00Z",
+      "value": -80.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T18:00:00Z",
+      "value": -79.98,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T19:00:00Z",
+      "value": -78.03,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T20:00:00Z",
+      "value": -78.49,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T21:00:00Z",
+      "value": -84.29,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T22:00:00Z",
+      "value": -91.48,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-24T23:00:00Z",
+      "value": -105.96,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-25T00:00:00Z",
+      "value": -111.73,
+      "samples": 14
     }
   ]
 }
