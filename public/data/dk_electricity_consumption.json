@@ -9,46 +9,11 @@
     "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-25T19:56:58Z",
+    "updated_at_utc": "2026-11-26T02:51:52Z",
     "record_count": 168,
     "file_path": "data/dk_electricity_consumption.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-18T18:00:00Z",
-      "value": 5678.88,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-18T19:00:00Z",
-      "value": 5433.37,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-18T20:00:00Z",
-      "value": 5350.26,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-18T21:00:00Z",
-      "value": 5122.02,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-18T22:00:00Z",
-      "value": 5020.04,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-18T23:00:00Z",
-      "value": 5715.44,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T00:00:00Z",
-      "value": 5778.05,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-19T01:00:00Z",
       "value": 5562.54,
@@ -852,6 +817,41 @@
     {
       "timestamp": "2026-11-25T17:00:00Z",
       "value": 6260.92,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-25T18:00:00Z",
+      "value": 5895.44,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-25T19:00:00Z",
+      "value": 5684.02,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-25T20:00:00Z",
+      "value": 5494.67,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-25T21:00:00Z",
+      "value": 5361.12,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-25T22:00:00Z",
+      "value": 5267.31,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-25T23:00:00Z",
+      "value": 5862.36,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T00:00:00Z",
+      "value": 5861.37,
       "samples": 24
     }
   ]
