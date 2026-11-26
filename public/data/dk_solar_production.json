@@ -9,61 +9,11 @@
     "description": "Hourly solar photovoltaic generation across Denmark via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T12:30:43Z",
+    "updated_at_utc": "2026-11-26T22:21:27Z",
     "record_count": 168,
     "file_path": "data/dk_solar_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-19T11:00:00Z",
-      "value": 1035.03,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T12:00:00Z",
-      "value": 955.01,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T13:00:00Z",
-      "value": 682.74,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T14:00:00Z",
-      "value": 210.06,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T15:00:00Z",
-      "value": 44.79,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T16:00:00Z",
-      "value": 114.97,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T17:00:00Z",
-      "value": 90.85,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T18:00:00Z",
-      "value": 34.72,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T19:00:00Z",
-      "value": 31.16,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T20:00:00Z",
-      "value": 47.35,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-19T21:00:00Z",
       "value": 91.39,
@@ -852,6 +802,56 @@
     {
       "timestamp": "2026-11-26T10:00:00Z",
       "value": 491.75,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T11:00:00Z",
+      "value": 612.04,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T12:00:00Z",
+      "value": 592.91,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T13:00:00Z",
+      "value": 372.27,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T14:00:00Z",
+      "value": 135.64,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T15:00:00Z",
+      "value": 62.46,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T16:00:00Z",
+      "value": 86.24,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T17:00:00Z",
+      "value": 60.2,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T18:00:00Z",
+      "value": 41.72,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T19:00:00Z",
+      "value": 40.78,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T20:00:00Z",
+      "value": 44.29,
       "samples": 24
     }
   ]

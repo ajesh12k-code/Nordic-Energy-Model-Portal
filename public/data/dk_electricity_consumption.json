@@ -9,61 +9,11 @@
     "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T12:30:41Z",
+    "updated_at_utc": "2026-11-26T22:21:26Z",
     "record_count": 168,
     "file_path": "data/dk_electricity_consumption.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-19T11:00:00Z",
-      "value": 6227.83,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T12:00:00Z",
-      "value": 6181.08,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T13:00:00Z",
-      "value": 6109.23,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T14:00:00Z",
-      "value": 5779.33,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T15:00:00Z",
-      "value": 5891.83,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T16:00:00Z",
-      "value": 6132.03,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T17:00:00Z",
-      "value": 5971.37,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T18:00:00Z",
-      "value": 5693.57,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T19:00:00Z",
-      "value": 5490.97,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T20:00:00Z",
-      "value": 5588.88,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-19T21:00:00Z",
       "value": 5242.52,
@@ -852,6 +802,56 @@
     {
       "timestamp": "2026-11-26T10:00:00Z",
       "value": 6255.14,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T11:00:00Z",
+      "value": 6157.05,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T12:00:00Z",
+      "value": 6108.39,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T13:00:00Z",
+      "value": 6102.49,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T14:00:00Z",
+      "value": 5934.56,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T15:00:00Z",
+      "value": 6054.15,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T16:00:00Z",
+      "value": 6245.22,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T17:00:00Z",
+      "value": 6118.07,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T18:00:00Z",
+      "value": 5828.8,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T19:00:00Z",
+      "value": 5634.31,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T20:00:00Z",
+      "value": 5499.82,
       "samples": 24
     }
   ]

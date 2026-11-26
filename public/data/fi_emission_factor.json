@@ -9,64 +9,14 @@
     "description": "Real-time carbon intensity of electricity consumed in Finland including cross-border net imports.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T12:30:40Z",
+    "updated_at_utc": "2026-11-26T22:21:25Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-19T12:00:00Z",
-      "value": 37.06,
-      "samples": 9
-    },
-    {
-      "timestamp": "2026-11-19T13:00:00Z",
-      "value": 35.66,
-      "samples": 19
-    },
-    {
-      "timestamp": "2026-11-19T14:00:00Z",
-      "value": 33.12,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T15:00:00Z",
-      "value": 32.08,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T16:00:00Z",
-      "value": 30.91,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T17:00:00Z",
-      "value": 29.01,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T18:00:00Z",
-      "value": 25.69,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T19:00:00Z",
-      "value": 23.83,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T20:00:00Z",
-      "value": 22.63,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-19T21:00:00Z",
-      "value": 21.58,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-19T22:00:00Z",
-      "value": 20.89,
-      "samples": 20
+      "value": 20.77,
+      "samples": 12
     },
     {
       "timestamp": "2026-11-19T23:00:00Z",
@@ -855,8 +805,58 @@
     },
     {
       "timestamp": "2026-11-26T12:00:00Z",
-      "value": 36.41,
-      "samples": 9
+      "value": 36.12,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T13:00:00Z",
+      "value": 35.7,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T14:00:00Z",
+      "value": 34.22,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T15:00:00Z",
+      "value": 35.41,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T16:00:00Z",
+      "value": 36.0,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T17:00:00Z",
+      "value": 36.34,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T18:00:00Z",
+      "value": 37.4,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T19:00:00Z",
+      "value": 38.16,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T20:00:00Z",
+      "value": 38.56,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T21:00:00Z",
+      "value": 39.1,
+      "samples": 19
+    },
+    {
+      "timestamp": "2026-11-26T22:00:00Z",
+      "value": 38.29,
+      "samples": 6
     }
   ]
 }
