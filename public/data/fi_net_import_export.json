@@ -9,54 +9,14 @@
     "description": "Real-time net cross-border electricity exchange (+ indicates net import into Finland; - indicates net export).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-27T15:04:18Z",
+    "updated_at_utc": "2026-11-27T23:27:26Z",
     "record_count": 169
   },
   "data": [
     {
-      "timestamp": "2026-11-20T15:00:00Z",
-      "value": -1600.81,
-      "samples": 18
-    },
-    {
-      "timestamp": "2026-11-20T16:00:00Z",
-      "value": -1493.64,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T17:00:00Z",
-      "value": -1426.31,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T18:00:00Z",
-      "value": -1457.62,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T19:00:00Z",
-      "value": -1450.83,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T20:00:00Z",
-      "value": -1301.54,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T21:00:00Z",
-      "value": -988.09,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T22:00:00Z",
-      "value": -668.78,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-20T23:00:00Z",
-      "value": 282.77,
-      "samples": 20
+      "value": 362.89,
+      "samples": 10
     },
     {
       "timestamp": "2026-11-21T00:00:00Z",
@@ -855,8 +815,48 @@
     },
     {
       "timestamp": "2026-11-27T15:00:00Z",
-      "value": -2778.31,
-      "samples": 1
+      "value": -2987.78,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T16:00:00Z",
+      "value": -3020.57,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T17:00:00Z",
+      "value": -2800.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T18:00:00Z",
+      "value": -2542.86,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T19:00:00Z",
+      "value": -2001.61,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T20:00:00Z",
+      "value": -1738.24,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T21:00:00Z",
+      "value": -1340.42,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T22:00:00Z",
+      "value": -1075.82,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T23:00:00Z",
+      "value": -595.84,
+      "samples": 8
     }
   ]
 }

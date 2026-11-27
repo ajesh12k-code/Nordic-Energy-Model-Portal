@@ -9,51 +9,11 @@
     "description": "Combined Danish onshore and offshore wind turbine electricity generation via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-27T15:04:34Z",
+    "updated_at_utc": "2026-11-27T23:27:44Z",
     "record_count": 168,
     "file_path": "data/dk_wind_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-20T14:00:00Z",
-      "value": 1881.18,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T15:00:00Z",
-      "value": 2045.82,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T16:00:00Z",
-      "value": 2124.99,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T17:00:00Z",
-      "value": 2459.35,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T18:00:00Z",
-      "value": 2294.82,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T19:00:00Z",
-      "value": 2580.08,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T20:00:00Z",
-      "value": 3101.92,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T21:00:00Z",
-      "value": 3366.59,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-20T22:00:00Z",
       "value": 3715.46,
@@ -852,6 +812,46 @@
     {
       "timestamp": "2026-11-27T13:00:00Z",
       "value": 2486.95,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T14:00:00Z",
+      "value": 2850.59,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T15:00:00Z",
+      "value": 3060.95,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T16:00:00Z",
+      "value": 3121.61,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T17:00:00Z",
+      "value": 3185.93,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T18:00:00Z",
+      "value": 3622.19,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T19:00:00Z",
+      "value": 3880.96,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T20:00:00Z",
+      "value": 4082.25,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T21:00:00Z",
+      "value": 4092.95,
       "samples": 24
     }
   ]

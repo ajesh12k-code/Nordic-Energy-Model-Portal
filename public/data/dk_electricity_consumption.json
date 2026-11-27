@@ -9,51 +9,11 @@
     "description": "Hourly gross electricity consumption across Western (DK1) and Eastern (DK2) Denmark via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-27T15:04:33Z",
+    "updated_at_utc": "2026-11-27T23:27:43Z",
     "record_count": 168,
     "file_path": "data/dk_electricity_consumption.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-20T14:00:00Z",
-      "value": 5516.49,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T15:00:00Z",
-      "value": 5611.49,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T16:00:00Z",
-      "value": 5788.55,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T17:00:00Z",
-      "value": 5578.47,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T18:00:00Z",
-      "value": 5123.72,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T19:00:00Z",
-      "value": 5048.66,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T20:00:00Z",
-      "value": 5167.4,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T21:00:00Z",
-      "value": 5200.9,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-20T22:00:00Z",
       "value": 4989.45,
@@ -852,6 +812,46 @@
     {
       "timestamp": "2026-11-27T13:00:00Z",
       "value": 5824.2,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T14:00:00Z",
+      "value": 5839.46,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T15:00:00Z",
+      "value": 5910.66,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T16:00:00Z",
+      "value": 6055.43,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T17:00:00Z",
+      "value": 5755.6,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T18:00:00Z",
+      "value": 5494.21,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T19:00:00Z",
+      "value": 5392.6,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T20:00:00Z",
+      "value": 5251.95,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T21:00:00Z",
+      "value": 5108.08,
       "samples": 24
     }
   ]
