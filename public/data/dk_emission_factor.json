@@ -9,46 +9,11 @@
     "description": "Hourly grid CO2 emission intensity in Denmark averaged across DK1 and DK2 via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:21:28Z",
+    "updated_at_utc": "2026-11-27T05:02:47Z",
     "record_count": 168,
     "file_path": "data/dk_emission_factor.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-19T21:00:00Z",
-      "value": 156.5,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 163.5,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 138.04,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 133.58,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 127.29,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 119.25,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 102.17,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-20T04:00:00Z",
       "value": 100.83,
@@ -852,6 +817,41 @@
     {
       "timestamp": "2026-11-26T20:00:00Z",
       "value": 112.21,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T21:00:00Z",
+      "value": 104.67,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T22:00:00Z",
+      "value": 90.79,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 84.0,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 90.62,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 88.62,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 87.29,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 84.0,
       "samples": 24
     }
   ]

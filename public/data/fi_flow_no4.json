@@ -9,49 +9,14 @@
     "description": "Cross-border transmission between Finnish Lapland and Norway bidding zone NO4 (+ import to FI, - export to NO4).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:21:19Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-27T05:02:37Z",
+    "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": -29.8,
-      "samples": 12
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": -24.96,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": -19.33,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": -21.11,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": -26.53,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": -38.93,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T04:00:00Z",
-      "value": -52.24,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-20T05:00:00Z",
-      "value": -52.2,
-      "samples": 20
+      "value": -52.08,
+      "samples": 19
     },
     {
       "timestamp": "2026-11-20T06:00:00Z",
@@ -855,8 +820,38 @@
     },
     {
       "timestamp": "2026-11-26T22:00:00Z",
-      "value": -36.43,
-      "samples": 6
+      "value": -35.02,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": -33.32,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": -28.91,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": -25.49,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": -28.86,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": -24.44,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T04:00:00Z",
+      "value": -21.06,
+      "samples": 20
     }
   ]
 }

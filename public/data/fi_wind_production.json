@@ -9,49 +9,14 @@
     "description": "Real-time wind power production in Finland for residual load and renewable penetration modeling.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:20:54Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-27T05:02:13Z",
+    "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 2539.18,
-      "samples": 13
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 2707.54,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 2878.01,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 2846.59,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 2776.52,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 2773.42,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T04:00:00Z",
-      "value": 2792.2,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-20T05:00:00Z",
-      "value": 2792.64,
-      "samples": 20
+      "value": 2791.37,
+      "samples": 19
     },
     {
       "timestamp": "2026-11-20T06:00:00Z",
@@ -855,8 +820,38 @@
     },
     {
       "timestamp": "2026-11-26T22:00:00Z",
-      "value": 4069.29,
-      "samples": 6
+      "value": 3985.45,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 3906.62,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 3602.13,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 3479.64,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 3116.2,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 2621.14,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T04:00:00Z",
+      "value": 2186.23,
+      "samples": 20
     }
   ]
 }

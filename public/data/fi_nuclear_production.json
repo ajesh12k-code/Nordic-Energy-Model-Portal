@@ -9,49 +9,14 @@
     "description": "Baseload nuclear power generation across Finnish reactors.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:20:57Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-27T05:02:15Z",
+    "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 3864.6,
-      "samples": 13
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 3864.01,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 3862.73,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 3864.2,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 3864.54,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 3864.63,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T04:00:00Z",
-      "value": 3863.79,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-20T05:00:00Z",
-      "value": 3863.8,
-      "samples": 20
+      "value": 3863.83,
+      "samples": 19
     },
     {
       "timestamp": "2026-11-20T06:00:00Z",
@@ -855,8 +820,38 @@
     },
     {
       "timestamp": "2026-11-26T22:00:00Z",
-      "value": 3091.37,
-      "samples": 6
+      "value": 3091.31,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 3092.03,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 3091.69,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 3092.24,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 3091.87,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 3091.3,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T04:00:00Z",
+      "value": 3091.36,
+      "samples": 20
     }
   ]
 }

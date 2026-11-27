@@ -9,49 +9,14 @@
     "description": "Total electricity consumption in Finland calculated from production and cross-border import/export.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:20:47Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-27T05:02:06Z",
+    "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 10253.25,
-      "samples": 2
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 9899.44,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 9878.92,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 9951.45,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 10178.62,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 10503.03,
-      "samples": 4
-    },
-    {
-      "timestamp": "2026-11-20T04:00:00Z",
-      "value": 10854.9,
-      "samples": 4
-    },
-    {
       "timestamp": "2026-11-20T05:00:00Z",
-      "value": 11180.85,
-      "samples": 4
+      "value": 11204.63,
+      "samples": 3
     },
     {
       "timestamp": "2026-11-20T06:00:00Z",
@@ -855,8 +820,38 @@
     },
     {
       "timestamp": "2026-11-26T22:00:00Z",
-      "value": 11567.7,
-      "samples": 1
+      "value": 11423.33,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 11064.92,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 11006.25,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 11040.67,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 10982.1,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 10960.55,
+      "samples": 4
+    },
+    {
+      "timestamp": "2026-11-27T04:00:00Z",
+      "value": 11231.3,
+      "samples": 3
     }
   ]
 }

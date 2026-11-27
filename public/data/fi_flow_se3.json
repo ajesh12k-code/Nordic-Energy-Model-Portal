@@ -9,49 +9,14 @@
     "description": "Subsea HVDC transmission between Finland and Sweden bidding zone SE3 (+ import to FI, - export to SE3).",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:21:15Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-27T05:02:34Z",
+    "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 421.36,
-      "samples": 12
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 782.12,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 840.76,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 717.36,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 436.77,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 48.63,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T04:00:00Z",
-      "value": -335.53,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-20T05:00:00Z",
-      "value": -789.29,
-      "samples": 20
+      "value": -798.3,
+      "samples": 19
     },
     {
       "timestamp": "2026-11-20T06:00:00Z",
@@ -855,8 +820,38 @@
     },
     {
       "timestamp": "2026-11-26T22:00:00Z",
-      "value": 185.72,
-      "samples": 6
+      "value": 192.8,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 569.29,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 594.38,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 609.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 762.15,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 637.85,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T04:00:00Z",
+      "value": 348.57,
+      "samples": 20
     }
   ]
 }

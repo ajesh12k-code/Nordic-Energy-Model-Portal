@@ -9,49 +9,14 @@
     "description": "Combined heat and power electricity produced alongside municipal district heating.",
     "license": "CC BY 4.0",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:21:03Z",
-    "record_count": 169
+    "updated_at_utc": "2026-11-27T05:02:22Z",
+    "record_count": 168
   },
   "data": [
     {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 500.17,
-      "samples": 13
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 463.4,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 440.21,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 441.2,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 448.58,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 471.68,
-      "samples": 20
-    },
-    {
-      "timestamp": "2026-11-20T04:00:00Z",
-      "value": 509.97,
-      "samples": 20
-    },
-    {
       "timestamp": "2026-11-20T05:00:00Z",
-      "value": 580.46,
-      "samples": 20
+      "value": 581.9,
+      "samples": 19
     },
     {
       "timestamp": "2026-11-20T06:00:00Z",
@@ -855,8 +820,38 @@
     },
     {
       "timestamp": "2026-11-26T22:00:00Z",
-      "value": 1409.51,
-      "samples": 6
+      "value": 1401.01,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 1376.97,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 1414.75,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 1487.8,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 1566.52,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 1655.72,
+      "samples": 20
+    },
+    {
+      "timestamp": "2026-11-27T04:00:00Z",
+      "value": 1814.62,
+      "samples": 20
     }
   ]
 }

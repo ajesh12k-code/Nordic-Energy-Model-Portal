@@ -9,46 +9,11 @@
     "description": "Combined Danish onshore and offshore wind turbine electricity generation via Energinet.",
     "license": "Energinet / Nord Pool Open Data (CC BY 4.0)",
     "resolution": "1h",
-    "updated_at_utc": "2026-11-26T22:21:27Z",
+    "updated_at_utc": "2026-11-27T05:02:45Z",
     "record_count": 168,
     "file_path": "data/dk_wind_production.json"
   },
   "data": [
-    {
-      "timestamp": "2026-11-19T21:00:00Z",
-      "value": 1158.55,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T22:00:00Z",
-      "value": 1400.0,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-19T23:00:00Z",
-      "value": 1907.94,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T00:00:00Z",
-      "value": 2461.1,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T01:00:00Z",
-      "value": 2578.15,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T02:00:00Z",
-      "value": 2340.37,
-      "samples": 24
-    },
-    {
-      "timestamp": "2026-11-20T03:00:00Z",
-      "value": 2409.41,
-      "samples": 24
-    },
     {
       "timestamp": "2026-11-20T04:00:00Z",
       "value": 2137.24,
@@ -852,6 +817,41 @@
     {
       "timestamp": "2026-11-26T20:00:00Z",
       "value": 1192.04,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T21:00:00Z",
+      "value": 1450.39,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T22:00:00Z",
+      "value": 1455.99,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-26T23:00:00Z",
+      "value": 1190.46,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T00:00:00Z",
+      "value": 1116.72,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T01:00:00Z",
+      "value": 1187.64,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T02:00:00Z",
+      "value": 1265.6,
+      "samples": 24
+    },
+    {
+      "timestamp": "2026-11-27T03:00:00Z",
+      "value": 1492.5,
       "samples": 24
     }
   ]
